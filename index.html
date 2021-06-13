@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avtogaz</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+  <!-- <div class="sprite" style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div> -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__link">
+          <picture>
+            <!-- <source media="(min-width: 1600px)" srcset="">
+            <source media="(min-width: 768px)" srcset=""> -->
+            <img class="header__logo" src="img/svg/ЛОГО.svg" alt="Avtogaz logo" width="277" height="42">
+          </picture>
+          <span class="header__logotext">Заправка газгольдеров в Крыму</span>
+        </a>
+        <div class="contacts">
+          <address class="contacts__address">
+            <a class="contacts__link" target="_blank" href="https://yandex.ru/maps/146/simferopol/house/ulitsa_geroyev_adzhimushkaya_2/Z00Ydg5mSEMAQFpufXV0cX1jYg==/?ll=34.096167%2C44.950107&z=16.99" rel="nofollow">
+              г. Симферополь, <br>
+              ул. г. Аджимушкая, 5/15 кв 2
+            </a>
+          </address>
+          <div class="contacts__wrapper">
+            <a class="contacts__phone" href="tel:+7(978)730-80-58" rel="nofollow">+7 (978) 730-80-58 </a>
+            <a class="contacts__askcall" href="#">Заказать звонок</a>
+          </div>
+        </div>
+        <section class="navigation">
+          <ul class="navigation__list"></ul>
+          <div class="navigation__menu">
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <h1 class="hero__name">Доставим <span class="hero__name hero__name--colored">газ</span></h1>
+        <p class="hero__name hero__name--sup">в любую точку Крыма от <span class="hero__name hero__name--sup hero__name--colored">25 Р/л</span></p>
+        <p class="hero__discription">
+          Компания АВТОГАЗКОМПЛЕКТ-КРЫМ специализируется на поставках СУГ (сжиженного углеводородного газа).
+          Вы можете купить пропан-бутан крупным, мелким оптом и в розницу для заправки газгольдеров разных объемов
+        </p>
+      </div>
+      <div class="bid container">
+        <form class="bid__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="bid__wrapper">
+            <label class="bid__label bid__label--tel"><span class="bid__name visually-hidden">Телефон:*</span>
+              <input id="phone" class="bid__input bid__input--tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__" required="">
+            </label>
+            <button class="btn" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+        <a class="btn btn--link">Расчитать стоимость заправки</a>
+      </div>
+      <div class="advantages container">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__icon advantages__icon--tachometer"></div>
+            <p class="advantages__discription advantages__discription--tachometer">Заполним газгольдер по счетчику и выдадим чек на месте.</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__icon advantages__icon--tank"></div>
+            <p class="advantages__discription advantages__discription--tank">Доставка осуществляется в  зимний период за 1-2 дня, в летний - в течение дня.</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__icon  advantages__icon--filter"></div>
+            <p class="advantages__discription advantages__discription--filter">Газ проходит фильтрацию перед доставкой. Вы получите газ без примесей серы, воды и масла</p>
+          </li>
+        </ul>
+      </div>
+    <section class="objects container">
+      <h2 class="objects__name">Заправляем газгольдеры на объектах</h2>
+
+      <div class="objects__wrapper">
+        <ul class="objects__tabs">
+          <li><a class="btn btn--tab" href="#tab1">Частные клиенты</a></li>
+          <li><a class="btn btn--tab" href="#tab2">Дачные посёлки</a></li>
+          <li><a class="btn btn--tab" href="#tab3">Комплексы АГЗС</a></li>
+          <li><a class="btn btn--tab" href="#tab4">Промышленные организации</a></li>
+        </ul>
+        <div class="objects__container">
+          <div id="tab1" class="objects__content">
+            <div class="objects__wraper">
+              <article>
+                <b>Газгольдеры для частного дома</b>  — это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива.
+                В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы.
+                В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом.
+                Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.
+              </article>
+              <a href="#" class="btn btn--send">отправить заявку</a>
+            </div>
+            <img class="objects__img" src="../img/object.jpg" alt="">
+          </div>
+          <div id="tab2" class="objects__content">
+            <div class="objects__wraper">
+              <article>2</article>
+              <a href="#" class="btn btn--send">отправить заявку</a>
+            </div>
+            <img class="objects__img" src="../img/object.jpg" alt="">
+          </div>
+          <div id="tab3" class="objects__content">
+            <div class="objects__wraper">
+              <article>3</article>
+              <a href="#" class="btn btn--send">отправить заявку</a>
+            </div>
+            <img class="objects__img" src="../img/object.jpg" alt="">
+          </div>
+          <div id="tab4" class="objects__content">
+            <div class="objects__wraper">
+              <article>4</article>
+              <a href="#" class="btn btn--send">отправить заявку</a>
+            </div>
+            <img class="objects__img" src="../img/object.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section></main>
+  <footer class="footer">
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
