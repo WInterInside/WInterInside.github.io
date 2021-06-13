@@ -462,17 +462,23 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px; }
+  @media (max-width: 586px) {
+    .header__wrapper {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .hero {
   position: relative;
   padding-top: 150px;
   height: 100vh;
-  min-height: 1509px;
+  min-height: 1709px;
   background: #e1f6ff;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #e1f6ff), to(#f6f9fc));
   background: linear-gradient(180deg, #e1f6ff 40%, #f6f9fc 100%); }
@@ -760,43 +766,6 @@ img {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
-
-.tabs {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  border-bottom: 1px solid #999; }
-
-.tabs li {
-  float: left;
-  border: 1px solid #999;
-  border-bottom: none;
-  background: #e0e0e0; }
-
-.tabs li a {
-  display: block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #000;
-  text-decoration: none; }
-
-.tabs li a:hover {
-  background: #ccc; }
-
-.tabs li.active,
-.tabs li.active a:hover {
-  font-weight: bold;
-  background: #fff; }
-
-.tab_container {
-  border: 1px solid #999;
-  border-top: none;
-  background: #fff; }
-
-.tab_content {
-  padding: 20px;
-  font-size: 16px; }
 
 .contacts {
   display: -webkit-box;
