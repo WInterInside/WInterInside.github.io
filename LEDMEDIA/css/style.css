@@ -480,6 +480,9 @@ img {
   -o-object-fit: cover;
      object-fit: cover; }
 
+.footer {
+  display: none; }
+
 .header {
   position: absolute;
   z-index: 111;
@@ -1070,7 +1073,8 @@ img {
       font-size: 20px; } }
   @media (max-width: 560px) {
     .advantages__caption {
-      font-size: 18px; } }
+      font-size: 18px;
+      margin: 1em 0; } }
 
 .advantages__text {
   font-size: 16px;
