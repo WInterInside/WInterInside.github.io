@@ -1,0 +1,32 @@
+<svg width="850" height="100" viewBox="0 0 850 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M350 0H0V100H350V0Z" fill="#82030A"/>
+<path d="M550 0V100L600 50L550 0Z" fill="#F2111C"/>
+<path d="M600 50V100H550L600 50Z" fill="#F21D1D"/>
+<path d="M650 100V0L600 50L650 100Z" fill="#FF3636"/>
+<path d="M750 100V0L700 50L750 100Z" fill="#F76363"/>
+<path d="M600 0V50L550 0H600Z" fill="#F21D1D"/>
+<path d="M700 50V100H650L700 50Z" fill="#F25555"/>
+<path d="M700 0V50L650 0H700Z" fill="#F25555"/>
+<path d="M800 50V100H750L800 50Z" fill="#F77777"/>
+<path d="M800 0V50L750 0H800Z" fill="#F77777"/>
+<path d="M650 100H600V50L650 100Z" fill="#F42C2C"/>
+<path d="M650 0L600 50V0H650Z" fill="#F42C2C"/>
+<path d="M450 0V100L500 50L450 0Z" fill="#C20102"/>
+<path d="M500 50V100H450L500 50Z" fill="#CC0202"/>
+<path d="M550 100V0L500 50L550 100Z" fill="#E20203"/>
+<path d="M500 0V50L450 0H500Z" fill="#CC0202"/>
+<path d="M550 100H500V50L550 100Z" fill="#D70202"/>
+<path d="M550 0L500 50V0H550Z" fill="#D70202"/>
+<path d="M350 0V100L400 50L350 0Z" fill="#82030A"/>
+<path d="M400 50V100H350L400 50Z" fill="#9F0101"/>
+<path d="M450 100V0L400 50L450 100Z" fill="#B50101"/>
+<path d="M400 0V50L350 0H400Z" fill="#9F0101"/>
+<path d="M450 100H400V50L450 100Z" fill="#A90101"/>
+<path d="M450 0L400 50V0H450Z" fill="#A90101"/>
+<path d="M850 100H800V50L850 100Z" fill="#F9878D"/>
+<path d="M850 0L800 50V0H850Z" fill="#F9878D"/>
+<path d="M750 100H700V50L750 100Z" fill="#EF5959"/>
+<path d="M750 0L700 50V0H750Z" fill="#EF5959"/>
+<path d="M650 0V100L700 50L650 0Z" fill="#FF4848"/>
+<path d="M750 0V100L800 50L750 0Z" fill="#F26B6B"/>
+</svg>
