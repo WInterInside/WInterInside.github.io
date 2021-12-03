@@ -31,7 +31,7 @@
 	background: #f9f9f9;
 	color: #444;
 	text-shadow: none;
-	border-radius: 15px;
+	border-radius: 40px;
 }
 
 .fancybox-opened {
@@ -99,24 +99,26 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
-	width: 43px;
-	height: 43px;
-	background: linear-gradient(0deg, rgba(16,106,238,1) 46%, rgba(0,197,253,1) 89%);
+	top: -45px;
+	right: -45px;
+	width: 55px;
+	height: 55px;
+	background: transparent;
+  border: 2px solid #ffffff;
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 8040;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .fancybox-close {
     position: absolute;
-    top: -18px;
+    top: -50px;
     right: 20px;
     width: 43px;
     height: 43px;
-    background: linear-gradient(0deg, rgba(16,106,238,1) 46%, rgba(0,197,253,1) 89%);
+    background: transparent;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
     z-index: 8040;
@@ -126,8 +128,8 @@
 .fancybox-close::after {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 20px;
+  top: 10px;
+  left: 23px;
   width: 3px;
   border-radius: 3px;
   height: 30px;
@@ -138,13 +140,25 @@
 .fancybox-close::before {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 20px;
+  top: 10px;
+  left: 23px;
   width: 3px;
   border-radius: 3px;
   height: 30px;
   background-color: white;
   transform: rotate(135deg);
+}
+
+@media (max-width: 600px) {
+  .fancybox-close::after {
+    top: 5px;
+    left: 18px;
+  }
+
+  .fancybox-close::before {
+    top: 5px;
+    left: 18px;
+  }
 }
 
 .fancybox-nav {
@@ -266,9 +280,9 @@
 	padding: 2px 20px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
 	background: rgba(0, 0, 0, 0.8);
-	-webkit-border-radius: 15px;
-	   -moz-border-radius: 15px;
-	        border-radius: 15px;
+	-webkit-border-radius: 40px;
+	   -moz-border-radius: 40px;
+	        border-radius: 40px;
 	text-shadow: 0 1px 2px #222;
 	color: #FFF;
 	font-weight: bold;
