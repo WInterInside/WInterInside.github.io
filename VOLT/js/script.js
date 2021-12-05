@@ -109,12 +109,21 @@ menu.addEventListener("click", function() {
 
 $(document).ready(function(){
 	$('.slider').slick({
-		arrows:false,
-		dots:true,
-		slidesToShow:1,
+		arrows:true,
+		dots:false,
+		slidesToShow:5,
 		autoplay:true,
 		speed:1000,
-		autoplaySpeed:5000
+		autoplaySpeed:5000,
+    responsive:[
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow:1,
+		      dots:true,
+          arrows:false,
+				}
+			}
+		]
 	});
 });
-
