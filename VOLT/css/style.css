@@ -1403,6 +1403,11 @@ img {
           justify-content: center;
   grid-column-gap: 50px;
   grid-row-gap: 40px; }
+  @media (max-width: 500px) {
+    .clients__list {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; } }
 
 .client {
   width: 200px;
@@ -1415,7 +1420,13 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: unset; }
+  @media (max-width: 500px) {
+    .client {
+      width: 140px;
+      height: 80px;
+      background-size: contain; } }
   .client--afksystem {
     background-image: url("../img/clients/afksystem.jpg"); }
   .client--fmba-rf {
