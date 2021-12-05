@@ -359,6 +359,16 @@ img {
   min-height: 100vh;
   overflow: hidden; }
 
+.winter-inside {
+  position: absolute;
+  z-index: 111;
+  bottom: 50px;
+  right: 50px;
+  color: rgba(75, 144, 191, 0.802);
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5; }
+
 @font-face {
   font-family: 'Museo Sans Cyrl 500';
   src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff");
@@ -1108,16 +1118,23 @@ img {
       font-size: 26px;
       line-height: 40px;
       text-transform: uppercase; } }
+  .heading__text--prod {
+    margin-right: 265px; }
   .heading__text--services {
     margin-left: 365px; }
-  .heading__text--right {
-    margin-right: 265px; }
-    @media (max-width: 600px) {
-      .heading__text--right {
-        margin: 0 auto; } }
+  .heading__text--work {
+    margin-right: 148px; }
+  .heading__text--clients {
+    margin-left: 205px; }
+  @media (max-width: 600px) {
+    .heading__text--right {
+      margin: 0 auto; } }
   @media (max-width: 600px) {
     .heading__text--left {
       margin: 0 auto; } }
+
+.heading__text span {
+  color: #82030A; }
 
 .production {
   margin-bottom: 70px; }
@@ -1311,3 +1328,118 @@ img {
   @media (max-width: 734px) {
     .service__caption {
       font-size: 16px; } }
+
+.work {
+  margin-bottom: 70px; }
+  @media (max-width: 1110px) {
+    .work {
+      margin-bottom: 45px; } }
+  @media (max-width: 750px) {
+    .work {
+      margin-bottom: 30px; } }
+
+.work__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto; }
+  @media (max-width: 1110px) {
+    .work__list {
+      width: 70%; } }
+  @media (max-width: 750px) {
+    .work__list {
+      width: 90%;
+      font-size: 14px; } }
+  @media (max-width: 450px) {
+    .work__list {
+      width: 100%; } }
+
+.work__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px; }
+  .work__item:last-child {
+    margin-bottom: 0; }
+
+.work__item span {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  margin-right: 60px;
+  text-align: center;
+  color: #82030A; }
+  @media (max-width: 750px) {
+    .work__item span {
+      font-size: 30px;
+      line-height: 35px; } }
+  @media (max-width: 450px) {
+    .work__item span {
+      margin-right: 20px; } }
+
+.clients {
+  margin-bottom: 70px; }
+  @media (max-width: 1110px) {
+    .clients {
+      margin-bottom: 45px; } }
+  @media (max-width: 750px) {
+    .clients {
+      margin-bottom: 30px; } }
+
+.clients__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px; }
+
+.client {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .client--afksystem {
+    background-image: url("../img/clients/afksystem.jpg"); }
+  .client--fmba-rf {
+    background-image: url("../img/clients/fmba.jpg"); }
+  .client--jkh {
+    background-image: url("../img/clients/jkh.jpg"); }
+  .client--fkr {
+    background-image: url("../img/clients/fkr.jpg"); }
+  .client--x5group {
+    background-image: url("../img/clients/x5group.jpg"); }
+  .client--md {
+    background-image: url("../img/clients/macdonalds.jpg"); }
+  .client--okey {
+    background-image: url("../img/clients/okey.jpg"); }
+  .client--miratorg {
+    background-image: url("../img/clients/miratorg.jpg"); }
+  .client--verniy {
+    background-image: url("../img/clients/verniy.jpg"); }
+  .client--da {
+    background-image: url("../img/clients/da.jpg"); }
+
+.client a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 10px; }
