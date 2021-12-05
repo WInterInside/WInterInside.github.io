@@ -1133,9 +1133,6 @@ img {
     .heading__text--left {
       margin: 0 auto; } }
 
-.heading__text span {
-  color: #82030A; }
-
 .production {
   margin-bottom: 70px; }
   @media (max-width: 1110px) {
@@ -1405,14 +1402,21 @@ img {
   grid-row-gap: 40px; }
   @media (max-width: 500px) {
     .clients__list {
-      grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
-      grid-column-gap: 20px;
-      grid-row-gap: 20px; } }
+      grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; } }
+  @media (max-width: 354px) {
+    .clients__list {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; } }
 
 .client {
   width: 200px;
   height: 120px;
   border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #3B3B3B;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1421,36 +1425,42 @@ img {
       align-content: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: unset; }
+  background-size: unset;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer; }
   @media (max-width: 500px) {
     .client {
-      width: 140px;
+      width: 150px;
+      height: 90px;
+      background-size: 90% 90%; } }
+  @media (max-width: 354px) {
+    .client {
+      width: 100%;
       height: 80px;
-      background-size: contain; } }
+      background-size: 65% 65%; } }
+  .client:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
   .client--afksystem {
-    background-image: url("../img/clients/afksystem.jpg"); }
+    background-image: url("../img/clients/afksystem.svg"); }
   .client--fmba-rf {
-    background-image: url("../img/clients/fmba.jpg"); }
+    background-image: url("../img/clients/fmba.svg"); }
   .client--jkh {
-    background-image: url("../img/clients/jkh.jpg"); }
+    background-image: url("../img/clients/jkh.svg"); }
   .client--fkr {
-    background-image: url("../img/clients/fkr.jpg"); }
+    background-image: url("../img/clients/fkr.svg"); }
   .client--x5group {
-    background-image: url("../img/clients/x5group.jpg"); }
+    background-image: url("../img/clients/x5group.svg"); }
   .client--md {
-    background-image: url("../img/clients/macdonalds.jpg"); }
+    background-image: url("../img/clients/macdonalds.svg"); }
   .client--okey {
-    background-image: url("../img/clients/okey.jpg"); }
+    background-image: url("../img/clients/okay.svg"); }
   .client--miratorg {
-    background-image: url("../img/clients/miratorg.jpg"); }
+    background-image: url("../img/clients/miratorg.svg"); }
   .client--verniy {
-    background-image: url("../img/clients/verniy.jpg"); }
+    background-image: url("../img/clients/verniy.svg"); }
   .client--da {
-    background-image: url("../img/clients/da.jpg"); }
-
-.client a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-radius: 10px; }
+    background-image: url("../img/clients/da.svg"); }
