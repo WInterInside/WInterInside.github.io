@@ -532,6 +532,9 @@ img {
   padding: 0 80px;
   height: 120px;
   position: relative; }
+  @media (max-width: 815px) {
+    .slick-slider {
+      padding: 0; } }
 
 .slick-list {
   overflow: hidden; }
@@ -547,14 +550,22 @@ img {
   background-color: transparent;
   border: 1px solid #0a2736;
   border-radius: 50%;
-  font-size: 0; }
+  font-size: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer; }
+  .slider .slick-arrow:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+            box-shadow: 0px 0px 5px 0px #000000; }
 
 .slider .slick-arrow::before {
   content: "";
   display: block;
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 19px;
   margin-top: -8px;
   border: solid #0a2736;
   border-width: 0 2px 2px 0;
@@ -588,15 +599,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 650px) {
+    .slick-slide {
+      width: 45%; } }
 
 /* Точки (булиты) */
 .slick-dots {
   position: relative;
-  margin-top: -30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,6 +649,12 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 95% 95%; }
+  @media (max-width: 650px) {
+    .slider__content {
+      width: 250px; } }
+  @media (max-width: 549px) {
+    .slider__content {
+      width: 100%; } }
   .slider__content--abb {
     background-image: url("../img/partners/abb.svg"); }
   .slider__content--dekraft {

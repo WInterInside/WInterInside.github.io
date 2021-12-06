@@ -117,7 +117,39 @@ $(document).ready(function(){
 		autoplaySpeed:5000,
     responsive:[
 			{
-				breakpoint: 500,
+				breakpoint: 1360,
+				settings: {
+					slidesToShow:4,
+		      dots:false,
+          arrows:true,
+				}
+			},
+      {
+				breakpoint: 1050,
+				settings: {
+					slidesToShow:3,
+		      dots:false,
+          arrows:true,
+				}
+			},
+      {
+				breakpoint: 815,
+				settings: {
+					slidesToShow:3,
+		      dots:true,
+          arrows:false,
+				}
+			},
+      {
+				breakpoint: 650,
+				settings: {
+					slidesToShow:2,
+		      dots:true,
+          arrows:false,
+				}
+			},
+      {
+				breakpoint: 549,
 				settings: {
 					slidesToShow:1,
 		      dots:true,
@@ -127,3 +159,4 @@ $(document).ready(function(){
 		]
 	});
 });
+
