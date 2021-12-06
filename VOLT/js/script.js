@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function() {
       event.keyCode && (keyCode = event.keyCode);
       var pos = this.selectionStart;
       if (pos < 3) event.preventDefault();
-      var matrix = "+7 (___) ___ ____",
+      var matrix = "+7 (___) ___-__-__",
           i = 0,
           def = matrix.replace(/\D/g, ""),
           val = this.value.replace(/\D/g, ""),
