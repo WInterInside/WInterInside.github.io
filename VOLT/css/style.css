@@ -1304,15 +1304,18 @@ img {
     .heading__wrapper {
       height: 50px; } }
   .heading__wrapper--left {
+    margin-left: -2px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
     background-position: left;
     background-image: url("../img/svg/heading-flag-left.svg"); }
   .heading__wrapper--right {
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    margin-right: -2px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     background-position: right;
     background-image: url("../img/svg/heading-flag.svg"); }
 
