@@ -744,8 +744,8 @@ img {
 .home--link {
   position: absolute;
   z-index: 111;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,21 +756,27 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   vertical-align: middle;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9878D), to(#9F0101));
-  background: linear-gradient(180deg, #F9878D 0%, #9F0101 100%);
+  background-color: #D70202;
   border: 1px solid #82030A; }
+  .home--link:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-box-shadow: 0px 30px 38px -17px #000000;
+            box-shadow: 0px 30px 38px -17px #000000; }
   .home--link::before {
     content: "";
     display: block;
     position: absolute;
     top: 55%;
-    left: 12px;
-    margin-top: -8px;
+    left: 10px;
+    margin-top: -7px;
     border: solid #ffffff;
     border-width: 0 4px 4px 0;
     display: inline-block;
@@ -1384,20 +1390,11 @@ img {
     .production__list {
       width: 100%;
       background-image: url("../img/prod-bg.svg");
-      background-size: 70% 70%;
-      background-position: top 50px right -180px;
+      background-position: top right -180px;
       background-repeat: no-repeat; } }
   @media (max-width: 900px) {
     .production__list {
-      padding-left: 15px;
-      background-size: 50% 50%;
-      background-position: top 150px right -100px;
-      background-repeat: no-repeat;
-      -webkit-box-shadow: none;
-              box-shadow: none; } }
-  @media (max-width: 750px) {
-    .production__list {
-      background-image: none; } }
+      background: none; } }
 
 .production__item {
   display: -webkit-box;
@@ -1673,10 +1670,10 @@ img {
   min-height: 300px;
   padding: 50px 0;
   background-color: #3B3B3B;
-  margin-bottom: 25px; }
+  margin-bottom: 5px; }
   @media (max-width: 799px) {
     .call {
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       padding: 25px 0; } }
 
 .partners {
