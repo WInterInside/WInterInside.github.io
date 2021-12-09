@@ -20,15 +20,19 @@
 <body>
   <div class="wrapper">
     <a name="home"></a>
+
     <header class="header">
+
       <div class="header__wrapper container">
+
         <div class="logo">
-          <a href="index.html" class="logo__link">
+          <a href="form.html" class="logo__link">
           <picture>
             <img class="logo__img" src="img/svg/logo.svg" alt="VOLЬT logo" width="" height="">
           </picture>
           </a>
         </div>
+
         <section class="navigation">
           <h3 class="navigation__name hidden">navigation</h3>
           <ul id="nav" class="navigation__list">
@@ -46,6 +50,7 @@
             </li>
           </ul>
         </section>
+
         <section class="contacts">
           <div class="contacts__messengers">
             <a class="contacts__link contacts__link--messenger contacts__link--tm" href="https://telegram.me/79999630630" target="_blank" rel="nofollow" title="Написать в telegram"></a>
@@ -56,8 +61,10 @@
           </div>
           <a class="contacts__link contacts__link--phone" href="tel:+7(999)9630630" rel="nofollow">+7 9999-630-630</a>
         </section>
+
       </div>
     </header>
+
     <main class="main">
       <h1 class="main__heading hidden">VOLЬT</h1>
 
@@ -235,14 +242,14 @@
 
       <section class="call">
         <div class="container">
-          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="form" id="callme" action="mail.php" method="POST">
             <p class="form__caption">Оставьте заявку на консультацию специалиста</p>
             <div class="form__wrapper">
               <label class="form__label">
                 <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя" required="">
               </label>
               <label class="form__label">
-                <input class="form__input form__input--tel" id="tel" type="tel" name="tel" placeholder="Номер телефона" required="">
+                <input class="form__input form__input--tel" id="tel" type="tel" name="number" placeholder="Номер телефона" required="">
               </label>
               <button class="btn btn--red btn--submit" type="submit">Заказать звонок</button>
             </div>
@@ -255,6 +262,7 @@
       </section>
 
     </main>
+
     <footer class="footer">
       <a name="footer"></a>
       <div class="container">
@@ -293,7 +301,9 @@
       </div>
       <a href="#home" class="home home--link"></a>
     </footer>
+
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="libs/jquery.js"></script>
   <script src="js/script.js"></script>
   <script src="libs/slick.min.js"></script>
