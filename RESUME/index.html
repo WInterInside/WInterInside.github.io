@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Inside</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <section class="navigation">
+            <h3 class="navigation__name visually-hidden">navigation</h3>
+            <ul id="nav" class="navigation__list">
+              <li class="navigation__item">
+                <a href="#info" class="navigation__link navigation__link--current">Информация</a>
+              </li>
+              <li class="navigation__item  navigation__item--ed">
+                <a href="#ed" class="navigation__link">Образование</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#exp" class="navigation__link">Навыки</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">О себе</a>
+              </li>
+            </ul>
+            <div class="navigation__menu"></div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <picture>
+        <img class="main__photo img-bg" src="../img/main_ph.webp" alt="photo" width="320" height="320">
+      </picture>
+      <div class="container">
+        <h1 class="main__title">Анкета</h1>
+        <section class="data">
+          <div class="data__wrapper data__wrapper--info">
+            <a name="info" class="main__link"></a>
+            <h2 class="data__caption">Личная информация</h2>
+            <ul class="data__list data__list--info">
+              <li class="data__item data__item--info">Циркулев Максим Михайлович</li>
+              <li class="data__item data__item--info">03 / 06 / 1989 г.</li>
+              <li class="data__item data__item--info">Крым / Алушта</li>
+              <li class="data__item data__item--info">
+                <a class="data__link" href="https://telegram.im/@WinterInside" target="_blank">Tm: @WinterInside</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link" href="skype:deAn1mator">Skype: deAn1mator</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link" href="tel:+7 (978) 746 90 90">Тел.: +7 (978) 746-90-80</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="data__education">
+            <a name="ed" class="main__link"></a>
+            <h2 class="data__caption">Образование</h2>
+            <ul class="data__list data__list--ed">
+              <li class="data__item data__item--ed">
+                <span class="data__year">2012</span>
+                <p class="data__institution">Таврический национальный университет им. В.И. Вернадского, Симферополь</p>
+                <p class="data__speciality">Компьютерные системы и сети</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2019</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 1</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2020</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 2</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="data__wrapper data__wrapper--skill">
+            <a name="exp" class="main__link"></a>
+            <h2 class="data__caption">Навыки</h2>
+            <ul class="data__list data__list--skill">
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">БЭМ</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">LESS / SASS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">SVG</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Семантичная верстка</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">JavaScript</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Gulp</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">jQuery</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Git</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">React JS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">emmet / pug</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Adobe PS / Zepplin / Figma</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">npm / yarn</span>
+              </li>
+            </ul>
+          </div>
+          <div class="data__wrapper data__wrapper--about">
+            <a name="about" class="main__link"></a>
+            <h2 class="data__caption">О себе</h2>
+            <textarea class="data__textarea" name="about" cols="30" rows="10" disabled=""> Фрилансер. Ищу интересные full-time проекты. Мотивирован. Учусь быстро, а могу еще быстрее. Не боюсь трудностей и стрессовых ситуаций. Готов к стажировке, удаленной работе (в большей степени) или переезду (в меньшей).</textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__text">2021 / WinterInside &#169;</span>
+    </footer>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
