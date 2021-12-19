@@ -443,10 +443,15 @@ img {
   text-decoration: none;
   color: #435993;
   font-size: 14px;
-  line-height: 170%; }
+  line-height: 170%;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .navigation__link--current {
     color: #1c1c1c;
-    border-bottom: 1px solid #1c1c1c; }
+    border-bottom: 1px solid #1c1c1c;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   @media (max-width: 500px) {
     .navigation__link {
       font-size: 24px; } }
@@ -549,9 +554,22 @@ img {
   font-weight: normal;
   border-bottom: 1px solid #b4c4e2; }
 
+.data__year {
+  font-weight: 900; }
+
 .data__list {
   width: 100%;
   list-style: none; }
+  .data__list--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .data__list--skill {
     list-style: circle;
     display: -webkit-box;
@@ -577,16 +595,31 @@ img {
   @media (max-width: 560px) {
     .data__list--ed {
       list-style: circle;
-      text-align: left; } }
+      text-align: left;
+      padding-left: 20px; } }
+  .data__list--portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
 
 .data__item--info {
-  width: 100%;
+  width: 49%;
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(100%, #dbe4f5), to(#dbe4f5));
   background: linear-gradient(90deg, white 0%, #dbe4f5 100%, #dbe4f5 100%);
   border: 1px solid #c0bcbc;
   border-radius: 5px;
   padding: 10px 5px 10px 5px;
   margin-bottom: 10px; }
+  .data__item--info:first-child {
+    width: 100%; }
+  @media (max-width: 500px) {
+    .data__item--info {
+      width: 100%; } }
 
 .data__item--skill {
   width: none;
@@ -608,6 +641,15 @@ img {
   @media (max-width: 560px) {
     .data__item--skill:not(:last-child) {
       margin-right: 0; } }
+
+.data__item--portfolio {
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .data__item--portfolio:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
 
 .data__textarea {
   width: 100%;

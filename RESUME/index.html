@@ -45,8 +45,11 @@
 
     <main class="main">
       <picture>
-        <img class="main__photo img-bg" src="../img/main_ph.webp" alt="photo" width="320" height="320">
+        <source type="image/webp" srcset="../img/main_ph.webp">
+
+        <img class="main__photo img-bg" src="../img/main_ph.jpg" alt="photo" width="320" height="320">
       </picture>
+
       <div class="container">
         <h1 class="main__title">Анкета</h1>
         <section class="data">
@@ -67,31 +70,32 @@
               <li class="data__item data__item--info">
                 <a class="data__link" href="tel:+7 (978) 746 90 90">Тел.: +7 (978) 746-90-80</a>
               </li>
+              <li class="data__item data__item--info">
+                <a class="data__link" href="mailto:tsirkulev.maksim@mail.ru" rel="nofollow">tsirkulev.maksim@mail.ru</a>
+              </li>
             </ul>
           </div>
 
           <div class="data__education">
             <a name="ed" class="main__link"></a>
-            <div class="container">
-              <h2 class="data__caption">Образование</h2>
-              <ul class="data__list data__list--ed">
-                <li class="data__item data__item--ed">
-                  <span class="data__year">2012</span>
-                  <p class="data__institution">Таврический национальный университет им. В.И. Вернадского, Симферополь</p>
-                  <p class="data__speciality">Компьютерные системы и сети</p>
-                </li>
-                <li class="data__item data__item--ed">
-                  <span class="data__year">2019</span>
-                  <p class="data__institution">HTMLacademy</p>
-                  <p class="data__speciality">Профессиональный HTML и CSS, уровень 1</p>
-                </li>
-                <li class="data__item data__item--ed">
-                  <span class="data__year">2020</span>
-                  <p class="data__institution">HTMLacademy</p>
-                  <p class="data__speciality">Профессиональный HTML и CSS, уровень 2</p>
-                </li>
-              </ul>
-            </div>
+            <h2 class="data__caption">Образование</h2>
+            <ul class="data__list data__list--ed">
+              <li class="data__item data__item--ed">
+                <span class="data__year">2012</span>
+                <p class="data__institution">Таврический национальный университет им. В.И. Вернадского, Симферополь</p>
+                <p class="data__speciality">Компьютерные системы и сети</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2019</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 1</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2020</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 2</p>
+              </li>
+            </ul>
           </div>
 
           <div class="data__wrapper data__wrapper--skill">
@@ -139,23 +143,45 @@
 
           <div class="data__wrapper data__wrapper--portfolio">
             <a name="portfolio" class="main__link"></a>
-            <div class="container">
-              <h2 class="data__caption">Примеры работ</h2>
-              <ul class="data__list data__list--portfolio">
-                <li class="data__item data__item--portfolio">
-                  <a href="http://tet.sheer82.ru" class="data__link" target="_blank" rel="nofollow">TET-сервис</a>
-                </li>
-                <li class="data__item data__item--portfolio">
-                  <a href="http://vo-lt.ru" class="data__link" target="_blank" rel="nofollow">VOLT</a>
-                </li>
-                <li class="data__item data__item--portfolio">
-                  <a href="https://winterinside.github.io/ALCOMARKET" class="data__link" target="_blank" rel="nofollow">Крым АЛКОМАРКЕТ</a>
-                </li>
-                <li class="data__item data__item--portfolio">
-                  <a href="https://winterinside.github.io/LEDMEDIA" class="data__link" target="_blank" rel="nofollow">LED-media</a>
-                </li>
-              </ul>
-            </div>
+            <h2 class="data__caption">Примеры работ</h2>
+            <ul class="data__list data__list--portfolio">
+              <li class="data__item data__item--portfolio">
+                <a href="http://tet.sheer82.ru" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="../img/prev/tet.webp">
+
+                    <img class="data__item-prev img-bg" src="../img/prev/tet.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+              <li class="data__item data__item--portfolio">
+                <a href="http://vo-lt.ru" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="../img/prev/volt.webp">
+
+                    <img class="data__item-prev img-bg" src="../img/prev/volt.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/ALCOMARKET" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="../img/prev/alco.webp">
+
+                    <img class="data__item-prev img-bg" src="../img/prev/alco.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/LEDMEDIA" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="../img/prev/led.webp">
+
+                    <img class="data__item-prev img-bg" src="../img/prev/led.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="data__wrapper data__wrapper--about">
