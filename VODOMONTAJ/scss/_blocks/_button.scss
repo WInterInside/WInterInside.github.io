@@ -1,0 +1,20 @@
+.button {
+	@include flex-center;
+	width: 100%;
+	max-width: 330px;
+	line-height: normal;
+	border: none;
+	padding: 26px;
+	text-align: center;
+	color: #fff;
+	background-image: linear-gradient(to bottom, #fe7f2a, #ff6724);
+	border-radius: 45px;
+	box-shadow: 0 15px 20px rgba(#ff6724, 0.5);
+	transition: 0.3s;
+	white-space: normal;
+
+	&:hover {
+		transform: translate(0, -5px);
+		box-shadow: 0 20px 25px rgba(#ff6724, 0.5);
+	}
+}

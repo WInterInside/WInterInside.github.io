@@ -1,0 +1,99 @@
+.form {
+	background-color: #337caa;
+	border-radius: 6px;
+	padding: 34px 45px 44px;
+	width: 100%;
+	max-width: 410px;
+
+	&__title {
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #fff;
+		margin-left: -2px;
+		margin-right: -2px;
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		height: 50px;
+		padding: 0 18px;
+		margin-top: 19px;
+		border: none;
+		border-radius: 6px;
+		font-size: 12px;
+
+		&::placeholder {
+			color: #0a2736;
+		}
+	}
+
+	&__button {
+		margin-top: 25px;
+		max-width: none;
+		font-size: 14px;
+		font-weight: 700;
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+
+	&__checkbox-wrap {
+		margin-top: 32px;
+	}
+}
+
+.form--callback {
+	padding: 40px 58px;
+	max-width: 436px;
+
+	.form {
+		&__title {
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+
+		&__desc {
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			color: #fff;
+			margin-left: -5px;
+			margin-right: -5px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.form {
+		padding: 20px 15px;
+
+		&__title {
+			font-size: 18px;
+			margin-bottom: 20px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.form--callback {
+		padding-top: 50px;
+
+		.form {
+			&__title {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+
+			&__desc {
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

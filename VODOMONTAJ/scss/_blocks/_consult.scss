@@ -1,0 +1,44 @@
+.consult {
+	margin-top: -1px;
+	padding: 45px 0 68px;
+	background-image: url('../img/consult-bg.jpg');
+	background-size: cover;
+	background-position: center 0;
+
+	&__title {
+		text-align: center;
+		font-size: 30px;
+		line-height: normal;
+		font-weight: 700;
+
+		span {
+			color: #fe7f2a;
+		}
+	}
+
+	.form {
+		margin: 30px auto 0;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.consult {
+
+		&__title {
+
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.consult {
+		padding-bottom: 50px;
+
+		&__title {
+			font-size: 22px;
+		}
+	}
+}
