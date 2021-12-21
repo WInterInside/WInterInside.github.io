@@ -604,6 +604,10 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
+    @media (max-width: 414px) {
+      .data__list--skill {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
   @media (max-width: 560px) {
     .data__list--ed {
       list-style: circle;
@@ -652,9 +656,7 @@ img {
         margin-right: 15px; } }
   @media (max-width: 414px) {
     .data__item--skill {
-      width: 100%; }
-      .data__item--skill:nth-child(odd) {
-        margin-right: 0; } }
+      width: 47%; } }
 
 .data__item--skill:not(:last-child) {
   margin-bottom: 10px; }
