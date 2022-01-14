@@ -384,9 +384,16 @@ img {
     color: inherit;
     background: transparent; } }
 
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; }
+
+/*Change text in autofill textbox*/
 input:-webkit-autofill {
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both; }
+  -webkit-text-fill-color: #336 !important; }
 
 .container {
   min-width: 375px;
