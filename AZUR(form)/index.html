@@ -62,7 +62,7 @@
             </label>
 
             <label class="form__label form__laber--address">
-              <textarea class="form__input form__input--address" id="address" name="address" type="text"></textarea>
+              <textarea class="form__input form__input--address" id="address" name="address" type="text" required=""></textarea>
               <span class="form__text form__text--address">Адрес предприятия</span>
             </label>
 
@@ -71,45 +71,22 @@
               <span class="form__text">ИНН предприятия торговли</span>
             </label>
             
-            <label class="form__label">
+            <label class="form__label">              
               <input class="form__input form__input--tel" id="tel" type="tel" name="tel" placeholder="Номер телефона" required="">
               <span class="form__text">Номер телефона</span>
             </label>
-            
-            <label class="form__label form__label--password">
-              <input class="form__input form__input--password" id="password" type="password" name="password" placeholder="Пароль" required="">
-              <span class="form__text">Пароль</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.5">
-                  <path d="M14.53 9.47001L9.47001 14.53C8.82001 13.88 8.42001 12.99 8.42001 12C8.42001 10.02 10.02 8.42001 12 8.42001C12.99 8.42001 13.88 8.82001 14.53 9.47001Z" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.82 5.77001C16.07 4.45001 14.07 3.73001 12 3.73001C8.47 3.73001 5.18 5.81001 2.89 9.41001C1.99 10.82 1.99 13.19 2.89 14.6C3.68 15.84 4.6 16.91 5.6 17.77" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M8.42001 19.53C9.56001 20.01 10.77 20.27 12 20.27C15.53 20.27 18.82 18.19 21.11 14.59C22.01 13.18 22.01 10.81 21.11 9.39999C20.78 8.87999 20.42 8.38999 20.05 7.92999" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.51 12.7C15.25 14.11 14.1 15.26 12.69 15.52" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M9.47 14.53L2 22" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M22 2L14.53 9.47" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>                
-            </label>
 
-            <label class="form__label form__label--password">
-              <input class="form__input form__input--repeat-password" id="password" type="password" name="password" placeholder="Повторить пароль" required="">
-              <span class="form__text">Повторить пароль</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.5">
-                  <path d="M14.53 9.47001L9.47001 14.53C8.82001 13.88 8.42001 12.99 8.42001 12C8.42001 10.02 10.02 8.42001 12 8.42001C12.99 8.42001 13.88 8.82001 14.53 9.47001Z" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.82 5.77001C16.07 4.45001 14.07 3.73001 12 3.73001C8.47 3.73001 5.18 5.81001 2.89 9.41001C1.99 10.82 1.99 13.19 2.89 14.6C3.68 15.84 4.6 16.91 5.6 17.77" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M8.42001 19.53C9.56001 20.01 10.77 20.27 12 20.27C15.53 20.27 18.82 18.19 21.11 14.59C22.01 13.18 22.01 10.81 21.11 9.39999C20.78 8.87999 20.42 8.38999 20.05 7.92999" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.51 12.7C15.25 14.11 14.1 15.26 12.69 15.52" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M9.47 14.53L2 22" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M22 2L14.53 9.47" stroke="#697199" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>    
-            </label>
+            <div class="password">
+              <input class="form__input" type="password" id="password-input" placeholder="Введите пароль" name="password" maxlength="10" required="">
+              <span class="form__text">Пароль</span>
+              <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+            </div>
 
             <div class="form__wrapper form__wrapper--agreement">
               <input class="form__checkbox" id="agreement" type="checkbox" name="agreement" checked="">
               <label class="form__label form__label--checkbox" for="agreement">Нажимая кнопку «Зарегистрироваться» я принимаю <a href="#" class="form__link">Пользовательское соглашение</a></label>
             </div>
+
             <button class="btn btn--reg" type="submit">Зарегистрироваться</button>
           </div>
         </form>
