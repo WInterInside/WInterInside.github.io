@@ -927,13 +927,17 @@ img {
   @media (max-width: 580px) {
     .noft__char {
       width: 100%; } }
-  @media (max-width: 451px) {
-    .noft__char {
-      margin-bottom: 15px; } }
   .noft__char:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-position: right 183px center; }
+  @media (max-width: 451px) {
+    .noft__char {
+      margin-bottom: 15px; }
+      .noft__char:hover {
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        background-position: center; } }
 
 .noft__char-name {
   position: relative;
@@ -1090,7 +1094,6 @@ img {
   width: 100%;
   height: auto;
   border-radius: 3px; }
-
   @-webkit-keyframes levitate{
     0% {  transform: translateY(0);  }
     50% {  transform: translateY(-10px);  }
