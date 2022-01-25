@@ -50,6 +50,7 @@
 @media (max-width: 450px) {
   .noft__avatar {
     width: 355px;
+    margin: 0 auto;
   }
 }
 
