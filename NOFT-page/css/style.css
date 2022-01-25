@@ -507,8 +507,11 @@ img {
   position: absolute; }
   .header__menu--closed {
     top: -1000px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    right: 25px;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    z-index: 10;
+    opacity: 1; }
     @media (min-width: 641px) {
       .header__menu--closed {
         position: relative;
