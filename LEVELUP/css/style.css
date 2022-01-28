@@ -785,9 +785,11 @@ img {
     @media (max-width: 810px) {
       .compound__list--second {
         text-align: right; } }
+    @media (max-width: 530px) {
+      .compound__list--second {
+        margin-top: 30px; } }
   @media (max-width: 510px) {
     .compound__list {
-      padding-left: 30px;
       text-align: left; } }
 
 .compound__item:not(:last-child) {
@@ -824,9 +826,6 @@ img {
     @media (max-width: 810px) {
       .compound__item--right {
         padding: 30px 100px 30px 30px; } }
-    @media (max-width: 530px) {
-      .compound__item--right {
-        margin-top: 30px; } }
     .compound__item--right::before {
       content: "";
       display: block;
