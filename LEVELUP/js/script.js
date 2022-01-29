@@ -1,4 +1,13 @@
 $(document).ready(function(){
+	// плавное перемещение страницы к нужному блоку
+	$("main a").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 800);
+	});
+});
+
+$(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
 		dots:false,
@@ -53,10 +62,3 @@ function initializeClock(id, endtime) {
 var deadline = new Date(Date.parse(new Date()) + 30 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
 
-var $page = $('html, body');
-$('a[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 400);
-    return false;
-});
