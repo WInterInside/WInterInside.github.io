@@ -129,6 +129,63 @@
         </div>
       </section>
 
+      <section class="order">
+        <a name="order"></a>
+        <div class="container">
+          <div class="order__wrapper">
+            <div class="product">
+              <div class="product__wrapper">
+                <h2 class="product__name">LevelUP!</h2>
+
+                <picture>
+                  <source srcset="img/prod.webp">
+                  <img class="product__img product__img--mob" src="img/prod.png" alt="product image">
+                </picture>
+
+                <div id="countdown" class="countdown">
+                  <div class="countdown__number countdown__number--hours">
+                    <span class="countdown__time countdown__time--hours">00</span>
+                  </div>
+                  <span class="countdown__dots countdown__dots--hours">:</span>
+                  <div class="countdown__number">
+                    <span class="minutes countdown__time"></span>
+                  </div>
+                  <span>:</span>
+                  <div class="countdown__number">
+                    <span class="seconds countdown__time"></span>
+                  </div>
+                </div>
+
+                <div class="product__prices">
+                  <span class="product__price product__price--old">100 000 <span>&#8381;</span></span>
+                  <span class="product__price product__price--new">1 <span>&#8381;</span></span>
+                </div>
+              </div>
+              <picture>
+                <source srcset="img/prod.webp">
+                <img class="product__img" src="img/prod.png" alt="product image">
+              </picture>
+            </div>
+
+            <form class="order__form">
+              <div class="order__form-wrapper">
+                <div class="order__form-group">
+                  <label class="order__form-label">
+                    <input class="order__form-input" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+                    <span>Евгений</span>
+                  </label>
+                  <label class="order__form-label">
+                    <input class="order__form-input order__form-input--tel" id="tel" type="number" name="number" placeholder="Номер телефона" required="">
+                    <span>89780000011</span>
+                  </label>
+                </div>
+                <button class="btn btn--primary btn--ghost btn--shine" type="submit">Заказать</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
