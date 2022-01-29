@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LevelUP</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css"> -->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="main">
+      <a href="#order" class="main__link">Заказать</a>
+
+      <section class="promo">
+        <div class="promo__bg" id="wrapper">
+          <div class="container">
+            <h1 class="heading">LevelUp</h1>
+            <div class="promo__wrapper">
+              <picture>
+                <source srcset="img/prod.webp">
+                <img class="promo__img" src="img/prod.png" alt="product image">
+              </picture>
+              <ol class="promo__list">
+                <li class="promo__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li class="promo__item">Excepteur sint occaecat cupidatat non proident</li>
+                <li class="promo__item">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              
+            </ol></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compound">
+        <div class="container">
+          <h1 class="heading">Cостав</h1>
+          <div class="compound__wrapper">
+            <ul class="compound__list compound__list--first">
+              <li class="compound__item compound__item--left">Мармелад</li>
+              <li class="compound__item compound__item--left">Шоколад</li>
+              <li class="compound__item compound__item--left">Мел</li>
+            </ul>
+            <picture>
+              <source srcset="img/prod.webp">
+              <img class="compound__img" src="img/prod.png" alt="product image">
+            </picture>
+            <ul class="compound__list compound__list--second">
+              <li class="compound__item compound__item--right">Известь</li>
+              <li class="compound__item compound__item--right">Опилки</li>
+              <li class="compound__item compound__item--right compound__item--hope">Надежда</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="slider">
+          <div class="slider-item">
+            <div class="slider__content">
+              <picture>
+                <source srcset="img/doctor.webp">
+                <img class="slider__img" src="img/doctor.png" alt="product image">
+              </picture>
+              <cite>Антон</cite>
+              <q>Очень доволен</q>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider__content">
+              <picture>
+                <source srcset="img/doctor.webp">
+                <img class="slider__img" src="img/doctor.jpg" alt="product image">
+              </picture>
+              <cite>Женя</cite>
+              <q>Со своей функцией справился
+            </q></div>
+          </div>
+          <div class="slider-item">
+            <div class="slider__content">
+              <picture>
+                <source srcset="img/doctor.webp">
+                <img class="slider__img" src="img/doctor.png" alt="product image">
+              </picture>
+              <cite>Дима</cite>
+              <q>Не помогает!</q>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__photo">
+              <picture>
+                <source srcset="img/doctor.webp">
+                <img class="intro__img" src="img/doctor.jpg" alt="product image">
+              </picture>
+            </div>
+            <div class="intro__descr">
+              <p>
+                Небольшое описание продукта. Ниже 3 характеристики продукта в виде списка в линию.
+                Небольшое описание продукта. Ниже 3 характеристики продукта в виде списка в линию.
+                Небольшое описание продукта. Ниже 3 характеристики продукта в виде списка в линию.
+                Небольшое описание продукта. Ниже 3 характеристики продукта в виде списка в линию.
+              </p>
+            </div>
+          </div>
+          <ul class="intro__list">
+            <li class="intro__item">Безвредный!</li>
+            <li class="intro__item">беспрецедентный!</li>
+            <li class="intro__item">Бесполезный!</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="order">
+        <a name="order"></a>
+        <div class="container">
+          <div class="order__wrapper">
+            <div class="product">
+              <div class="product__wrapper">
+                <h2 class="product__name">LevelUP!</h2>
+
+                <picture>
+                  <source srcset="img/prod.webp">
+                  <img class="product__img product__img--mob" src="img/prod.png" alt="product image">
+                </picture>
+
+                <div id="countdown" class="countdown">
+                  <div class="countdown__number countdown__number--hours">
+                    <span class="countdown__time countdown__time--hours">00</span>
+                  </div>
+                  <span class="countdown__dots countdown__dots--hours">:</span>
+                  <div class="countdown__number">
+                    <span class="minutes countdown__time"></span>
+                  </div>
+                  <span>:</span>
+                  <div class="countdown__number">
+                    <span class="seconds countdown__time"></span>
+                  </div>
+                </div>
+
+                <div class="product__prices">
+                  <span class="product__price product__price--old">100 000 <span>&#8381;</span></span>
+                  <span class="product__price product__price--new">1 <span>&#8381;</span></span>
+                </div>
+              </div>
+              <picture>
+                <source srcset="img/prod.webp">
+                <img class="product__img" src="img/prod.png" alt="product image">
+              </picture>
+            </div>
+
+            <form class="order__form">
+              <div class="order__form-wrapper">
+                <div class="order__form-group">
+                  <label class="order__form-label">
+                    <input class="order__form-input" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+                    <span>Евгений</span>
+                  </label>
+                  <label class="order__form-label">
+                    <input class="order__form-input order__form-input--tel" id="tel" type="number" name="number" placeholder="Номер телефона" required="">
+                    <span>89780000011</span>
+                  </label>
+                </div>
+                <button class="btn btn--primary btn--ghost btn--shine" type="submit">Заказать</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+  </div>
+  <script src="libs/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="libs/slick.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+</body>
+</html>
