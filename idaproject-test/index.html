@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idaproject</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- <div class="sprite" style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div> -->
+    <header class="header">
+    </header>
+
+    <main class="main">
+      <section class="add">
+        <div class="container">
+          <div class="add__top">
+          <h1 class="section-heading">Добавление товара</h1>
+          <form class="add__sort" action="post">
+            <select class="add__sort-list" name="sort__list">
+              <option selected="" value="По умолчанию">По умолчанию</option>
+              <option value="По цене">По цене</option>
+              <option value="По рейтингу">По рейтингу</option>
+            </select>
+          </form>
+          </div>
+
+          <div class="add__wrapper">
+          <div class="add__sidebar">
+            <div class="add__form">
+
+              <div class="add__form-wrapper">
+                <label class="add__label add__label--required" for="name">Наименование товара</label>
+                <input class="add__input" type="text" name="name" id="name" placeholder="Введите наименование товара" required="">
+              </div>
+
+              <div class="add__form-wrapper">
+                <label class="add__label" for="description">Описание товара</label>
+                <textarea class="add__textarea" id="description" name="description" placeholder="Введите описание товара"></textarea>
+              </div>
+
+              <div class="add__form-wrapper">
+                <label class="add__label add__label--required" for="link">Ссылка на изображение товара</label>
+                <input class="add__input" type="text" name="link" id="link" placeholder="Введите ссылку" required="">
+              </div>
+
+              <div class="add__form-wrapper">
+                <label class="add__label add__label--required" for="price">Цена товара</label>
+                <input class="add__input" type="number" name="price" id="price" placeholder="Введите цену" required="">
+              </div>
+
+              <button class="btn" type="submit" value="Отправить">Добавить товар</button>  <!-- add mod "btn--acept" if validation complet -->
+
+            </div>
+          </div>
+
+          <section class="goods">
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+            <div class="good">
+              <a class="good__link" href="#">
+                <div class="good__preview">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset=""> -->
+                    <img class="good__img" src="img/good.jpg" alt="good photo" width="" height="">
+                  </picture>
+                </div>
+                <div class="good__content">
+                  <h3 class="good__caption">Название товара</h3>
+                  <p class="good__description">
+                    Довольно-таки интересное описание товара в несколько строк.
+                    Довольно-таки интересное описание товара в несколько строк
+                  </p>
+                  <p class="good__price"><span class="good__price-value">10 000</span> руб.</p>
+                </div>
+              </a>
+            </div>
+          </section>
+
+           </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
