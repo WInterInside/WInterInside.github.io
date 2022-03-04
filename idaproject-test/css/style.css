@@ -644,11 +644,13 @@ input[type=number] {
     -webkit-transition: all .4s;
     transition: all .4s; }
 
-.good:hover::before {
-  opacity: 1; }
-
-.good:hover::after {
-  opacity: 1; }
+.good:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01); }
+  .good:hover::before {
+    opacity: 1; }
+  .good:hover::after {
+    opacity: 1; }
 
 .good__link {
   text-decoration: none; }
