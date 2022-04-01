@@ -8,21 +8,6 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
-// const anchors = document.querySelectorAll('a[href*="#"]')
-
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-
-//     const blockID = anchor.getAttribute('href').substr(1)
-
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-//   })
-// }
-
 let scrollpos = window.scrollY
 const shadow = document.querySelector("header")
 const header_height = header.offsetHeight
@@ -55,4 +40,15 @@ menu.addEventListener("click", function() {
     menu.classList.remove("navigation__menu--on");
     menu.classList.add("navigation__menu--off");
   }
+});
+
+$(document).ready(function(){
+  $('a[href^="#"]').bind("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top - 50
+      }, 1000);
+      e.preventDefault();
+  });
+  return false;
 });
