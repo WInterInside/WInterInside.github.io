@@ -6,30 +6,50 @@ $(document).ready(function(){
 		autoplay:true,
 		speed:1000,
 		autoplaySpeed:5000,
-		// responsive:[
-		// 	{
-		// 		breakpoint: 1370,
-		// 		settings: {
-		// 			slidesToShow:3
-		// 		}
-		// 	},
-    //   {
-		// 		breakpoint: 1070,
-		// 		settings: {
-		// 			slidesToShow:2
-		// 		}
-		// 	},
-		// 	{
-		// 		breakpoint: 760,
-		// 		settings: {
-		// 			slidesToShow:1,
-		//       dots:true,
-    //       arrows:false,
-		// 		}
-		// 	}
-		// ]
 	});
 });
+
+$(document).ready(function(){
+	$('.slider-reviews').slick({
+		arrows:false,
+		dots:true,
+		slidesToShow:3,
+		autoplay:false,
+		speed:1000,
+		autoplaySpeed:5000,
+    		responsive:[
+			{
+				breakpoint: 850,
+				settings: {
+					slidesToShow:2
+				}
+			},
+      {
+				breakpoint: 620,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
+});
+
+(function () {
+
+  const cropElement = document.querySelectorAll('.review__text'), // выбор элементов
+        size = 460                                             // кол-во символов
+        endCharacter = '...';                                  // окончание
+
+  cropElement.forEach(el => {
+      let text = el.innerHTML;
+
+      if (el.innerHTML.length > size) {
+          text = text.substr(0, size);
+          el.innerHTML = text + endCharacter;
+      }
+  });
+
+}());
 
 var menu = document.querySelector(".navigation__menu");
 var nav = document.querySelector(".navigation__list");
