@@ -14,7 +14,7 @@ $(document).ready(function(){
 		arrows:false,
 		dots:true,
 		slidesToShow:3,
-		autoplay:false,
+		autoplay:true,
 		speed:1000,
 		autoplaySpeed:5000,
     		responsive:[
@@ -51,6 +51,9 @@ $(document).ready(function(){
 
 }());
 
+
+// меню
+
 var menu = document.querySelector(".navigation__menu");
 var nav = document.querySelector(".navigation__list");
 var body = document.querySelector("body");
@@ -74,5 +77,28 @@ menu.addEventListener("click", function() {
     menu.classList.add("navigation__menu--off");
     body.classList.remove("scroll-stop");
     body.classList.add("scroll-on")
+  }
+});
+
+// список услуг
+
+var servicesBtn = document.querySelector(".services__caption");
+var servicesList = document.querySelector(".services__list");
+var servicesArrow = document.querySelector(".services__arrow");
+
+servicesArrow.classList.add("services__arrow--down");
+servicesList.classList.add("services__list--off");
+
+servicesBtn.addEventListener("click", function() {
+  if (servicesList.classList.contains("services__list--off")) {
+    servicesList.classList.remove("services__list--off");
+    servicesList.classList.add("services__list--on");
+    servicesArrow.classList.remove("services__arrow--down");
+    servicesArrow.classList.add("services__arrow--up");
+  } else {
+    servicesList.classList.remove("services__list--on");
+    servicesList.classList.add("services__list--off");
+    servicesArrow.classList.remove("services__arrow--up");
+    servicesArrow.classList.add("services__arrow--down");
   }
 });
