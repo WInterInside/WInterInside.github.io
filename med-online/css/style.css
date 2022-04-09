@@ -2646,7 +2646,7 @@ img {
 
 .services__arrow--up {
   display: none; }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .services__arrow--up {
       display: block;
       margin-left: 10px;
@@ -2658,7 +2658,7 @@ img {
 
 .services__arrow--down {
   display: none; }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .services__arrow--down {
       display: block;
       margin-left: 10px;
@@ -2684,7 +2684,10 @@ img {
   .services__list--on {
     display: block; }
   .services__list--off {
-    display: none; }
+    display: block; }
+    @media (max-width: 800px) {
+      .services__list--off {
+        display: none; } }
   @media (max-width: 1100px) {
     .services__list {
       margin-right: 35px;
