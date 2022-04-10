@@ -991,8 +991,7 @@ img {
   .navigation__item--services:focus .navigation__services a {
     color: #ffffff;
     -webkit-transition: all .4s;
-    transition: all .4s;
-    border-bottom: 1px solid transparent; }
+    transition: all .4s; }
     @media (max-width: 1100px) {
       .navigation__item--services:hover .navigation__services a,
       .navigation__item--services:focus .navigation__services a {
@@ -1000,10 +999,10 @@ img {
     @media (max-width: 820px) {
       .navigation__item--services:hover .navigation__services a,
       .navigation__item--services:focus .navigation__services a {
-        color: #000; } }
+        color: #333333; } }
     .navigation__item--services:hover .navigation__services a:hover,
     .navigation__item--services:focus .navigation__services a:hover {
-      border-bottom: 1px solid #ffffff; }
+      opacity: 0.7; }
 
 .navigation__item--services:hover .navigation__item-caption,
 .navigation__item--services:focus .navigation__item-caption {
