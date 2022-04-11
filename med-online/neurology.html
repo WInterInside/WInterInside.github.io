@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Все врачи онлайн</title>
+  <title>Неврология</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 
     <header class="header">
 
-      <div class="header__top">
+      <div id="home" class="header__top">
         <div class="header__wrapper container">
           <div class="logo">
             <a href="index.html" class="logo__link">
@@ -125,7 +125,7 @@
               </li>
 
               <li class="navigation__item">
-                <a href="/neurology.html" class="navigation__link">Неврология</a>
+                <a href="#" class="navigation__link navigation__link--current">Неврология</a>
               </li>
 
               <li class="navigation__item">
@@ -143,36 +143,6 @@
                 </form>
               </li>
 
-              <li class="navigation__item navigation__item--mobile">
-
-                <section class="working working--mobile">
-                  <p class="working__caption">Режим работы:</p>
-                  <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
-                    без выходных</p>
-                </section>
-
-                <section class="contacts contacts--mobile">
-
-                  <a href="#" target="_blank" rel="nofollow" class="contacts__link btn">Записаться на прием</a>
-
-                  <div class="contacts__wrapper contacts__wrapper--mobile">
-                    <p class="contacts__caption">Телефон регистратуры</p>
-                    <div class="contacts__group">
-                      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
-                      <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
-                    </div>
-
-                    <span class="contacts__text">Звоните бесплатно по РФ</span>
-
-                    <div class="contacts__group">
-                      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
-                      <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Пишите из любой точки мира</a>
-                    </div>
-                  </div>
-
-                </section>
-              </li>
-
             </ul>
             <div class="navigation__menu"></div>
           </section>
@@ -181,52 +151,55 @@
 
     </header>
 
-    <main id="home"  class="main">
-      <h1 class="main__heading hidden">Все врачи онлайн</h1>
+    <main class="main">
+      <h1 class="main__heading hidden">Неврология</h1>
 
       <section class="hero">
-        <div class="slider-hero">
-          <div class="slider-hero__item slider-hero__item--3">
-            <div class="container">
-              <div class="slider-hero__content">
-                <p class="slider-hero__caption">Ваш сервис <span>медицинской помощи</span> по телефону и <span>онлайн</span> в любой точке мира</p>
-                <div class="slider-hero__btns">
-                  <a href="#" target="_blank" rel="nofollow" class="slider-hero__btn slider-hero__btn--call btn">Позвонить в регистратуру</a>
-                  <a href="#" class="slider-hero__btn slider-hero__btn--reg btn">Записаться</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="advantages">
         <div class="container">
-          <ul class="advantages__list">
-            <li class="advantages__item">
+          <ul class="advantages__list advantages__list--neurology">
+
+            <li class="advantages__item advantages__item--neurology">
               <div class="advantages__content advantages__content--fast">
-                <p class="advantages__caption">Быстро</p>
-                <p class="advantages__description">Опытный дежурный врач ответит вам в течение 20 мин</p>
+                <p class="advantages__caption">Помощь врача уже сегодня!</p>
               </div>
+              <p class="advantages__description">
+                Время ожидания приема в частной клинике - 2−3 дня.
+                Наши врачи ответят вам в течение 20 минут
+              </p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__content advantages__content--available">
-                <p class="advantages__caption">Доступно</p>
-                <p class="advantages__description">Там, где вам удобно — дома, в пути или на даче. Нужен только телефон</p>
+
+            <li class="advantages__item advantages__item--neurology">
+              <div class="advantages__content  advantages__content--profit">
+                <p class="advantages__caption">Дешевле очного приема</p>
               </div>
+              <p class="advantages__description">
+                Стоимость консультаций онлайн в 3-6 раз дешевле очного приема в частной клинике
+              </p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__content advantages__content--profit">
-                <p class="advantages__caption">Выгодно</p>
-                <p class="advantages__description">Стоимость телефонной консультации в 3-6 раз дешевле очного приема</p>
+
+            <li class="advantages__item advantages__item--neurology">
+              <div class="advantages__content advantages__content--lab">
+                <p class="advantages__caption">Без дорогих анализов и обследований</p>
               </div>
+              <p class="advantages__description">
+                У нас нет своих лабораторий и интереса назначать побольше анализов,
+                только действительно необходимые
+              </p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__content advantages__content--prof">
-                <p class="advantages__caption">Профессионально</p>
-                <p class="advantages__description">Качество консультаций контролирует Экспертный совет светил медицины</p>
+
+            <li class="advantages__item advantages__item--neurology">
+              <div class="advantages__content advantages__content--easy">
+                <p class="advantages__caption">Оставайтесь там, где удобно</p>
               </div>
+              <p class="advantages__description">
+                Получите помощь онлайн, не думая,
+                как отпроситься с работы или с кем оставить детей дома
+              </p>
             </li>
+
           </ul>
         </div>
       </section>
@@ -237,151 +210,24 @@
             <div class="disturb__content">
               <p class="disturb__caption">Что вас беспокоит?</p>
               <ul class="disturb__list">
-                <li class="disturb__item"><a href="#" class="disturb__link">Боль в горле</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Последствия травм</a></li>
                 <li class="disturb__item"><a href="#" class="disturb__link">Головная боль</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Простуда</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Тревога и депрессия</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Проблемы с сердцем</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Головокружение</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Боль в спине</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Боль в шее</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Потери сознания</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Нарушение сна</a></li>
 
-                <li class="disturb__item"><a href="#" class="disturb__link">Тяжесть в животе</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Заболел ребенок</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Снижение иммунитета</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Кожные заболевания</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Боль в суставах</a></li>
-                <li class="disturb__item"><a href="#" class="disturb__link">Аллергия</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Последствия травм</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Мышечная слабость</a></li>
+                <li class="disturb__item"><a href="#" class="disturb__link">Шум в ушах</a></li>
               </ul>
               <a href="https://api.whatsapp.com/send/?phone=88000000000" class="disturb__link disturb__link--whatsapp btn">Задать вопрос</a>
             </div>
             <div class="disturb__preview img-bg">
               <picture>
-                <img class="logo__img" src="img/disturb__preview.jpg" alt="" width="615" height="458">
+                <img class="logo__img" src="img/disturb__neurology.jpg" alt="" width="615" height="458">
               </picture>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="notime">
-        <div class="container">
-          <div class="notime__wrapper">
-            <div class="notime__content">
-              <p class="notime__caption">Нет времени на здоровье?</p>
-
-              <ul class="notime__list">
-                <li class="notime__item">Плохо себя чувствуете?</li>
-                <li class="notime__item">Продолжаете терпеть?</li>
-                <li class="notime__item">Сомневаетесь при выборе анализов?</li>
-                <li class="notime__item">Нужна вторая точка зрения на назначенное лечение?</li>
-                <li class="notime__item">Надоели очереди?</li>
-                <li class="notime__item">Надоело переплачивать за частную медицину?</li>
-                <li class="notime__item">Избегаете скопления людей?</li>
-                <li class="notime__item">Боитесь заразиться?</li>
-              </ul>
-
-              <a href="#" class="notime__link btn">Записаться к врачу</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="responsibility">
-        <div class="container">
-          <div class="responsibility__wrapper">
-            <picture>
-              <img class="responsibility__img" src="img/responsibility.png" alt="" width="424" height="570">
-            </picture>
-            <div class="responsibility__content">
-              <p class="responsibility__caption">Возьмем ответственность за Ваше здоровье</p>
-              <p class="responsibility__text">Запишитесь сейчас - поможем уже через <span>20&nbsp;минут</span></p>
-              <div class="responsibility__offer">
-                <span class="responsibility__offer-text">Получите скидку 30 %</span>
-                <a href="#" class="responsibility__btn btn">Записаться онлайн </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="treatment">
-        <div class="container">
-          <div class="treatment__content">
-            <p class="treatment__caption">Каждый третий россиянин не обращается к врачу</p>
-            <ul class="treatment__list">
-
-              <li class="treatment__item treatment__item--warning">
-                <p class="treatment__item-caption treatment__item-caption--colored">Внимание! Это риск осложнений!</p>
-                <p class="treatment__item-text">34,5% россиян не получают необходимую медицинскую помощь</p>
-                <p class="treatment__item-note">комплексное наблюдение Федеральной службы государственной статистики (Росстат) методом личного опроса, 2018 г</p>
-                <a href="https://api.whatsapp.com/send/?phone=88000000000" class="treatment__link treatment__link--whatsapp btn">Задать вопрос</a>
-              </li>
-
-              <li class="treatment__item treatment__item--work">
-                <p class="treatment__item-caption">Работа поликлиник не удовлетворяет</p>
-              </li>
-              <li class="treatment__item treatment__item--time">
-                <p class="treatment__item-caption">Нет времени на поход к доктору</p>
-              </li>
-              <li class="treatment__item treatment__item--center">
-                <p class="treatment__item-caption">Тяжело добраться до медицинского учреждения</p>
-              </li>
-              <li class="treatment__item treatment__item--help">
-                <p class="treatment__item-caption">Не могут доехать до клиники без посторонней помощи</p>
-              </li>
-              <li class="treatment__item treatment__item--dont-know">
-                <p class="treatment__item-caption">Не знают, где получить лечение</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="take-care">
-        <div class="container">
-          <div class="take-care__content">
-            <p class="take-care__caption">Займитесь здоровьем - для себя и всей семьи!</p>
-            <p class="take-care__subcaption">Наши квалифицированные врачи провели уже более 4000 консультаций</p>
-            <ul class="take-care__list">
-              <li class="take-care__item take-care__item--1">
-                <div class="take-care__item-heading">
-                  <span class="take-care__item-number">1</span>
-                  <p class="take-care__item-text">Выберите нужного специалиста</p>
-                </div>
-              </li>
-              <li class="take-care__item take-care__item--2">
-                <div class="take-care__item-heading">
-                  <span class="take-care__item-number">2</span>
-                  <p class="take-care__item-text">Выберите подходящее время для консультации</p>
-                </div>
-              </li>
-              <li class="take-care__item take-care__item--3">
-                <div class="take-care__item-heading">
-                  <span class="take-care__item-number">3</span>
-                  <p class="take-care__item-text">Оплатите выбранную услугу</p>
-                </div>
-              </li>
-
-              <li class="take-care__item take-care__item--btn">
-                <a href="#" class="take-care__btn take-care__btn--green btn">Записаться онлайн </a>
-              </li>
-
-              <li class="take-care__item take-care__item--4">
-                <div class="take-care__item-heading">
-                  <span class="take-care__item-number">4</span>
-                  <p class="take-care__item-text">В назначенное время ожидайте звонка или сообщения от врача</p>
-                </div>
-              </li>
-              <li class="take-care__item take-care__item--5">
-                <div class="take-care__item-heading take-care__item-heading--5">
-                  <span class="take-care__item-number take-care__item-number--5">5</span>
-                  <p class="take-care__item-text">По результатам консультации получите письменные рекомендации </p>
-                </div>
-                <div class="take-care__item-content">
-                  <p class="take-care__item-subheading"><span>или</span> позвоните в регистратуру и мы запишем Вас</p>
-                  <a href="tel:+8(800)6000816" target="_blank" rel="nofollow" class="take-care__link btn">Позвонить в регистратуру</a>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -495,12 +341,6 @@
       </section>
     </main>
 
-    <section class="connect">
-      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
-      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
-      <a href="#" target="_blank" rel="nofollow" class="contacts__link contacts__link--reg-icon"></a>
-    </section>
-
     <footer class="footer">
 
       <div class="footer__top">
@@ -528,9 +368,6 @@
                   </li>
                   <li class="social__item">
                     <a href="#" class="social__link social__link--vk" rel="nofollow" target="_blank" title="страница Вконтакте"></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link social__link--ok" rel="nofollow" target="_blank" title="страница Одноклассники"></a>
                   </li>
                 </ul>
               </section>
@@ -569,7 +406,7 @@
                     <a href="#" class="services__link">Педиатрия</a>
                   </li>
                   <li class="services__item">
-                    <a href="/neurology.html" class="services__link">Неврология</a>
+                    <a href="#" class="services__link  services__link--current">Неврология</a>
                   </li>
                   <li class="services__item">
                     <a href="#" class="services__link">Covid-19</a>
@@ -605,7 +442,7 @@
             </div>
 
             <div class="footer__column footer__column--right">
-              <section class="contacts contacts--footer">
+              <section class="contacts">
                 <div class="contacts__wrapper contacts__wrapper--start">
                   <p class="contacts__caption contacts__caption--black">Контакты</p>
                   <div class="contacts__group">

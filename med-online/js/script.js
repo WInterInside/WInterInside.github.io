@@ -1,9 +1,13 @@
+$(window).scroll(function() {
+  $('header').toggleClass('header--shadow', $(this).scrollTop() > 76);
+});
+
 $(document).ready(function(){
 	$('.slider-hero').slick({
 		arrows:false,
-		dots:true,
+		dots:false,
 		slidesToShow:1,
-		autoplay:true,
+		autoplay:false,
 		speed:1000,
 		autoplaySpeed:5000,
 	});
@@ -107,7 +111,7 @@ $(document).ready(function(){
   $('a[href^="#"]').bind("click", function(e){
       var anchor = $(this);
       $('html, body').stop().animate({
-          scrollTop: $(anchor.attr('href')).offset().top - 50
+          scrollTop: $(anchor.attr('href')).offset().top - 150
       }, 1000);
       e.preventDefault();
   });
