@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-  $('header').toggleClass('header--shadow', $(this).scrollTop() > 76);
+  $('header').toggleClass('header--shadow', $(this).scrollTop() > 0);
 });
 
 $(document).ready(function(){

@@ -1273,10 +1273,10 @@ img {
   text-align: center; }
   @media (max-width: 870px) {
     .main {
-      margin-top: 200px; } }
+      margin-top: 220px; } }
   @media (max-width: 820px) {
     .main {
-      margin-top: 75px; } }
+      margin-top: 100px; } }
 
 .slick-slider .slider-hero {
   position: relative;
@@ -3013,7 +3013,7 @@ img {
   background-image: url("../img/svg/icon-whatsapp-white.svg"); }
 
 .connect .contacts__link--reg-icon {
-  background-size: contain;
+  background-size: 118%;
   background-image: url("../img/svg/icon-avail.svg"); }
 
 .home {
