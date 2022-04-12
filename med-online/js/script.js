@@ -5,7 +5,7 @@ $(window).scroll(function() {
 $(document).ready(function(){
 	$('.slider-hero').slick({
 		arrows:false,
-		dots:false,
+		dots:true,
 		slidesToShow:1,
 		autoplay:false,
 		speed:1000,

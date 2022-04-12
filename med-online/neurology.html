@@ -21,21 +21,26 @@
 
     <header class="header">
 
-      <div id="home" class="header__top">
+      <div class="header__top">
         <div class="header__wrapper container">
           <div class="logo">
             <a href="index.html" class="logo__link">
               <div class="logo__wrapper">
                 <picture>
-                  <img class="logo__img" src="img/Logo.svg" alt="Логотип" width="180" height="63">
+                  <img class="logo__img" src="img/logo.png" alt="Логотип" width="180" height="63">
                 </picture>
                 <ul class="logo__list">
                   <li class="logo__item">телефон</li>
-                  <li class="logo__item">меседжер</li>
+                  <li class="logo__item">мессенджер</li>
                   <li class="logo__item">видеосвязь</li>
                 </ul>
               </div>
             </a>
+          </div>
+
+          <div class="mobile-contacts">
+            <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+            <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
           </div>
 
           <section class="working">
@@ -85,7 +90,7 @@
                     <a href="#" class="services__link">Педиатрия</a>
                   </li>
                   <li class="services__item">
-                    <a href="#" class="services__link">Неврология</a>
+                    <a class="services__link services__link--current">Неврология</a>
                   </li>
                   <li class="services__item">
                     <a href="#" class="services__link">Covid-19</a>
@@ -125,7 +130,7 @@
               </li>
 
               <li class="navigation__item">
-                <a href="#" class="navigation__link navigation__link--current">Неврология</a>
+                <a class="navigation__link navigation__link--current">Неврология</a>
               </li>
 
               <li class="navigation__item">
@@ -143,6 +148,36 @@
                 </form>
               </li>
 
+              <li class="navigation__item navigation__item--mobile">
+
+                <section class="working working--mobile">
+                  <p class="working__caption">Режим работы:</p>
+                  <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+                    без выходных</p>
+                </section>
+
+                <section class="contacts contacts--mobile">
+
+                  <a href="#" target="_blank" rel="nofollow" class="contacts__link btn">Записаться на прием</a>
+
+                  <div class="contacts__wrapper contacts__wrapper--mobile">
+                    <p class="contacts__caption">Телефон регистратуры</p>
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
+                      <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+                    </div>
+
+                    <span class="contacts__text">Звоните бесплатно по РФ</span>
+
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                      <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Пишите из любой точки мира</a>
+                    </div>
+                  </div>
+
+                </section>
+              </li>
+
             </ul>
             <div class="navigation__menu"></div>
           </section>
@@ -151,10 +186,28 @@
 
     </header>
 
-    <main class="main">
+    <main id="home" class="main">
       <h1 class="main__heading hidden">Неврология</h1>
 
-      <section class="hero">
+      <section class="hero hero--neurology">
+        <div class="slider-hero">
+
+          <div class="slider-hero__item slider-hero__item--neurology">
+            <div class="container">
+              <div class="slider-hero__content">
+                <p class="slider-hero__caption">Не надо терпеть боль!</p>
+                <p class="slider-hero__subcaption">онлайн-консультация НЕВРОЛОГА от <span>190₽</span></p>
+                <p class="slider-hero__text">Прием ведут врачи из государственных и частных поликлиник</p>
+                <p class="slider-hero__offer">Запишись сейчас и через 20 минут получи рекомендации квалифицированного врача</p>
+                <div class="slider-hero__btns">
+                  <a href="#" target="_blank" rel="nofollow" class="slider-hero__btn slider-hero__btn--call btn">Позвонить в регистратуру</a>
+                  <a href="#" class="slider-hero__btn slider-hero__btn--reg btn">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
 
       <section class="advantages">
@@ -229,6 +282,53 @@
               </picture>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="trust">
+        <div class="container">
+          <p class="trust__caption">Почему нам можно доверять</p>
+          <div class="trust__banner">
+
+          </div>
+          <ul class="trust__list">
+            <li class="trust__item">
+              <p class="trust__item-caption">Забота и внимание</p>
+              <p class="trust__item-text">
+                Вежливость, внимательность к Вашим словам и к деталям — для нас это не просто слова, а стандарт работы.
+                Мы понимаем, что Вы доверяете врачам самое ценное — здоровье, и берем на себя ответственность за заботу о нем.
+                А еще наши доктора просто приятные люди
+              </p>
+            </li>
+            <li class="trust__item">
+              <p class="trust__item-caption">Профессионализм</p>
+              <p class="trust__item-text">
+                Самое важное в медицинской услуге — это специалисты, их квалификация и опыт.
+                Поэтому мы регулярно проверяем врачей, проводим дополнительные обучения, следим за тенденциями.
+              </p>
+              <p class="trust__item-text">
+                Все рекомендации по лечению и назначения основаны на новейшей международной клинической практике.
+                Поручите ответственность за свое здоровье проверенным и надежным специалистам!
+              </p>
+            </li>
+            <li class="trust__item">
+              <p class="trust__item-caption">Рациональность и доказательность</p>
+              <p class="trust__item-text">
+                Следуем принципам доказательной медицины — назначаем только то лечение,
+                что доказало свою эффективность в масштабных и достоверных клинических исследованиях.
+                Оправляем только на те анализы, которые действительно необходимы.
+                Экономьте время и деньги, делайте и платите только за то, что влияет на выздоровление
+              </p>
+            </li>
+            <li class="trust__item">
+              <p class="trust__item-caption">Ориентация на пациента</p>
+              <p class="trust__item-text">
+                Вам будет удобно. Онлайн-прием состоится там, где Вам комфортно: дома, на работе, на даче, в транспорте.
+                В чате, по видеосвязи, или просто в формате звонка. Тогда, когда у Вас есть время – утром,
+                в обеденный перерыв или вечером, когда уже заснули дети. Сообщите о своих предпочтениях – мы подстроимся
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -361,7 +461,7 @@
                     </picture>
                     <ul class="logo__list">
                       <li class="logo__item">телефон</li>
-                      <li class="logo__item">меседжер</li>
+                      <li class="logo__item">мессенджер</li>
                       <li class="logo__item">видеосвязь</li>
                     </ul>
                   </div>
@@ -412,7 +512,7 @@
                     <a href="#" class="services__link">Педиатрия</a>
                   </li>
                   <li class="services__item">
-                    <a href="#" class="services__link  services__link--current">Неврология</a>
+                    <a class="services__link  services__link--current">Неврология</a>
                   </li>
                   <li class="services__item">
                     <a href="#" class="services__link">Covid-19</a>
@@ -473,7 +573,7 @@
           <div class="footer__wrapper footer__wrapper--bottom">
 
             <div class="footer__column footer__column--left">
-              <a href="#" target="_blank" rel="nofollow" class="footer__link footer__link--conf">Политика кониденциальности</a>
+              <a href="#" target="_blank" rel="nofollow" class="footer__link footer__link--conf">Политика конфиденциальности</a>
             </div>
 
             <div class="footer__column footer__column--center">
