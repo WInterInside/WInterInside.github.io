@@ -571,13 +571,6 @@ img {
   @media (max-width: 1100px) {
     .logo__list {
       display: block; } }
-  @media (max-width: 480px) {
-    .logo__list {
-      display: none; } }
-
-@media (max-width: 1100px) {
-  .logo--footer .logo__list {
-    display: none; } }
 
 @media (max-width: 610px) {
   .logo--footer .logo__list {
@@ -595,15 +588,21 @@ img {
 .logo__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .logo__img {
   max-width: none;
   height: auto;
   vertical-align: top;
   margin-right: 15px; }
+  @media (max-width: 1100px) {
+    .logo__img {
+      width: 120px; } }
 
-@media (max-width: 610px) {
+@media (max-width: 1100px) {
   .logo--footer .logo__list {
     display: none; } }
 
@@ -1072,6 +1071,8 @@ img {
   z-index: 100;
   top: 20px;
   left: 120px;
+  overflow: scroll;
+  max-height: 460px;
   background-color: #4ABAAE;
   padding: 20px;
   border-radius: 10px;
@@ -1089,7 +1090,8 @@ img {
     .navigation__item--services:focus .navigation__services {
       top: 30px;
       left: 70px;
-      padding: 10px; } }
+      padding: 10px;
+      max-height: 370px; } }
   @media (max-width: 820px) {
     .navigation__item--services:hover .navigation__services,
     .navigation__item--services:focus .navigation__services {
@@ -1099,8 +1101,8 @@ img {
       padding: 30px;
       background-color: #ffffff;
       border-color: #4ABAAE;
-      -webkit-box-shadow: inset 0px 0px 15px 10px #4abaaf82;
-              box-shadow: inset 0px 0px 15px 10px #4abaaf82; } }
+      -webkit-box-shadow: inset 0px 0px 15px 4px #4abaaf82;
+              box-shadow: inset 0px 0px 15px 4px #4abaaf82; } }
   .navigation__item--services:hover .navigation__services a,
   .navigation__item--services:focus .navigation__services a {
     color: #ffffff;
@@ -1402,6 +1404,37 @@ img {
 .hero--neurology .slick-slide {
   background-image: url("../img/slider-hero/neurology.jpg"); }
 
+.slider-hero__icons {
+  display: none; }
+  @media (max-width: 1200px) {
+    .slider-hero__icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 15px;
+      margin-right: -30px; } }
+
+.slider-hero__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: #4ABAAE;
+  background-position: center;
+  background-size: contain; }
+  .slider-hero__icon--phone {
+    background-image: url("../img/slider-hero/iconPhone.svg"); }
+  .slider-hero__icon--sms {
+    background-image: url("../img/slider-hero/iconSms.svg"); }
+  .slider-hero__icon--video {
+    background-image: url("../img/slider-hero/iconVideo.svg"); }
+
 .slider-hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1520,21 +1553,21 @@ img {
           box-sizing: border-box;
   -webkit-box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
           box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
-  border-radius: 20px; }
+  border-radius: 15px; }
   @media (max-width: 1300px) {
     .slider-hero__content-card {
       -ms-flex-item-align: center;
           align-self: center; } }
   @media (max-width: 850px) {
     .slider-hero__content-card {
-      padding: 30px; } }
+      padding: 20px; } }
   @media (max-width: 550px) {
     .slider-hero__content-card {
-      padding: 20px; } }
+      padding: 10px; } }
 
 .slider-hero__content-card-text {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   text-align: center;
   font-weight: 500;
   font-size: 45px;
@@ -1544,11 +1577,10 @@ img {
   @media (max-width: 850px) {
     .slider-hero__content-card-text {
       font-size: 30px;
-      margin-bottom: 30px; } }
+      margin-bottom: 15px; } }
   @media (max-width: 550px) {
     .slider-hero__content-card-text {
-      font-size: 22px;
-      margin-bottom: 20px; } }
+      font-size: 20px; } }
 
 .slider-hero__remark {
   width: 35%;
