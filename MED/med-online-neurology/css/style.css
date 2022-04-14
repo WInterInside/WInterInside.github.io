@@ -3257,6 +3257,173 @@ img {
   background-size: 118%;
   background-image: url("../img/svg/icon-avail.svg"); }
 
+.questions {
+  color: #ffffff;
+  background-color: #4ABAAE; }
+
+.questions__caption {
+  margin: 0;
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 30px; }
+  @media (max-width: 1000px) {
+    .questions__caption {
+      font-size: 30px;
+      margin-bottom: 20px; } }
+  @media (max-width: 450px) {
+    .questions__caption {
+      font-size: 24px; } }
+  @media (max-width: 365px) {
+    .questions__caption {
+      font-size: 18px; } }
+
+.questions__subcaption {
+  font-size: 28px;
+  line-height: 130%;
+  margin-bottom: 65px; }
+  @media (max-width: 1000px) {
+    .questions__subcaption {
+      font-size: 22px;
+      margin-bottom: 35px; } }
+  @media (max-width: 450px) {
+    .questions__subcaption {
+      font-size: 18px; } }
+  @media (max-width: 365px) {
+    .questions__subcaption {
+      font-size: 14px; } }
+
+.questions__content {
+  width: 50%;
+  padding: 50px 0;
+  padding-right: 50px;
+  margin-left: auto;
+  text-align: left; }
+  @media (max-width: 1000px) {
+    .questions__content {
+      padding: 20px 0;
+      padding-right: 0;
+      width: 65%;
+      margin-right: -20px; } }
+
+.questions__wrapper {
+  width: 100%;
+  min-height: 457px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/questions-bg.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media (max-width: 1000px) {
+    .questions__wrapper {
+      min-height: 350px;
+      margin-left: -20px;
+      background-position: left -200px center; } }
+  @media (max-width: 450px) {
+    .questions__wrapper {
+      min-height: 250px;
+      background-position: left -140px center; } }
+
+.questions__link {
+  width: 320px;
+  color: #4ED3C5;
+  background-color: #ffffff; }
+  @media (max-width: 1000px) {
+    .questions__link {
+      width: calc(100% - 20px); } }
+
+.about {
+  padding: 70px 0;
+  background-color: #fffff; }
+  @media (max-width: 1260px) {
+    .about {
+      padding: 30px 0; } }
+  .about ::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent; }
+  .about ::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #fBDBDBD; }
+  .about ::-webkit-scrollbar-thumb {
+    width: 20px;
+    background-color: #4ABAAE;
+    -webkit-box-shadow: -2px 0px 0px 0px #4ABAAE;
+            box-shadow: -2px 0px 0px 0px #4ABAAE; }
+
+.about__caption {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 130%;
+  color: #333333; }
+  @media (max-width: 600px) {
+    .about__caption {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 15px; } }
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 650px) {
+    .about__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+
+.about__content {
+  width: 50%; }
+  @media (max-width: 1100px) {
+    .about__content {
+      width: 65%; } }
+  @media (max-width: 650px) {
+    .about__content {
+      width: 100%; } }
+
+.about__article {
+  height: 300px;
+  padding-right: 20px;
+  overflow-y: scroll; }
+  .about__article p {
+    margin-top: 0; }
+
+.about__article {
+  margin-right: 60px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333; }
+  @media (max-width: 1100px) {
+    .about__article {
+      margin-right: 25px;
+      font-size: 14px; } }
+  @media (max-width: 650px) {
+    .about__article {
+      margin-right: 0; } }
+
+.about__preview {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 615px;
+  height: 458px; }
+  @media (max-width: 1100px) {
+    .about__preview {
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-item-align: center;
+          align-self: center;
+      width: 415px;
+      height: 258px; } }
+  @media (max-width: 650px) {
+    .about__preview {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px; } }
+
 .trust {
   padding: 80px 0;
   background-color: #ffffff; }
@@ -3491,9 +3658,6 @@ img {
   background-color: #F3F3F3;
   border-spacing: 0;
   border: none; }
-  @media (max-width: 360px) {
-    .price__table {
-      margin-left: -7px; } }
   .price__table tr {
     background-color: #FFFFFF; }
   .price__table td {
@@ -3517,7 +3681,7 @@ img {
           text-align: center; } }
       @media (max-width: 500px) {
         .price__table td:nth-child(1) {
-          font-size: 12px; } }
+          font-size: 10px; } }
     @media (max-width: 1100px) {
       .price__table td {
         padding: 10px 10px; } }
@@ -3525,7 +3689,9 @@ img {
       .price__table td {
         padding: 5px; } }
     .price__table td:nth-child(3) {
-      padding: 0; }
+      padding: 0;
+      border-bottom: none;
+      position: relative; }
   .price__table th {
     width: 35%;
     border: 1px solid #BDBDBD;
@@ -3545,7 +3711,7 @@ img {
         padding: 10px 0px; } }
     @media (max-width: 680px) {
       .price__table th {
-        font-size: 18px;
+        font-size: 14px;
         padding: 5px 0; } }
     .price__table th:nth-child(3) {
       width: 45%;
@@ -3586,9 +3752,22 @@ img {
     .price__subtable th:nth-child(1),
     .price__subtable-cost th:nth-child(1) {
       width: 33%; }
+    @media (max-width: 855px) {
+      .price__subtable th,
+      .price__subtable-cost th {
+        min-width: 122px; } }
+    @media (max-width: 680px) {
+      .price__subtable th,
+      .price__subtable-cost th {
+        min-width: auto; } }
     .price__subtable th:nth-child(3),
     .price__subtable-cost th:nth-child(3) {
-      padding: 10px; }
+      padding: 10px;
+      width: 33%; }
+      @media (max-width: 500px) {
+        .price__subtable th:nth-child(3),
+        .price__subtable-cost th:nth-child(3) {
+          padding: 5px; } }
     @media (max-width: 500px) {
       .price__subtable th,
       .price__subtable-cost th {
@@ -3607,7 +3786,7 @@ img {
       @media (max-width: 500px) {
         .price__subtable th span,
         .price__subtable-cost th span {
-          font-size: 12px; } }
+          font-size: 10px; } }
 
 .price__subtable-caption {
   font-weight: 500;
@@ -3618,7 +3797,7 @@ img {
       font-size: 16px; } }
   @media (max-width: 500px) {
     .price__subtable-caption {
-      font-size: 12px; } }
+      font-size: 10px; } }
 
 .price__subtable-avalieble {
   margin: 0;
@@ -3629,27 +3808,31 @@ img {
   color: #333333; }
   @media (max-width: 1100px) {
     .price__subtable-avalieble {
-      font-size: 12px; } }
+      font-size: 10px; } }
 
 .price__subtable-cost {
   width: 100%;
+  height: 100%;
   border-spacing: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0; }
   .price__subtable-cost td {
     font-size: 22px;
     text-align: left;
     vertical-align: text-top;
     padding: 0;
-    border-right: 1px solid #BDBDBD;
-    border-left: 1px solid #BDBDBD; }
+    border-right: 0px solid #BDBDBD;
+    border-left: 0px solid #BDBDBD; }
     .price__subtable-cost td:nth-child(1) {
       font-weight: 600; }
   .price__subtable-cost th {
     width: 33%;
     padding: 40px 30px;
     border-top: none;
-    border-bottom: none;
-    border-right: 0px solid #BDBDBD;
+    border-bottom: 0px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD;
     border-left: 0px solid #BDBDBD;
     font-size: 22px;
     line-height: 130%;
@@ -3668,13 +3851,27 @@ img {
     @media (max-width: 500px) {
       .price__subtable-cost th {
         padding: 5px;
-        font-size: 12px; } }
+        font-size: 10px; } }
     .price__subtable-cost th:nth-child(3) {
-      padding: 0; }
+      padding: 0;
+      border-right: 0px solid #BDBDBD; }
 
 @media (max-width: 680px) {
   .pirce__table-hidden {
     display: none; } }
+
+.price__table-last {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.price__br--left {
+  border-bottom-left-radius: 15px; }
+
+.price__br--right {
+  border-bottom-right-radius: 15px; }
+
+.price__table .price__subtable-cost--bottom th {
+  border-bottom: 1px solid #BDBDBD; }
 
 .home {
   position: absolute;
