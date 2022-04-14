@@ -3464,6 +3464,218 @@ img {
     .trust__item-text {
       font-size: 14px; } }
 
+.price {
+  padding: 70px 0;
+  background-color: #F3F3F3; }
+  @media (max-width: 1200px) {
+    .price {
+      padding: 30px 0; } }
+
+.price__caption {
+  text-align: left;
+  margin: 0;
+  font-size: 40px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 40px; }
+  @media (max-width: 1200px) {
+    .price__caption {
+      font-size: 30px;
+      margin-bottom: 20px; } }
+  @media (max-width: 800px) {
+    .price__caption {
+      text-align: center; } }
+
+.price__table {
+  width: 100%;
+  background-color: #F3F3F3;
+  border-spacing: 0;
+  border: none; }
+  @media (max-width: 360px) {
+    .price__table {
+      margin-left: -7px; } }
+  .price__table tr {
+    background-color: #FFFFFF; }
+  .price__table td {
+    text-align: left;
+    vertical-align: text-top;
+    padding: 35px 30px;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD; }
+    .price__table td:nth-child(1) {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 130%; }
+      @media (max-width: 1100px) {
+        .price__table td:nth-child(1) {
+          font-size: 16px;
+          text-align: center; } }
+      @media (max-width: 680px) {
+        .price__table td:nth-child(1) {
+          font-size: 14px;
+          text-align: center; } }
+      @media (max-width: 500px) {
+        .price__table td:nth-child(1) {
+          font-size: 12px; } }
+    @media (max-width: 1100px) {
+      .price__table td {
+        padding: 10px 10px; } }
+    @media (max-width: 500px) {
+      .price__table td {
+        padding: 5px; } }
+    .price__table td:nth-child(3) {
+      padding: 0; }
+  .price__table th {
+    width: 35%;
+    border: 1px solid #BDBDBD;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background-color: #4ABAAE;
+    padding: 75px 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+    .price__table th:nth-child(1) {
+      width: 20%; }
+    @media (max-width: 1100px) {
+      .price__table th {
+        font-size: 22px;
+        padding: 10px 0px; } }
+    @media (max-width: 680px) {
+      .price__table th {
+        font-size: 18px;
+        padding: 5px 0; } }
+    .price__table th:nth-child(3) {
+      width: 45%;
+      padding-top: 15px;
+      padding-bottom: 0; }
+
+.price__subtable,
+.price__subtable-cost {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 10px; }
+  .price__subtable td,
+  .price__subtable-cost td {
+    text-align: left;
+    vertical-align: text-top;
+    padding: 35px 30px;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD; }
+    .price__subtable td:nth-child(1),
+    .price__subtable-cost td:nth-child(1) {
+      font-weight: 600; }
+    @media (max-width: 500px) {
+      .price__subtable td,
+      .price__subtable-cost td {
+        padding: 5px; } }
+  .price__subtable th,
+  .price__subtable-cost th {
+    width: 33%;
+    border: 1px solid #BDBDBD;
+    line-height: 130%;
+    text-align: center;
+    vertical-align: text-top;
+    color: #333333;
+    background-color: #FBFBFB;
+    padding: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    .price__subtable th:nth-child(1),
+    .price__subtable-cost th:nth-child(1) {
+      width: 33%; }
+    .price__subtable th:nth-child(3),
+    .price__subtable-cost th:nth-child(3) {
+      padding: 10px; }
+    @media (max-width: 500px) {
+      .price__subtable th,
+      .price__subtable-cost th {
+        padding: 5px; } }
+    .price__subtable th span,
+    .price__subtable-cost th span {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      color: #333333; }
+      @media (max-width: 1100px) {
+        .price__subtable th span,
+        .price__subtable-cost th span {
+          font-size: 14px; } }
+      @media (max-width: 500px) {
+        .price__subtable th span,
+        .price__subtable-cost th span {
+          font-size: 12px; } }
+
+.price__subtable-caption {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0; }
+  @media (max-width: 1100px) {
+    .price__subtable-caption {
+      font-size: 16px; } }
+  @media (max-width: 500px) {
+    .price__subtable-caption {
+      font-size: 12px; } }
+
+.price__subtable-avalieble {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #333333; }
+  @media (max-width: 1100px) {
+    .price__subtable-avalieble {
+      font-size: 12px; } }
+
+.price__subtable-cost {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 0; }
+  .price__subtable-cost td {
+    font-size: 22px;
+    text-align: left;
+    vertical-align: text-top;
+    padding: 0;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD; }
+    .price__subtable-cost td:nth-child(1) {
+      font-weight: 600; }
+  .price__subtable-cost th {
+    width: 33%;
+    padding: 40px 30px;
+    border-top: none;
+    border-bottom: none;
+    border-right: 0px solid #BDBDBD;
+    border-left: 0px solid #BDBDBD;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    vertical-align: text-top;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    .price__subtable-cost th:nth-child(1) {
+      width: 33%; }
+    @media (max-width: 1100px) {
+      .price__subtable-cost th {
+        font-size: 18px;
+        padding: 10px 10px; } }
+    @media (max-width: 500px) {
+      .price__subtable-cost th {
+        padding: 5px;
+        font-size: 12px; } }
+    .price__subtable-cost th:nth-child(3) {
+      padding: 0; }
+
+@media (max-width: 680px) {
+  .pirce__table-hidden {
+    display: none; } }
+
 .home {
   position: absolute;
   display: block;
