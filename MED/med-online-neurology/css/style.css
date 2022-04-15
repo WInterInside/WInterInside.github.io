@@ -3813,10 +3813,10 @@ img {
 .price__subtable-cost {
   width: 100%;
   height: 100%;
+  min-height: 100%;
   border-spacing: 0;
   margin-top: 0;
   position: absolute;
-  top: 0;
   bottom: 0; }
   .price__subtable-cost td {
     font-size: 22px;
