@@ -117,3 +117,25 @@ $(document).ready(function(){
   });
   return false;
 });
+
+// список услуг
+
+var depBtn = document.querySelector(".navigation__item--services");
+var depList = document.querySelector(".navigation__services-mobile-list");
+
+depBtn.classList.add("navigation__item--services-off");
+depList.classList.add("navigation__services-mobile-list--off");
+
+depBtn.addEventListener("click", function() {
+  if (depList.classList.contains("navigation__services-mobile-list--off")) {
+    depList.classList.remove("navigation__services-mobile-list--off");
+    depList.classList.add("navigation__services-mobile-list--on");
+    depBtn.classList.remove("navigation__item--services-off");
+    depBtn.classList.add("navigation__item--services-on");
+  } else {
+    depList.classList.remove("navigation__services-mobile-list--on");
+    depList.classList.add("navigation__services-mobile-list--off");
+    depBtn.classList.remove("navigation__item--services-on");
+    depBtn.classList.add("navigation__item--services-off");
+  }
+});
