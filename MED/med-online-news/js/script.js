@@ -41,7 +41,7 @@ $(document).ready(function(){
 (function () {
 
   const cropElement = document.querySelectorAll('.preview-text'), // выбор элементов
-        size = 460                                             // кол-во символов
+        size = 350                                             // кол-во символов
         endCharacter = '...';                                  // окончание
 
   cropElement.forEach(el => {

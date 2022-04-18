@@ -40,8 +40,8 @@ $(document).ready(function(){
 
 (function () {
 
-  const cropElement = document.querySelectorAll('.review__text'), // выбор элементов
-        size = 460                                             // кол-во символов
+  const cropElement = document.querySelectorAll('.preview-text'), // выбор элементов
+        size = 350                                             // кол-во символов
         endCharacter = '...';                                  // окончание
 
   cropElement.forEach(el => {
@@ -194,6 +194,20 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(document).ready(function($) {
+  $('.tab_content').hide();
+  $('.tab_content:first').show();
+  $('.tabs li:first').addClass('active');
+  $('.tabs li').click(function(event) {
+    event.preventDefault();
+    $('.tabs li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab_content').hide();
+    var selectTab = $(this).find('a').attr("href");
+    $(selectTab).fadeIn();
+  });
+});
 
 var faqBtn = document.querySelector(".btn__faq");
 var faqList = document.querySelector(".faq__hidden");
