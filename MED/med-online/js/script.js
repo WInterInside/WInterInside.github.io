@@ -1,4 +1,3 @@
-
 var stickySidebar = $('.sticky');
 var mContent = $('.main-content');
 
@@ -239,23 +238,11 @@ for (let i = 0; i < acc.length; i++) {
 
 $(document).ready(function($) {
   $('.tab_content').hide();
-  $('.tab_content:first').show();
-  $('.tabs li:first').addClass('active');
-  $('.tabs li').click(function(event) {
-    event.preventDefault();
-    $('.tabs li').removeClass('active');
-    $(this).addClass('active');
-    $('.tab_content').hide();
-    var selectTab = $(this).find('a').attr("href");
-    $(selectTab).fadeIn();
-  });
-});
-
-$(document).ready(function($) {
-  $('.tab_content').hide();
   $('.tab_content--2').show();
+  $('.tab_content--news').show();
   $('.tabs li').removeClass('active');
   $('.tabs li.audio').addClass('active');
+  $('.tabs li.news-tab').addClass('active');
   $('.tabs li').click(function(event) {
     event.preventDefault();
     $('.tabs li').removeClass('active');
@@ -291,4 +278,3 @@ btn.addEventListener('click', function() {
   btn.innerHTML =
     (btn.innerHTML === 'Все вопросы') ? btn.innerHTML = 'Скрыть' : btn.innerHTML = 'Все вопросы';
 })
-

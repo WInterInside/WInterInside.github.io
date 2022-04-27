@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Неврология</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -29,7 +30,7 @@
                 <picture>
                   <img class="logo__img" src="img/logo.png" alt="Логотип" width="180" height="63">
                 </picture>
-                <ul class="logo__list">
+                <ul class="logo__list logo__list--head">
                   <li class="logo__item">телефон</li>
                   <li class="logo__item">мессенджер</li>
                   <li class="logo__item">видеосвязь</li>
@@ -44,8 +45,11 @@
               без выходных</p>
           </section>
 
-          <section class="contacts">
+          <section class="contacts-mobile">
+            <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+          </section>
 
+          <section class="contacts">
             <a href="#" target="_blank" rel="nofollow" class="contacts__link btn">Записаться на прием</a>
 
             <div class="contacts__wrapper">
@@ -73,7 +77,9 @@
             <ul id="nav" class="navigation__list">
 
               <li class="navigation__item navigation__item--services">
+
                 <span class="navigation__item-caption">Отделения</span>
+
                 <ul class="navigation__services-mobile-list">
                   <li class="services__item">
                     <a href="#" class="services__link">Терапия</a>
@@ -82,7 +88,7 @@
                     <a href="#" class="services__link">Педиатрия</a>
                   </li>
                   <li class="services__item">
-                    <a class="services__link services__link--current">Неврология</a>
+                    <a href="/neurology.html" class="services__link">Неврология</a>
                   </li>
                   <li class="services__item">
                     <a href="#" class="services__link">Психология</a>
@@ -103,7 +109,7 @@
                     <a href="#" class="services__link">Педиатрия</a>
                   </li>
                   <li class="services__item">
-                    <a class="services__link services__link--current">Неврология</a>
+                    <a href="/neurology.html" class="services__link">Неврология</a>
                   </li>
                   <li class="services__item">
                     <a href="#" class="services__link">Психология</a>
@@ -132,7 +138,7 @@
               </li>
 
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--current navigation__link--desctop">Неврология</a>
+                <a href="/neurology.html" class="navigation__link navigation__link--desctop">Неврология</a>
                 <a href="#" class="navigation__link navigation__link--mobile">Новости</a>
               </li>
 
@@ -750,8 +756,7 @@
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Врачи</a></li>
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Вопрос-ответ</a></li>
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Новости</a></li>
-                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Блог</a></li>
-                  <li class="footer__links-item"><a href="#" class="footer__link  footer__link--partners">Докторам и партнерам</a></li>
+                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Блог</a></li><li class="footer__links-item"><a href="#partners" class="footer__link  footer__link--partners fancybox">Докторам и партнерам</a></li>
                 </ul>
               </div>
 
@@ -794,9 +799,241 @@
         <a href="#home" class="home"></a>
       </div>
     </footer>
-  </div>
 
+    <div class="form-review" id="review">
+      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="get">
+        <p class="form__caption form__caption--modal">Оставьте отзыв</p>
+        <div class="form__wrapper form__wrapper--modal">
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+          </label>
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal form__input--tel" id="tel" type="tel" name="tel" placeholder="+7 (__) ___-__-__" required="">
+          </label>
+          <textarea placeholder="Введите текст" name="text"></textarea>
+          <button class="btn btn--red btn--submit btn--modal" type="submit">Отправить</button>
+          <div class="form__wrapper form__wrapper--modal form__wrapper--agreement">
+            <input class="form__checkbox form__checkbox--modal" id="agreement-review" type="checkbox" name="agreement" checked="">
+            <label class="form__label form__label--modal form__label--checkbox form__label--modal-checkbox" for="agreement-review">Даю согласие <a href="#">на обработку персональных данных</a> </label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="partners" id="partners">
+      <h2>Партнерам и докторам</h2>
+      <p>
+        Все врачи Онлайн — это сервис онлайн-консультаций.
+        Сейчас мы рассматриваем новых партнеров для подключения к нашей системе и, если вы управляете клиникой,
+        которой необходимо увеличить загрузку и готовой работать с телемедицинскими консультациями, заполните, пожалуйста,
+        <a href="#clinic" class="fancybox">форму</a> - мы свяжемся с вами, чтобы обсудить индивидуальные условия.
+      </p>
+      <p>
+        Если вы - врач вне клиники, то заполните, пожалуйста, <a href="#doctor" class="fancybox">анкету</a>. В ближайшее время мы рассмотрим Вашу кандидатуру и свяжемся с Вами.
+      </p>
+    </div>
+
+    <div class="questionnaire" id="clinic">
+      <p class="questionnaire__heading">Анкета клиники, желающей принять участие в проекте</p>
+      <div class="form-wrapper">
+        <form class="questionnaire__form" action="">
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> ФИО </p>
+            <input class="questionnaire__input" type="text" name="name" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Телефон для связи </p>
+            <input class="questionnaire__input form__input--tel" id="tel" type="tel" name="number" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Почта </p>
+            <input class="questionnaire__input" type="email" name="email" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--position">
+            <p class="questionnaire__caption"> <span>*</span> Уточните, пожалуйста, вы ...</p>
+          </label>
+
+          <ul class="questionnaire__list">
+
+            <label class="questionnaire__label questionnaire__label--another" for="leader">
+              <input class="questionnaire__input questionnaire__input--radio" id="leader" value="leader" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> руководитель клиники </p>
+            </label>
+
+
+            <label class="questionnaire__label questionnaire__label--another" for="manager">
+              <input class="questionnaire__input questionnaire__input--radio" id="manager" value="manager" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> заведующий по клинической части </p>
+            </label>
+
+
+            <label class="questionnaire__label questionnaire__label--another questionnaire__label--another-position">
+              <input class="questionnaire__input questionnaire__input--radio" id="another" value="another" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> другая персона </p>
+              <input class="questionnaire__input questionnaire__input--another questionnaire__input--another-position" id="position" type="text" name="another-position">
+          </label>
+
+          </ul>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Название клиники </p>
+            <input class="questionnaire__input" type="text" name="clinic" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Подробная информация о вашей клинике </p>
+            <p class="questionnaire__subcaption">Специальности врачей и их количество в штате</p>
+
+            <textarea class="questionnaire__textarea" name="about" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> Сайт клиники </p>
+            <input class="questionnaire__input" type="text" name="site" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--present">
+            <p class="questionnaire__caption questionnaire__caption--present">Презентация клиники </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--present">Приложите, пожалуйста, презентацию вашей клиники, если таковая имеется</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--download">
+              <label class="btn btn--download" for="download-present">
+                <input id="download-present" type="file" style="display:none;">
+                Загрузить
+              </label>
+              <p class="questionnaire__remark">
+                До 20 файлов (общий размер - до 20 мб.)
+              </p>
+            </div>
+          </label>
+
+          <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+            <span>*</span>
+            <input class="form__checkbox" id="agreement-clinic" type="checkbox" name="agreement" checked="" required="">
+            <label class="form__label form__label--checkbox" for="agreement-clinic">Я согласен с <a class="form__link form__link--agreement" href="#">обработку персональных данных</a></label>
+          </div>
+
+          <button class="btn btn--submit btn--modal-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="questionnaire" id="doctor">
+      <p class="questionnaire__heading">Анкета врача</p>
+      <div class="form-wrapper">
+        <form class="questionnaire__form" action="">
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> ФИО </p>
+            <input class="questionnaire__input" type="text" name="name" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Почта </p>
+            <input class="questionnaire__input" type="email" name="email" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Телефон для связи </p>
+            <input class="questionnaire__input form__input--tel" id="tel" type="tel" name="phone-number" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Направление медицины </p>
+            <input class="questionnaire__input" type="text" name="direction-of-medicine" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Образование </p>
+            <p class="questionnaire__subcaption">Информация об учебных заведениях, курсы и сертификаты</p>
+
+            <textarea class="questionnaire__textarea" name="education" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Квалификация </p>
+            <input class="questionnaire__input" type="text" name="qualification" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Стаж работы</p>
+            <input class="questionnaire__input" type="text" name="work-experience" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Работа в клиниках </p>
+            <p class="questionnaire__subcaption">Расскажите, пожалуйста, где вы работали и по какой специальности</p>
+
+            <textarea class="questionnaire__textarea" name="work" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Дополнительно о себе </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--about">Если желаете, то можете направить нам дополнительную информацию о вашей деятельности</p>
+
+            <textarea class="questionnaire__textarea" name="about-you" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Желаемый график работы (дни,часы) </p>
+
+            <textarea class="questionnaire__textarea" name="work-schedule" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Возможность проводить онлайн-консультации </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--about">Укажите доступный формат</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-chat" type="checkbox" name="agreement" checked="" required="">
+              <label class="form__label form__label--checkbox" for="agreement-chat"> Чат </label>
+            </div>
+
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-calls" type="checkbox" name="agreement" checked="" required="">
+              <label class="form__label form__label--checkbox" for="agreement-calls"> Звонки </label>
+            </div>
+
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-video" type="checkbox" name="agreement" required="">
+              <label class="form__label form__label--checkbox" for="agreement-video"> Видео </label>
+            </div>
+
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--present">
+            <p class="questionnaire__caption questionnaire__caption--present"> Резюме </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--present">Если у вас есть готовое резюме, то можно приложить его в этом поле</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--download">
+              <label class="btn btn--download" for="my-file-selector">
+                <input id="my-file-selector" type="file" style="display:none;">
+                Загрузить
+              </label>
+              <p class="questionnaire__remark">
+                До 20 файлов (общий размер - до 20 мб.)
+              </p>
+            </div>
+          </label>
+
+          <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+            <span>*</span>
+            <input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked="" required="">
+            <label class="form__label form__label--checkbox" for="agreement-doc">Я согласен с <a class="form__link form__link--agreement" href="#">обработку персональных данных</a></label>
+          </div>
+
+          <button class="btn btn--submit btn--modal-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
   <script src="libs/jquery.js"></script>
+  <script src="libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
   <script src="js/script.js"></script>
   <script src="libs/slick.min.js"></script>
 </body>
