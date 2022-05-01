@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расшифровка анализов</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+
+      <div class="header__top">
+        <div class="header__wrapper container">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <div class="logo__wrapper">
+                <picture>
+                  <img class="logo__img" src="img/logo.png" alt="Логотип" width="180" height="63">
+                </picture>
+                <ul class="logo__list logo__list--head">
+                  <li class="logo__item">телефон</li>
+                  <li class="logo__item">мессенджер</li>
+                  <li class="logo__item">видеосвязь</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <section class="working">
+            <p class="working__caption">Режим работы:</p>
+            <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+              без выходных</p>
+          </section>
+
+          <section class="contacts-mobile">
+            <div class="contacts__wrapper contacts__wrapper--contacts-mobile">
+              <div class="contacts__group">
+                <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+              </div>
+
+              <div class="contacts__group">
+                <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Чат WhatsApp</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="contacts">
+            <a href="#" target="_blank" rel="nofollow" class="contacts__link btn">Записаться на прием</a>
+
+            <div class="contacts__wrapper">
+              <p class="contacts__caption">Телефон регистратуры</p>
+              <div class="contacts__group">
+                <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
+                <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+              </div>
+
+              <span class="contacts__text">Звоните бесплатно по РФ</span>
+
+              <div class="contacts__group">
+                <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Пишите из любой точки мира</a>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container">
+          <section class="navigation">
+
+            <ul id="nav" class="navigation__list-mobile">
+
+              <li class="navigation__item navigation__item--services">
+
+                <span class="navigation__item-caption">Отделения</span>
+
+                <ul class="navigation__services-mobile-list">
+                  <li class="services__item">
+                    <a href="#" class="services__link">Терапия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Педиатрия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="/neurology.html" class="services__link">Неврология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Психология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Covid-19</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Расшифровка анализов</a>
+                  </li>
+                </ul>
+
+                <ul class="navigation__services navigation__services--drop-list">
+                  <li class="services__item">
+                    <a href="#" class="services__link">Терапия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Педиатрия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="/neurology.html" class="services__link">Неврология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Психология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Covid-19</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Расшифровка анализов</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Услуги</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">О сервисе</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Вопрос-ответ</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Новости</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Блог</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Врачи</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Контакты</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Докторам и партнерам</a>
+              </li>
+
+              <li class="navigation__item navigation__item--search">
+                <form class="search">
+                  <input type="text" name="search" class="search__input" placeholder="Поиск">
+                  <input type="submit" name="submit" class="search__submit" value="">
+                </form>
+              </li>
+
+              <li class="navigation__item navigation__item--mobile">
+
+                <a href="#" target="_blank" rel="nofollow" class="contacts__link contacts__link--mobile btn">Записаться на прием</a>
+
+                <section class="working working--mobile">
+                  <p class="working__caption">Режим работы:</p>
+                  <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+                    без выходных</p>
+                </section>
+
+                <section class="contacts contacts--mobile">
+
+                  <div class="contacts__wrapper contacts__wrapper--mobile">
+                    <p class="contacts__caption">Телефон регистратуры</p>
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
+                      <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+                    </div>
+
+                    <span class="contacts__text">Звоните бесплатно по РФ</span>
+
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                      <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Пишите из любой точки мира</a>
+                    </div>
+                  </div>
+
+                </section>
+              </li>
+
+            </ul>
+
+            <ul id="nav" class="navigation__list-desk">
+
+              <li class="navigation__item navigation__item--services">
+
+                <span class="navigation__item-caption">Отделения</span>
+
+                <ul class="navigation__services-mobile-list">
+                  <li class="services__item">
+                    <a href="#" class="services__link">Терапия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Педиатрия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="/neurology.html" class="services__link">Неврология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Психология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Covid-19</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Расшифровка анализов</a>
+                  </li>
+                </ul>
+
+                <ul class="navigation__services navigation__services--drop-list">
+                  <li class="services__item">
+                    <a href="#" class="services__link">Терапия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Педиатрия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="/neurology.html" class="services__link">Неврология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Психология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Covid-19</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Расшифровка анализов</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Услуги</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--desctop">Терапия</a>
+                <a href="#" class="navigation__link navigation__link--mobile">О сервисе</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--desctop">Педиатрия</a>
+                <a href="#" class="navigation__link navigation__link--mobile">Вопрос-ответ</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="/neurology.html" class="navigation__link navigation__link--desctop">Неврология</a>
+                <a href="#" class="navigation__link navigation__link--mobile">Новости</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--desctop">Covid-19</a>
+                <a href="#" class="navigation__link navigation__link--mobile">Блог</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--desctop">Расшифровка анализов</a>
+                <a href="#" class="navigation__link navigation__link--mobile">Врачи</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--mobile">Контакты</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--desctop">Врачи</a>
+                <a href="#" class="navigation__link navigation__link--mobile">Докторам и партнерам</a>
+              </li>
+
+              <li class="navigation__item navigation__item--search">
+                <form class="search">
+                  <input type="text" name="search" class="search__input" placeholder="Поиск">
+                  <input type="submit" name="submit" class="search__submit" value="">
+                </form>
+              </li>
+
+              <li class="navigation__item navigation__item--mobile">
+
+                <a href="#" target="_blank" rel="nofollow" class="contacts__link contacts__link--mobile btn">Записаться на прием</a>
+
+                <section class="working working--mobile">
+                  <p class="working__caption">Режим работы:</p>
+                  <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+                    без выходных</p>
+                </section>
+
+                <section class="contacts contacts--mobile">
+
+                  <div class="contacts__wrapper contacts__wrapper--mobile">
+                    <p class="contacts__caption">Телефон регистратуры</p>
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
+                      <a class="contacts__link contacts__link--phone" href="tel:+8(800)6000816" rel="nofollow">+8 (800) 600-08-16</a>
+                    </div>
+
+                    <span class="contacts__text">Звоните бесплатно по РФ</span>
+
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                      <a class="contacts__link contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">Пишите из любой точки мира</a>
+                    </div>
+                  </div>
+
+                </section>
+              </li>
+
+            </ul>
+
+            <div class="navigation__menu"></div>
+          </section>
+        </div>
+      </div>
+
+    </header>
+    <main id="home" class="main">
+      <h1 class="main__heading hidden">Расшифровка анализов</h1>
+
+      <section class="hero hero--analiz">
+        <div class="slider-hero__item slider-hero__item--covid">
+          <div class="container">
+            <div class="slider-hero__content slider-hero__content--doctors slider-hero__content-covid--bg">
+              <p class="slider-hero__warning">Переведем результаты анализов на понятный язык</p>
+              <p class="slider-hero__subcaption slider-hero__subcaption--about">Сложно разобраться в результатах анализов детей и взрослых? </p>
+              <p class="slider-hero__offer slider-hero__offer--doctors">Наши специалисты понятно и доступно объяснят, что означают все показатели
+                и с чем могут быть связаны их изменения</p>
+              <div class="slider-hero__btns">
+                <a href="#" target="_blank" rel="nofollow" class="slider-hero__btn slider-hero__btn--call btn">Позвонить в регистратуру</a>
+                <a href="#" class="slider-hero__btn slider-hero__btn--reg btn">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <ul class="advantages__list advantages__list--covid">
+
+            <li class="advantages__item advantages__item--covid">
+              <div class="advantages__content  advantages__content--fast advantages__content--fast-covid">
+                <p class="advantages__caption">Быстро</p>
+              </div>
+              <p class="advantages__description">
+                Не ждите - получите план
+                лечения прямо сейчас!
+                Врач примет уже через 20 минут.
+              </p>
+            </li>
+
+            <li class="advantages__item advantages__item--covid">
+              <div class="advantages__content advantages__content--prof advantages__content--prof-analiz">
+                <p class="advantages__caption">Безопасно</p>
+              </div>
+              <p class="advantages__description">
+                Качество консультаций
+                гарантирует Экспертный совет, а
+                еще наши врачи очень приятные люди.
+              </p>
+            </li>
+
+            <li class="advantages__item advantages__item--covid">
+              <div class="advantages__content advantages__content--easy advantages__content--easy-analiz">
+                <p class="advantages__caption">Дистанционно</p>
+              </div>
+              <p class="advantages__description">
+                Не нужно никуда ехать,
+                отпрашиваться с работы, ждать в
+                очередях. Достаточно телефона.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="services-tabs services-tabs--analiz">
+        <div class="container">
+          <div class="services-tabs__content">
+
+            <div class="services-tabs__wrapper">
+              <p class="services-tabs__caption">Как проходит консультация?</p>
+              <ul class="tabs tabs--services">
+                <li><a href="#chat">Чат</a></li>
+                <li class="audio active"><a href="#audio">Аудио</a></li>
+                <li><a href="#video">Видео</a></li>
+              </ul>
+              <p class="services-tabs__text">
+                Выбирайте удобный формат — в чате, по видеосвязи, а еще врач может позвонить Вам по телефону
+              </p>
+              <p class="services-tabs__text">
+                Специалист изучит Ваши анализы, проведет консультацию и
+                даст письменные рекомендации по ее результатам.
+              </p>
+               <p class="services-tabs__text"><b>Никаких непонятных значений и недосказанностей, все четко и ясно!</b></p>
+              <a href="#" class="services-tabs__link  btn">Выбрать специалиста</a>
+            </div>
+
+            <div class="tab_container">
+              <div id="chat" class="tab_content tab_content--1">
+                <div class="benefit__phone  benefit__phone--tabs">
+                  <div class="benefit__chat">
+                    <div class="benefit__chat-container">
+                      <img class="benefit__cathlist" src="img/tab-chat.jpg" alt="alt">
+                    </div>
+                    <img class="benefit__iphone" src="img/phone-neuro.png" alt="alt">
+                  </div>
+                </div>
+              </div>
+              <div id="audio" class="tab_content tab_content--2">
+                <a class="video__preview img-bg">
+                  <img src="img/call-bg.jpg" alt="alt">
+                </a>
+              </div>
+              <div id="video" class="tab_content tab_content--3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E8d_JvMpoY4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="take-care">
+        <div class="container">
+          <div class="take-care__content">
+            <p class="take-care__caption">Займитесь здоровьем - для себя и всей семьи!</p>
+            <p class="take-care__subcaption">Наши квалифицированные врачи провели уже более 4000 консультаций</p>
+            <ul class="take-care__list">
+              <li class="take-care__item take-care__item--analiz">
+                <div class="take-care__item-heading">
+                  <span class="take-care__item-number">1</span>
+                  <p class="take-care__item-text">Подготовьте результаты анализов крови или мочи</p>
+                </div>
+              </li>
+              <li class="take-care__item take-care__item--2">
+                <div class="take-care__item-heading">
+                  <span class="take-care__item-number">2</span>
+                  <p class="take-care__item-text">Выберите подходящее время для консультации</p>
+                </div>
+              </li>
+              <li class="take-care__item take-care__item--3">
+                <div class="take-care__item-heading">
+                  <span class="take-care__item-number">3</span>
+                  <p class="take-care__item-text">Оплатите выбранную услугу</p>
+                </div>
+              </li>
+
+              <li class="take-care__item take-care__item--btn">
+                <a href="#" class="take-care__btn take-care__btn--green btn">Записаться онлайн </a>
+              </li>
+
+              <li class="take-care__item take-care__item--4">
+                <div class="take-care__item-heading">
+                  <span class="take-care__item-number">4</span>
+                  <p class="take-care__item-text">В назначенное время ожидайте звонка или сообщения от врача</p>
+                </div>
+              </li>
+              <li class="take-care__item take-care__item--5">
+                <div class="take-care__item-heading take-care__item-heading--5">
+                  <span class="take-care__item-number take-care__item-number--5">5</span>
+                  <p class="take-care__item-text">По результатам консультации получите письменные рекомендации </p>
+                </div>
+                <div class="take-care__item-content">
+                  <p class="take-care__item-subheading"><span>или</span> позвоните в регистратуру и мы запишем Вас</p>
+                  <a href="tel:+8(800)6000816" target="_blank" rel="nofollow" class="take-care__link btn">Позвонить в регистратуру</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="questions">
+        <div class="container">
+          <div class="questions__wrapper">
+            <div class="questions__content">
+              <p class="questions__caption">Остались вопросы?</p>
+              <p class="questions__subcaption">Звоните нам, мы бесплатно подберём врача и запишем Вас на приём</p>
+              <a href="#" class="questions__link btn" rel="nofollow">Позвонить в регистратуру</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+
+          <div class="reviews__top">
+            <p class="reviews__caption">Отзывы</p>
+            <a href="#review" class="reviews__link fancybox">Оставить отзыв</a>
+          </div>
+          <p class="reviews__subcaption">Нам очень важно ваше мнение о качестве предоставляемых услуг</p>
+
+          <div class="slider-reviews">
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Богатырев Евгений</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить,
+                  «гуглить», самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Димитров Александр</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить,
+                  «гуглить», самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Карасёв Андрей</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить,
+                  «гуглить», самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Богатырев Евгений</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить, «гуглить»,
+                  самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение…
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Богатырев Евгений</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить,
+                  «гуглить», самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="review">
+                <span>05 марта 2022</span>
+                <h2>Богатырев Евгений</h2>
+                <p>
+                  Обратился с проблемой постоянных угрей на лице, и вроде мне уже далеко не 18 лет.
+                  Стал на первой консультации изливать рассказы о сданных анализах, о своих попытках что-то исправить,
+                  «гуглить», самолечить… Но, по виду врача читалось: «ни слова больше, я знаю что делать!».
+                  Прописали курс лечения, назначили промежуточный прием, чтобы можно было по ходу дела корректировать лечение
+                </p>
+                <a class="review__original" href="#">Смотреть оригинал</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="connect">
+      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+      <a class="contacts__link contacts__link--phone-icon" href="tel:+8(800)6000816" target="_blank" rel="nofollow" title="Позвонить"></a>
+      <a href="#" target="_blank" rel="nofollow" class="contacts__link contacts__link--reg-icon" title="Записаться на прием"></a>
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__wrapper footer__wrapper--top">
+            <div class="footer__column footer__column--left">
+              <div class="logo logo--footer">
+                <a href="index.html" class="logo__link">
+                  <div class="logo__wrapper">
+                    <picture>
+                      <img class="logo__img" src="img/Logo.svg" alt="Логотип" width="180" height="63">
+                    </picture>
+                    <ul class="logo__list">
+                      <li class="logo__item">телефон</li>
+                      <li class="logo__item">мессенджер</li>
+                      <li class="logo__item">видеосвязь</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <section class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="href=https://telegram.me/<USERNAME>" class="social__link social__link--tm" rel="nofollow" target="_blank" title="Написать в телеграмм"></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link social__link--vk" rel="nofollow" target="_blank" title="страница Вконтакте"></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link social__link--ok" rel="nofollow" target="_blank" title="страница Одноклассники"></a>
+                  </li>
+                </ul>
+              </section>
+
+              <div class="footer__mobile">
+                <section class="contacts">
+                  <div class="contacts__wrapper contacts__wrapper--start">
+                    <p class="contacts__caption contacts__caption--black">Контакты</p>
+                    <div class="contacts__group">
+                      <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                      <a class="contacts__link contacts__link--light contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">+8 (800) 600-08-16</a>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="working working--footer">
+                  <p class="working__caption">Режим работы:</p>
+                  <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+                    без выходных</p>
+                </section>
+              </div>
+            </div>
+
+            <div class="footer__column footer__column--center">
+
+              <section class="services">
+                <p class="services__caption">Услуги <span class="services__arrow"></span></p>
+                <ul class="services__list">
+                  <li class="services__item">
+                    <a href="#" class="services__link">Расшифровка анализов</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Терапия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Педиатрия</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="/neurology.html" class="services__link">Неврология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Covid-19</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Гинекология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Эндокринология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Кардиология</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">ЛОР</a>
+                  </li>
+                  <li class="services__item">
+                    <a href="#" class="services__link">Гастроэнтерология</a>
+                  </li>
+                </ul>
+              </section>
+
+              <div class="footer__links">
+                <ul class="footer__links-list">
+                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Врачи</a></li>
+                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Вопрос-ответ</a></li>
+                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Новости</a></li>
+                  <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Блог</a></li><li class="footer__links-item"><a href="#partners" class="footer__link  footer__link--partners fancybox">Докторам и партнерам</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="footer__column footer__column--right">
+              <section class="contacts contacts--footer">
+                <div class="contacts__wrapper contacts__wrapper--start">
+                  <p class="contacts__caption contacts__caption--black">Контакты</p>
+                  <div class="contacts__group">
+                    <a class="contacts__link contacts__link--whatsapp-icon" href="https://api.whatsapp.com/send/?phone=88006000816" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
+                    <a class="contacts__link contacts__link--light contacts__link--whatsapp" href="https://api.whatsapp.com/send/?phone=88006000816" rel="nofollow">+8 (800) 600-08-16</a>
+                  </div>
+                </div>
+              </section>
+
+              <section class="working working--footer">
+                <p class="working__caption">Режим работы:</p>
+                <p class="working__text">Пн-Вс: с 7:00 до 22:00, <br>
+                  без выходных</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__wrapper footer__wrapper--bottom">
+
+            <div class="footer__column footer__column--left">
+              <a href="#" target="_blank" rel="nofollow" class="footer__link footer__link--conf">Политика конфиденциальности</a>
+            </div>
+
+            <div class="footer__column footer__column--center">
+              <a href="https://sheer82.ru/" class="footer__link footer__link--sheer" rel="nofollow" target="_blank">Сделано в <span></span></a>
+            </div>
+          </div>
+        </div>
+        <a href="#home" class="home"></a>
+      </div>
+    </footer>
+
+    <div class="form-review" id="review">
+      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="get">
+        <p class="form__caption form__caption--modal">Оставьте отзыв</p>
+        <div class="form__wrapper form__wrapper--modal">
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+          </label>
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal form__input--tel" id="tel" type="tel" name="tel" placeholder="+7 (__) ___-__-__" required="">
+          </label>
+          <textarea placeholder="Введите текст" name="text"></textarea>
+          <button class="btn btn--red btn--submit btn--modal" type="submit">Отправить</button>
+          <div class="form__wrapper form__wrapper--modal form__wrapper--agreement">
+            <input class="form__checkbox form__checkbox--modal" id="agreement-review" type="checkbox" name="agreement" checked="">
+            <label class="form__label form__label--modal form__label--checkbox form__label--modal-checkbox" for="agreement-review">Даю согласие <a href="#">на обработку персональных данных</a> </label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="partners" id="partners">
+      <h2>Партнерам и докторам</h2>
+      <p>
+        Все врачи Онлайн — это сервис онлайн-консультаций.
+        Сейчас мы рассматриваем новых партнеров для подключения к нашей системе и, если вы управляете клиникой,
+        которой необходимо увеличить загрузку и готовой работать с телемедицинскими консультациями, заполните, пожалуйста,
+        <a href="#clinic" class="fancybox">форму</a> - мы свяжемся с вами, чтобы обсудить индивидуальные условия.
+      </p>
+      <p>
+        Если вы - врач вне клиники, то заполните, пожалуйста, <a href="#doctor" class="fancybox">анкету</a>. В ближайшее время мы рассмотрим Вашу кандидатуру и свяжемся с Вами.
+      </p>
+    </div>
+
+    <div class="questionnaire" id="clinic">
+      <p class="questionnaire__heading">Анкета клиники, желающей принять участие в проекте</p>
+      <div class="form-wrapper">
+        <form class="questionnaire__form" action="">
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> ФИО </p>
+            <input class="questionnaire__input" type="text" name="name" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Телефон для связи </p>
+            <input class="questionnaire__input form__input--tel" id="tel" type="tel" name="number" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Почта </p>
+            <input class="questionnaire__input" type="email" name="email" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--position">
+            <p class="questionnaire__caption"> <span>*</span> Уточните, пожалуйста, вы ...</p>
+          </label>
+
+          <ul class="questionnaire__list">
+
+            <label class="questionnaire__label questionnaire__label--another" for="leader">
+              <input class="questionnaire__input questionnaire__input--radio" id="leader" value="leader" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> руководитель клиники </p>
+            </label>
+
+
+            <label class="questionnaire__label questionnaire__label--another" for="manager">
+              <input class="questionnaire__input questionnaire__input--radio" id="manager" value="manager" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> заведующий по клинической части </p>
+            </label>
+
+
+            <label class="questionnaire__label questionnaire__label--another questionnaire__label--another-position">
+              <input class="questionnaire__input questionnaire__input--radio" id="another" value="another" type="radio" name="position">
+              <p class="questionnaire__caption questionnaire__caption--another"> другая персона </p>
+              <input class="questionnaire__input questionnaire__input--another questionnaire__input--another-position" id="position" type="text" name="another-position">
+          </label>
+
+          </ul>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Название клиники </p>
+            <input class="questionnaire__input" type="text" name="clinic" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Подробная информация о вашей клинике </p>
+            <p class="questionnaire__subcaption">Специальности врачей и их количество в штате</p>
+
+            <textarea class="questionnaire__textarea" name="about" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> Сайт клиники </p>
+            <input class="questionnaire__input" type="text" name="site" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--present">
+            <p class="questionnaire__caption questionnaire__caption--present">Презентация клиники </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--present">Приложите, пожалуйста, презентацию вашей клиники, если таковая имеется</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--download">
+              <label class="btn btn--download" for="download-present">
+                <input id="download-present" type="file" style="display:none;">
+                Загрузить
+              </label>
+              <p class="questionnaire__remark">
+                До 20 файлов (общий размер - до 20 мб.)
+              </p>
+            </div>
+          </label>
+
+          <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+            <span>*</span>
+            <input class="form__checkbox" id="agreement-clinic" type="checkbox" name="agreement" checked="" required="">
+            <label class="form__label form__label--checkbox" for="agreement-clinic">Я согласен с <a class="form__link form__link--agreement" href="#">обработку персональных данных</a></label>
+          </div>
+
+          <button class="btn btn--submit btn--modal-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="questionnaire" id="doctor">
+      <p class="questionnaire__heading">Анкета врача</p>
+      <div class="form-wrapper">
+        <form class="questionnaire__form" action="">
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> ФИО </p>
+            <input class="questionnaire__input" type="text" name="name" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Почта </p>
+            <input class="questionnaire__input" type="email" name="email" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Телефон для связи </p>
+            <input class="questionnaire__input form__input--tel" id="tel" type="tel" name="phone-number" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Направление медицины </p>
+            <input class="questionnaire__input" type="text" name="direction-of-medicine" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Образование </p>
+            <p class="questionnaire__subcaption">Информация об учебных заведениях, курсы и сертификаты</p>
+
+            <textarea class="questionnaire__textarea" name="education" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Квалификация </p>
+            <input class="questionnaire__input" type="text" name="qualification" required="">
+          </label>
+
+          <label class="questionnaire__label">
+            <p class="questionnaire__caption"> <span>*</span> Стаж работы</p>
+            <input class="questionnaire__input" type="text" name="work-experience" required="">
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> <span>*</span> Работа в клиниках </p>
+            <p class="questionnaire__subcaption">Расскажите, пожалуйста, где вы работали и по какой специальности</p>
+
+            <textarea class="questionnaire__textarea" name="work" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Дополнительно о себе </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--about">Если желаете, то можете направить нам дополнительную информацию о вашей деятельности</p>
+
+            <textarea class="questionnaire__textarea" name="about-you" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Желаемый график работы (дни,часы) </p>
+
+            <textarea class="questionnaire__textarea" name="work-schedule" required=""></textarea>
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--about">
+            <p class="questionnaire__caption"> Возможность проводить онлайн-консультации </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--about">Укажите доступный формат</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-chat" type="checkbox" name="agreement" checked="" required="">
+              <label class="form__label form__label--checkbox" for="agreement-chat"> Чат </label>
+            </div>
+
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-calls" type="checkbox" name="agreement" checked="" required="">
+              <label class="form__label form__label--checkbox" for="agreement-calls"> Звонки </label>
+            </div>
+
+            <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+              <input class="form__checkbox" id="agreement-video" type="checkbox" name="agreement" required="">
+              <label class="form__label form__label--checkbox" for="agreement-video"> Видео </label>
+            </div>
+
+          </label>
+
+          <label class="questionnaire__label questionnaire__label--present">
+            <p class="questionnaire__caption questionnaire__caption--present"> Резюме </p>
+            <p class="questionnaire__subcaption questionnaire__subcaption--present">Если у вас есть готовое резюме, то можно приложить его в этом поле</p>
+            <div class="questionnaire__wrapper questionnaire__wrapper--download">
+              <label class="btn btn--download" for="my-file-selector">
+                <input id="my-file-selector" type="file" style="display:none;">
+                Загрузить
+              </label>
+              <p class="questionnaire__remark">
+                До 20 файлов (общий размер - до 20 мб.)
+              </p>
+            </div>
+          </label>
+
+          <div class="questionnaire__wrapper questionnaire__wrapper--agreement">
+            <span>*</span>
+            <input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked="" required="">
+            <label class="form__label form__label--checkbox" for="agreement-doc">Я согласен с <a class="form__link form__link--agreement" href="#">обработку персональных данных</a></label>
+          </div>
+
+          <button class="btn btn--submit btn--modal-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
+  <script src="js/script.js"></script>
+  <script src="libs/slick.min.js"></script>
+</body>
+</html>

@@ -322,6 +322,34 @@ template {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/FuturaPT-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 *,
 *::before,
 *::after {
@@ -453,7 +481,7 @@ img {
       padding-top: 50px;
       padding-bottom: 70px; } }
 
-.cards {
+.cards__list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,13 +489,15 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (max-width: 850px) {
-    .cards {
+    .cards__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
 
 .card {
   width: 25%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +513,11 @@ img {
   @media (max-width: 850px) {
     .card {
       width: 332px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; } }
+  @media (max-width: 350px) {
+    .card {
+      width: 300px;
       -ms-flex-negative: 0;
           flex-shrink: 0; } }
 
@@ -570,6 +605,7 @@ img {
   padding-top: 13px;
   padding-bottom: 33px;
   min-height: 130px;
+  height: 100%;
   -webkit-transition: all .4s;
   transition: all .4s; }
   .card__content::before {
@@ -606,6 +642,7 @@ img {
 .card__caption {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 400;
   font-size: 19px;
   line-height: 24px;
   letter-spacing: 0.04em; }
@@ -616,6 +653,7 @@ img {
 .card__price {
   display: inline-block; }
   .card__price--old {
+    font-weight: 400;
     font-size: 12px;
     line-height: 24px;
     -webkit-text-decoration-line: line-through;
@@ -649,7 +687,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   font-size: 14px;
   line-height: 20px;
   display: flex;
@@ -672,7 +710,7 @@ img {
 
 .card:hover .card__wrapper--buy {
   opacity: 1;
-  top: 100px;
+  top: 100%;
   padding: 0 20px;
   padding-top: 12px;
   padding-bottom: 21px;
