@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.main-screen {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 350px;
+  height: 100vh;
+  transition: all .5s;
+}
+
+.main-screen__menu {
+  background-color: rgba(60, 185, 238, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.527);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  padding-top: 17px;
+  margin-left: 40px;
+  margin-top: 30px;
+  box-shadow: -1px 0px 37px 5px rgba(0, 0, 0, 0.75);
+}
+
+.main-screen__toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all .5s;
+}
+
+.main-screen__toggle--day {
+  background-image: url("../img/day.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.main-screen__toggle--night {
+  background: url("../img/night.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.main-screen--day {
+  background: url("../img/bg-day.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.main-screen--night {
+  background: url("../img/bg-night.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.main-screen__unit {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 130px;
+  height: 130px;
+  transform: rotate(20deg);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.main-screen__unit:hover {
+  transform: scale(0.8);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
