@@ -130,8 +130,8 @@ var servicesBtn = document.querySelector(".services__caption");
 var servicesList = document.querySelector(".services__list");
 var servicesArrow = document.querySelector(".services__arrow");
 
-servicesArrow.classList.add("services__arrow--down");
-servicesList.classList.add("services__list--off");
+servicesArrow.classList.add("services__arrow--up");
+servicesList.classList.add("services__list--on");
 
 servicesBtn.addEventListener("click", function() {
   if (servicesList.classList.contains("services__list--off")) {
@@ -163,8 +163,8 @@ $(document).ready(function(){
 var depBtn = document.querySelector(".navigation__item--services");
 var depList = document.querySelector(".navigation__services-mobile-list");
 
-depBtn.classList.add("navigation__item--services-off");
-depList.classList.add("navigation__services-mobile-list--off");
+depBtn.classList.add("navigation__item--services-on");
+depList.classList.add("navigation__services-mobile-list--on");
 
 depBtn.addEventListener("click", function() {
   if (depList.classList.contains("navigation__services-mobile-list--off")) {
