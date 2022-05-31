@@ -2285,7 +2285,7 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      min-height: 600px;
+      min-height: 650px;
       background-color: #F1F1F1;
       background-position: top;
       background-image: url("../img/hero-pain-х2.jpg");
@@ -2296,6 +2296,7 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      min-height: 600px;
       background-color: #F1F1F1;
       background-position: top;
       background-image: url("../img/hero-pain.jpg");
@@ -2333,7 +2334,8 @@ img {
     font-size: 12px;
     -ms-flex-item-align: center;
         align-self: center;
-    max-width: 290px;
+    max-width: 300px;
+    padding-left: 30px;
     margin: 0 auto;
     margin-bottom: 20px; } }
 
@@ -2341,7 +2343,7 @@ img {
   display: inline-block;
   width: 229px;
   padding: 10px 20px;
-  margin-bottom: 120px;
+  margin-bottom: 250px;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
@@ -2358,6 +2360,12 @@ img {
   margin-right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 600px) {
+    .slider-hero__item--index .slider-hero__btns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .slider-hero__wrapper-pain {
   width: 95%;
@@ -2367,10 +2375,10 @@ img {
   border-radius: 10px;
   background-color: #ffffffc7;
   margin-bottom: 30px; }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     .slider-hero__wrapper-pain {
       width: 100%;
-      padding: 0;
+      padding: 20px 0;
       margin: 0;
       background-color: transparent; } }
 
