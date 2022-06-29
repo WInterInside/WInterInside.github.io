@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IJS</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js/libs/fancybox/source/jquery.fancybox.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <picture>
+          <img class="header__logo" src="img/svg/Logo.svg" alt="logo" width="" height="">
+        </picture>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="main__title hidden">ИЖС СЕРВИС</h1>
+        <div class="hero">
+          <div class="hero__content">
+            <h2 class="hero__caption">
+              Постройте дом быстрее и легче через приложение
+            </h2>
+            <div class="hero__buttons">
+              <a class="hero__link hero__link--app btn ">установить <br> <span>App Store</span></a>
+              <a class="hero__link hero__link--play btn">установить <br> <span>Google Play</span></a>
+              <span class="hero__buttons-sticker">Скоро запуск</span>
+            </div>
+          </div>
+          <picture>
+            <img class="hero__img" src="img/phone.jpg" alt="app tumb" width="277" height="600">
+          </picture>
+          <section class="paginator">
+            <ul class="paginator__list">
+              <li class="paginator__item">
+                <a href="" class="paginator__link paginator__link--current"></a>
+                <span class="paginator__number">01</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">02</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">03</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">03</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">04</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">05</span>
+              </li>
+              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">05</span>
+              </li>              <li class="paginator__item">
+                <a href="" class="paginator__link"></a>
+                <span class="paginator__number">06</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="next">
+          <picture>
+            <img class="header__logo" src="img/svg/next.svg" alt="logo" width="" height="">
+          </picture>
+        <a class="next__page" href="#">Как это работает?</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
