@@ -40,8 +40,8 @@ rev.slick({
   arrows: true,
   dots: false,
   focusOnSelect: true,
-  prevArrow: '<button> prev</button>',
-  nextArrow: '<button> next</button>',
+  prevArrow: '<button class="slick-toggle slick-toggle--prev"></button>',
+  nextArrow: '<button class="slick-toggle slick-toggle--next"></button>',
   infinite: true,
   centerMode: true,
   slidesPerRow: 1,
@@ -52,6 +52,12 @@ rev.slick({
   customPaging: function(slider, i) {
     return '';
   },
+  responsive: [
+    {
+        breakpoint: 1200,
+        settings: 'unslick',
+    },
+  ]
   /*infinite: false,*/
 });
 
