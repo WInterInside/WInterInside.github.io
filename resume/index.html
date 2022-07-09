@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Inside</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="js/libs/fancybox/source/jquery.fancybox.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <section class="navigation">
+            <h3 class="navigation__name hidden">navigation</h3>
+            <ul id="nav" class="navigation__list">
+              <li class="navigation__item">
+                <a href="#info" class="navigation__link navigation__link--current">Информация</a>
+              </li>
+              <li class="navigation__item  navigation__item--ed">
+                <a href="#ed" class="navigation__link">Образование</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#exp" class="navigation__link">Навыки</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#portfolio" class="navigation__link">Примеры работ</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#work" class="navigation__link">Опыт работы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">О себе</a>
+              </li>
+            </ul>
+            <div class="navigation__menu"></div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <picture>
+        <source type="image/webp" srcset="img/main_ph.webp">
+
+        <img class="main__photo img-bg" src="img/main_ph.jpg" alt="photo" width="320" height="320">
+      </picture>
+
+      <div class="container">
+        <h1 class="main__title hidden">Анкета</h1>
+        <section class="data">
+
+          <div id="info" class="data__wrapper data__wrapper--info">
+            <h2 class="data__caption">Личная информация</h2>
+            <ul class="data__list data__list--info">
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="https://vk.com/maks_winter" target="_blank">Циркулев Максим Михайлович</a>
+              </li>
+              <li class="data__item data__item--info">03 / 06 / 1989 г.</li>
+              <li class="data__item data__item--info">Крым / Алушта</li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="https://telegram.im/@WinterInside" target="_blank">Tm: @WinterInside</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="skype:deAn1mator">Skype: deAn1mator</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="tel:+7 (978) 746 90 90">Тел.: +7 (978) 746-90-80</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="mailto:tsirkulev.maksim@mail.ru" rel="nofollow">tsirkulev.maksim@mail.ru</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" rel="nofollow" target="_blank" href="https://alushta.hh.ru/resume/a9ef0eccff0864e1b20039ed1f424979334574?hhtmFrom=resume_list">Резюме на HeadHunter</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="ed" class="data__education">
+            <h2 class="data__caption">Образование</h2>
+            <ul class="data__list data__list--ed">
+              <li class="data__item data__item--ed">
+                <span class="data__year">2012</span>
+                <p class="data__institution">Таврический национальный университет им. В.И. Вернадского, Симферополь</p>
+                <p class="data__speciality">Компьютерные системы и сети</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2019</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 1</p>
+              </li>
+              <li class="data__item data__item--ed">
+                <span class="data__year">2020</span>
+                <p class="data__institution">HTMLacademy</p>
+                <p class="data__speciality">Профессиональный HTML и CSS, уровень 2</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="exp" class="data__wrapper data__wrapper--skill">
+            <h2 class="data__caption">Навыки</h2>
+            <ul class="data__list data__list--skill">
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">HTML</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">CSS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">БЭМ</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">LESS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">SASS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">SVG</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">JavaScript</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Gulp</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">jQuery</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Git</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">React JS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">jade / pug</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">emmet</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Adobe PS</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Zepplin</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">Figma</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">yarn / npm</span>
+              </li>
+              <li class="data__item data__item--skill">
+                <span class="data__skillname">TWIG</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="portfolio" class="data__wrapper data__wrapper--portfolio">
+
+            <a href="#remarck" class="remarck fancybox">
+              <h2 class="data__caption">Примеры работ <span>*</span></h2>
+            </a>
+            <div class="page__row">
+              <p class="data__subcaption">Работа более чем над  <span data-digits-counter="" class="page__counter"> 10 </span>  проектами</p>
+            </div>
+
+            <section class="billbord">
+              <div class="container">
+                <div class="billbord__wrap">
+                  <div class="rev_slider">
+
+                    <div class="rev_slide">
+                      <a href="http://tet.sheer82.ru" class="slider-billbord" target="_blank" rel="nofollow">
+                        <picture>
+                          <source type="image/webp" srcset="img/prev/tet.webp">
+
+                          <img class="data__item-prev" src="img/prev/tet.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a href="http://vo-lt.ru" class="slider-billbord" target="_blank" rel="nofollow">
+                          <picture>
+                            <source type="image/webp" srcset="img/prev/volt.webp">
+
+                            <img class="data__item-prev" src="img/prev/volt.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a href="https://winterinside.github.io/ALCOMARKET" class="slider-billbord" target="_blank" rel="nofollow">
+                          <picture>
+                            <source type="image/webp" srcset="img/prev/alco.webp">
+
+                            <img class="data__item-prev" src="img/prev/alco.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a href="https://winterinside.github.io/LEDMEDIA" class="slider-billbord" target="_blank" rel="nofollow">
+                        <picture>
+                          <source type="image/webp" srcset="img/prev/led.webp">
+
+                          <img class="data__item-prev" src="img/prev/led.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a href="https://noftgamesorganization.github.io/noft-landing-layout/" class="slider-billbord" target="_blank" rel="nofollow">
+                        <picture>
+                          <source type="image/webp" srcset="img/prev/noft-v2.webp">
+
+                          <img class="data__item-prev" src="img/prev/noft-v2.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a href="https://xn----8sbebnv8ce3d.xn--80asehdb/department/nevrologiya/" class="slider-billbord" target="_blank" rel="nofollow">
+                          <picture>
+                            <source type="image/webp" srcset="img/prev/docs.webp">
+
+                            <img class="data__item-prev" src="img/prev/docs.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- <ul class="data__list data__list--portfolio data__list--real">
+
+              <li class="data__item data__item--portfolio">
+                <a href="http://tet.sheer82.ru" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/tet.webp">
+
+                    <img class="data__item-prev" src="img/prev/tet.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="http://vo-lt.ru" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/volt.webp">
+
+                    <img class="data__item-prev" src="img/prev/volt.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/ALCOMARKET" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/alco.webp">
+
+                    <img class="data__item-prev" src="img/prev/alco.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/LEDMEDIA" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/led.webp">
+
+                    <img class="data__item-prev" src="img/prev/led.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://noftgamesorganization.github.io/noft-landing-layout/" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/noft-v2.webp">
+
+                    <img class="data__item-prev" src="img/prev/noft-v2.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://xn----8sbebnv8ce3d.xn--80asehdb/department/nevrologiya/" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/docs.webp">
+
+                    <img class="data__item-prev" src="img/prev/docs.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+            </ul> -->
+          </div>
+
+          <div id="portfolio" class="data__wrapper data__wrapper--portfolio">
+            <div class="page__row">
+              <p class="data__subcaption">Выполнено более  <span data-digits-counter="" class="page__counter"> 20 </span> тестовых заданий! </p>
+            </div>
+
+            <ul class="data__list data__list--portfolio">
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/NOFT-page" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/noft.webp">
+
+                    <img class="data__item-prev" src="img/prev/noft.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/LEVELUP" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/levelUP.webp">
+
+                    <img class="data__item-prev" src="img/prev/levelUP.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/AppFox/" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/AppFox.webp">
+
+                    <img class="data__item-prev" src="img/prev/AppFox.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/idaproject-test/" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/ida-project.webp">
+
+                    <img class="data__item-prev" src="img/prev/ida-project.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+              <li class="data__item data__item--portfolio">
+                <a href="https://winterinside.github.io/IJS/" class="data__link" target="_blank" rel="nofollow">
+                  <picture>
+                    <source type="image/webp" srcset="img/prev/ijs.webp">
+
+                    <img class="data__item-prev" src="img/prev/ijs.jpg" alt="site preview">
+                  </picture>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div id="work" class="data__wrapper data__wrapper--work">
+            <h2 class="data__caption">Работал в таких командах как:</h2>
+            <ul class="data__list data__list--work">
+              <li class="data__item data__item--work">
+                <h3 class="data__team-name">IBRUSH</h3>
+                <a target="_blank" rel="_nofollow" href="https:// www.ibrush.ru/" class="deta__team-site">www.ibrush.ru</a>
+                <p class="data__team-position">HTML-верстальщик</p>
+              </li>
+              <li class="data__item data__item--work">
+                <h3 class="data__team-name">веб-студия SHEER</h3>
+                <a target="_blank" rel="_nofollow" href="https://sheer82.ru/" class="deta__team-site">sheer82.ru</a>
+                <p class="data__team-position">HTML-верстальщик</p>
+              </li>
+              <li class="data__item data__item--work">
+                <h3 class="data__team-name">NOFT GAMES</h3>
+                <a target="_blank" rel="_nofollow" href="https://noftgames.io/" class="deta__team-site">noftgames.io</a>
+                <p class="data__team-position">junior react developer</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="about" class="data__wrapper data__wrapper--about">
+            <h2 class="data__caption">О себе</h2>
+            <textarea class="data__textarea" name="about" cols="30" rows="10" disabled=""> Фрилансер. Ищу интересные full-time проекты. Мотивирован. Учусь быстро, а могу еще быстрее. Не боюсь трудностей и стрессовых ситуаций. Готов к стажировке, удаленной работе (в большей степени) или переезду (в меньшей).</textarea>
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__text">2022 / WinterInside &#169;</span>
+    </footer>
+
+    <div class="modal" id="remarck" style="display: none;">
+      <div class="modal__remarck">
+        <p>Почему счетчик проектов больше, чем количество представленных ссылками?</p>
+        <p>Некоторые из проектов, над которыми я работал, <i>возможно</i> , стали не актуальны, или закрыты, или показать их я могу только по Вашему запросу, не выставляя на публичный обзор.</p>
+        <p>То же касается и тестовых заданий &#128578;  </p>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
