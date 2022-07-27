@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAXI</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="js/libs/fancybox/source/jquery.fancybox.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <section class="navigation">
+            <h3 class="navigation__name hidden">navigation</h3>
+            <ul id="nav" class="navigation__list">
+              <li class="navigation__item">
+                <a href="#info" class="navigation__link navigation__link--current">Контакты</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#portfolio" class="navigation__link">Галлерея</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">О нас</a>
+              </li>
+            </ul>
+            <div class="navigation__menu"></div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <picture>
+        <!-- <source type="image/webp" srcset="img/main_ph.webp"> -->
+
+        <img class="main__photo img-bg" src="img/main.jpg" alt="photo" width="" height="200">
+      </picture>
+
+      <div class="container">
+        <h1 class="main__title">ТАКСИ</h1>
+        <ul class="main__list">
+          <li class="main__item">ЖД ВОКЗАЛ  \  АЭРОПОРТ</li>
+          <li class="main__item">ЭКСКУРСИИ ПО КРЫМУ</li>
+          <li class="main__item">ВЫЕЗД НА МАТЕРИК</li>
+        </ul>
+
+        <section class="data">
+          <div id="info" class="data__wrapper data__wrapper--info">
+            <h2 class="data__caption">Контакты <br> <span>( Telegram, Viber, WhatsApp )</span> </h2>
+
+            <ul class="data__list data__list--info">
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="tel:+7 (978) 746 90 89">+7 (978) 746-90-89  –  Михаил</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="tel:+7 (978) 815 72 89">+7 (978) 815 72 89  –  Сергей</a>
+              </li>
+              <li class="data__item data__item--info">
+                <a class="data__link data__link--contact" href="tel:+7 (978) 746 90 80">+7 (978) 746-90-80  –  Максим</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="portfolio" class="data__wrapper data__wrapper--portfolio">
+            <section class="billbord">
+              <div class="container">
+                <div class="billbord__wrap">
+                  <div class="rev_slider">
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                        <picture>
+                          <source type="image/webp" srcset="img/prev/bah.webp">
+
+                          <img class="data__item-prev" src="img/prev/bah.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                          <picture>
+                            <source type="image/webp" srcset="img/prev/jd.webp">
+
+                            <img class="data__item-prev" src="img/prev/jd.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                          <picture>
+                            <source type="image/webp" srcset="img/prev/ns.webp">
+
+                            <img class="data__item-prev" src="img/prev/ns.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                        <picture>
+                          <source type="image/webp" srcset="img/prev/sev.webp">
+
+                          <img class="data__item-prev" src="img/prev/sev.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                        <picture>
+                          <!-- <source type="image/webp" srcset="img/prev/vor.webp"> -->
+
+                          <img class="data__item-prev" src="img/prev/vor.jpg" alt="site preview">
+                        </picture>
+                      </a>
+                    </div>
+
+                    <div class="rev_slide">
+                      <a class="slider-billbord">
+                          <picture>
+                            <!-- <source type="image/webp" srcset="img/prev/vod.webp"> -->
+
+                            <img class="data__item-prev" src="img/prev/vod.jpg" alt="site preview">
+                          </picture>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div id="about" class="data__wrapper data__wrapper--about">
+            <h2 class="data__caption">О нас</h2>
+            <textarea class="data__textarea" name="about" cols="30" rows="10" disabled="">Комфортные авто с кондиционером. Удобный 8-ми местный микроавтобус. Вежливые и бодрые водители. </textarea>
+          </div>
+
+        </section>
+      </div>
+      <iframe class="data__map" src="https://yandex.com/map-widget/v1/-/CCURMWF-LA" frameborder="0" allowfullscreen="true" style=""></iframe>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__text">2022 / WinterInside &#169;</span>
+    </footer>
+
+    <div class="modal" id="remarck" style="display: none;">
+      <div class="modal__remarck">
+        <p>Почему счетчик проектов больше, чем количество представленных ссылками?</p>
+        <p>Некоторые из проектов, над которыми я работал, <i>возможно</i> , стали не актуальны, или закрыты, или показать их я могу только по Вашему запросу, не выставляя на публичный обзор.</p>
+        <p>То же касается и тестовых заданий &#128578;  </p>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
