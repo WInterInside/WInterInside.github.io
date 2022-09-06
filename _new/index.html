@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Inside</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="js/libs/fancybox/source/jquery.fancybox.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="sprite" style="display:none">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="mail" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#3498db"></circle><path d="M256 285.8l148-128.5H108l148 128.5zm-40-14l40 32.6 39.1-32.6 108 93.1H108l108-93.1zM98.7 354.7V167.6l108 93.1-108 94zm314.6 0V167.6l-108 93.1 108 94z" fill="#fff"></path></symbol><symbol id="phone"><g transform="matrix(2.81 0 0 2.81 1.407 1.407)" stroke-width="0" stroke-miterlimit="10" fill="none"><circle cx="45" cy="45" r="45" fill="#2196f3"></circle><path d="M57.332 70.088c-1.955.001-4.074-.313-6.32-.946-6.303-1.777-12.904-5.885-18.586-11.568-5.682-5.682-9.79-12.283-11.568-18.586-1.84-6.528-.978-11.999 2.429-15.406.124-.124.25-.244.38-.36a.983.983 0 01.112-.131l1.819-1.819a4.61 4.61 0 013.282-1.36 4.61 4.61 0 013.282 1.36l6.976 6.977a4.647 4.647 0 010 6.563L36.149 37.8a1.934 1.934 0 000 2.732L49.468 53.85c.729.729 2.002.729 2.732 0l2.988-2.988a4.649 4.649 0 016.564-.001l6.977 6.977c.876.876 1.359 2.042 1.359 3.281s-.483 2.405-1.359 3.281l-1.819 1.819a1.18 1.18 0 01-.133.114c-.117.13-.236.256-.36.379-2.235 2.236-5.359 3.376-9.085 3.376z" fill="#fff"></path></g></symbol><symbol id="skype" preserveAspectRatio="xMidYMid"><path d="M246.939 149.01c-.081.45-.138.905-.223 1.355l-.438-2.579c.24.402.438.82.661 1.225a121.489 121.489 0 002.015-21.913c0-16.318-3.195-32.15-9.507-47.053-6.09-14.396-14.802-27.325-25.91-38.425-11.092-11.1-24.03-19.813-38.418-25.902-14.899-6.304-30.73-9.499-47.048-9.499-7.69 0-15.394.722-22.89 2.161-.016.004-.036.004-.057.008.422.223.848.422 1.261.653l-2.542-.398c.426-.08.856-.17 1.281-.255C94.84 2.92 83.272 0 71.564 0 52.45 0 34.477 7.443 20.96 20.964 7.447 34.481 0 52.453 0 71.568a71.498 71.498 0 009.004 34.696c.077-.438.13-.88.215-1.318l.438 2.534c-.227-.397-.426-.811-.653-1.216a121.745 121.745 0 00-1.82 20.834c0 16.322 3.195 32.15 9.507 47.057 6.081 14.4 14.798 27.32 25.894 38.42 11.108 11.101 24.029 19.826 38.433 25.899 14.9 6.316 30.735 9.515 47.053 9.515 7.103 0 14.222-.649 21.17-1.881-.405-.227-.818-.434-1.232-.673l2.583.454c-.446.085-.896.138-1.35.219a71.506 71.506 0 0035.206 9.276c19.111 0 37.075-7.432 50.592-20.956 13.52-13.509 20.96-31.485 20.96-50.6a71.57 71.57 0 00-9.061-34.817zm-118.386 52.121c-42.945 0-62.158-21.114-62.158-36.937 0-8.117 5.992-13.805 14.25-13.805 18.378 0 13.618 26.389 47.908 26.389 17.555 0 27.248-9.532 27.248-19.286 0-5.866-2.894-12.37-14.453-15.22l-38.198-9.535c-30.763-7.715-36.346-24.345-36.346-39.978 0-32.457 30.56-44.644 59.26-44.644 26.437 0 57.602 14.611 57.602 34.083 0 8.344-7.225 13.196-15.48 13.196-15.685 0-12.798-21.71-44.392-21.71-15.678 0-24.362 7.1-24.362 17.259 0 10.14 12.382 13.379 23.133 15.827l28.274 6.276c30.97 6.9 38.823 24.982 38.823 42.013 0 26.377-20.247 46.072-61.109 46.072zm19.456 44.304c.414.24.827.446 1.233.673.454-.081.904-.134 1.35-.22l-2.583-.453zm98.707-95.07c.085-.45.142-.904.223-1.354-.223-.406-.422-.823-.66-1.225l.437 2.579zM9.219 104.946c-.085.438-.138.88-.215 1.318.227.405.426.819.653 1.216l-.438-2.534zm97.166-95.905c-.413-.231-.839-.43-1.26-.653-.426.085-.856.174-1.282.255l2.542.398z" fill="#00AFF0"></path></symbol><symbol id="tg" viewBox="0 0 500 500"><path d="M250 500c138.071 0 250-111.929 250-250S388.071 0 250 0 0 111.929 0 250s111.929 250 250 250z" fill="#34aadf"></path><path d="M104.047 247.832s125-51.3 168.352-69.364c16.619-7.225 72.977-30.347 72.977-30.347s26.012-10.115 23.844 14.451c-.723 10.116-6.503 45.52-12.283 83.815-8.671 54.191-18.064 113.439-18.064 113.439s-1.445 16.619-13.728 19.509-32.515-10.115-36.127-13.006c-2.891-2.167-54.191-34.682-72.977-50.578-5.058-4.335-10.838-13.005.722-23.121 26.012-23.844 57.081-53.468 75.867-72.254 8.671-8.671 17.341-28.902-18.786-4.336-51.3 35.405-101.878 68.642-101.878 68.642s-11.561 7.225-33.237.722c-21.677-6.502-46.966-15.173-46.966-15.173s-17.34-10.838 12.284-22.399z" fill="#fff"></path></symbol></svg>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="index.html" class="logo">
+                        <picture>
+
+                            <!-- <source media="(min-width: 1300px)" srcset="img/logo.svg">
+                            <source media="(min-width: 768px)" srcset="img/logo.svg"> -->
+
+                            <img class="logo__img" src="img/logo.jpg" alt="site logo" width="100" height="50">
+                        </picture>
+                    </a>
+                    <div class="header__menu">
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#ed" class="header__nav-link">Образование</a></li>
+                            <li class="header__nav-item"><a href="#skills" class="header__nav-link">Навыки</a></li>
+                            <li class="header__nav-item"><a href="#exp" class="header__nav-link">Опыт работы</a></li>
+                            <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Портфолио</a></li>
+                            <li class="header__nav-item"><a href="#about" class="header__nav-link">О себе</a></li>
+                            <li class="header__nav-item"><a href="#info" class="header__nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h1 class="hidden">Winter Inside</h1>
+
+                <section class="data">
+
+                    <div id="info" class="data__block">
+
+                        <h2 class="data__caption">Личная информация</h2>
+
+                        <div class="data__wrapper">
+
+                            <picture>
+                                <!-- <source type="image/webp" srcset="img/main_ph.webp"> -->
+                                <img class="main__photo img-bg" src="img/main_ph.jpg" alt="photo" width="320" height="320">
+                            </picture>
+
+                            <div class="data__content">
+                                <ul class="data__list data__list--info">
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--vk" href="https://vk.com/maks_winter" target="_blank">Циркулев Максим Михайлович</a>
+                                  </li>
+                                  <li class="data__item data__item--info"><span>03 / 06 / 1989 г.</span></li>
+                                  <li class="data__item data__item--info"><span>Крым / Алушта</span></li>
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--tg" href="https://telegram.im/@WinterInside" target="_blank">Tm: @WinterInside</a>
+                                  </li>
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--skype" href="skype:deAn1mator">Skype: deAn1mator</a>
+                                  </li>
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--tel" href="tel:+7 (978) 746 90 90">Тел.: +7 (978) 746-90-80</a>
+                                  </li>
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--mail" href="mailto:tsirkulev.maksim@mail.ru" rel="nofollow">tsirkulev.maksim@mail.ru</a>
+                                  </li>
+                                  <li class="data__item data__item--info">
+                                    <a class="data__link data__link--hh" rel="nofollow" target="_blank" href="https://alushta.hh.ru/resume/a9ef0eccff0864e1b20039ed1f424979334574?hhtmFrom=resume_list">Резюме на HeadHunter</a>
+                                  </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="ed" class="data__block">
+
+                        <div class="data__education">
+
+                            <h2 class="data__caption">Образование</h2>
+
+                            <ul class="data__list">
+
+                              <li class="data__ed-item">
+                                <span class="data__year">2012</span>
+                                <p class="data__institution">Таврический национальный университет им. В.И. Вернадского, Симферополь</p>
+                                <p class="data__speciality">Компьютерные системы и сети</p>
+                              </li>
+
+                              <li class="data__ed-item">
+                                <span class="data__year">2019</span>
+                                <p class="data__institution">HTMLacademy</p>
+                                <p class="data__speciality">Профессиональный HTML и CSS, уровень 1</p>
+                              </li>
+
+                              <li class="data__ed-item">
+                                <span class="data__year">2020</span>
+                                <p class="data__institution">HTMLacademy</p>
+                                <p class="data__speciality">Профессиональный HTML и CSS, уровень 2</p>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                    </div>
+
+                    <div id="skills" class="data__block">
+                        <h2 class="data__caption">Навыки</h2>
+
+                        <ul class="data__skill-list">
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">HTML</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">CSS</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">БЭМ</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">LESS</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">SASS</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">SVG</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">JavaScript</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">Gulp</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">jQuery</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">Git</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">React JS</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">jade / pug</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">emmet</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">Adobe PS</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">Zepplin</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">Figma</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">yarn / npm</span>
+                          </li>
+                          <li class="data__item data__item--skill">
+                            <span class="data__skillname">TWIG</span>
+                          </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="portfolio" class="data__wrapper data__wrapper--portfolio">
+
+                        <a href="#remarck" class="remarck fancybox">
+                        <h2 class="data__caption">Примеры работ <span>*</span></h2>
+                        </a>
+                        <div class="page__row">
+                        <p class="data__subcaption">Работа более чем над  <span data-digits-counter="" class="page__counter"> 10 </span>  проектами</p>
+                        </div>
+
+                        <section class="billbord">
+                        <div class="container">
+                            <div class="billbord__wrap">
+                            <div class="rev_slider">
+
+                                <div class="rev_slide">
+                                <a href="http://tet.sheer82.ru" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                    <source type="image/webp" srcset="img/prev/tet.webp">
+
+                                    <img class="data__item-prev" src="img/prev/tet.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+
+                                <div class="rev_slide">
+                                <a href="http://vo-lt.ru" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/prev/volt.webp">
+
+                                        <img class="data__item-prev" src="img/prev/volt.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+
+                                <div class="rev_slide">
+                                <a href="https://winterinside.github.io/ALCOMARKET" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/prev/alco.webp">
+
+                                        <img class="data__item-prev" src="img/prev/alco.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+
+                                <div class="rev_slide">
+                                <a href="https://winterinside.github.io/LEDMEDIA" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                    <source type="image/webp" srcset="img/prev/led.webp">
+
+                                    <img class="data__item-prev" src="img/prev/led.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+
+                                <div class="rev_slide">
+                                <a href="https://noftgamesorganization.github.io/noft-landing-layout/" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                    <source type="image/webp" srcset="img/prev/noft-v2.webp">
+
+                                    <img class="data__item-prev" src="img/prev/noft-v2.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+
+                                <div class="rev_slide">
+                                <a href="https://xn----8sbebnv8ce3d.xn--80asehdb/department/nevrologiya/" class="slider-billbord" target="_blank" rel="nofollow">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/prev/docs.webp">
+
+                                        <img class="data__item-prev" src="img/prev/docs.jpg" alt="site preview">
+                                    </picture>
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </section>
+
+                        <!-- <ul class="data__list data__list--portfolio data__list--real">
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="http://tet.sheer82.ru" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/tet.webp">
+
+                                <img class="data__item-prev" src="img/prev/tet.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="http://vo-lt.ru" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/volt.webp">
+
+                                <img class="data__item-prev" src="img/prev/volt.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/ALCOMARKET" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/alco.webp">
+
+                                <img class="data__item-prev" src="img/prev/alco.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/LEDMEDIA" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/led.webp">
+
+                                <img class="data__item-prev" src="img/prev/led.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://noftgamesorganization.github.io/noft-landing-layout/" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/noft-v2.webp">
+
+                                <img class="data__item-prev" src="img/prev/noft-v2.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://xn----8sbebnv8ce3d.xn--80asehdb/department/nevrologiya/" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/docs.webp">
+
+                                <img class="data__item-prev" src="img/prev/docs.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        </ul> -->
+                    </div>
+
+                    <div id="portfolio" class="data__wrapper data__wrapper--portfolio">
+                        <div class="page__row">
+                        <p class="data__subcaption">Выполнено более  <span data-digits-counter="" class="page__counter"> 20 </span> тестовых заданий! </p>
+                        </div>
+
+                        <ul class="data__list data__list--portfolio">
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/NOFT-page" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/noft.webp">
+
+                                <img class="data__item-prev" src="img/prev/noft.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/LEVELUP" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/levelUP.webp">
+
+                                <img class="data__item-prev" src="img/prev/levelUP.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/AppFox/" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/AppFox.webp">
+
+                                <img class="data__item-prev" src="img/prev/AppFox.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/idaproject-test/" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/ida-project.webp">
+
+                                <img class="data__item-prev" src="img/prev/ida-project.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        <li class="data__item data__item--portfolio">
+                            <a href="https://winterinside.github.io/IJS/" class="data__link" target="_blank" rel="nofollow">
+                            <picture>
+                                <source type="image/webp" srcset="img/prev/ijs.webp">
+
+                                <img class="data__item-prev" src="img/prev/ijs.jpg" alt="site preview">
+                            </picture>
+                            </a>
+                        </li>
+
+                        </ul>
+                    </div>
+
+                    <div id="exp" class="data__wrapper data__wrapper--work">
+                        <h2 class="data__caption">Работал в таких командах как:</h2>
+                        <ul class="data__list data__list--work">
+                        <li class="data__item data__item--work">
+                            <h3 class="data__team-name">IBRUSH</h3>
+                            <a target="_blank" rel="_nofollow" href="https:// www.ibrush.ru/" class="deta__team-site">www.ibrush.ru</a>
+                            <p class="data__team-position">HTML-верстальщик</p>
+                        </li>
+                        <li class="data__item data__item--work">
+                            <h3 class="data__team-name">веб-студия SHEER</h3>
+                            <a target="_blank" rel="_nofollow" href="https://sheer82.ru/" class="deta__team-site">sheer82.ru</a>
+                            <p class="data__team-position">HTML-верстальщик</p>
+                        </li>
+                        <li class="data__item data__item--work">
+                            <h3 class="data__team-name">NOFT GAMES</h3>
+                            <a target="_blank" rel="_nofollow" href="https://noftgames.io/" class="deta__team-site">noftgames.io</a>
+                            <p class="data__team-position">junior react developer</p>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div id="about" class="data__wrapper data__wrapper--about">
+                        <h2 class="data__caption">О себе</h2>
+                        <textarea class="data__textarea" name="about" cols="30" rows="10" disabled=""> Фрилансер. Ищу интересные full-time проекты. Мотивирован. Учусь быстро, а могу еще быстрее. Не боюсь трудностей и стрессовых ситуаций. Готов к стажировке, удаленной работе (в большей степени) или переезду (в меньшей).</textarea>
+                    </div>
+
+
+                </section>
+
+                <!-- <a href="#remarck" class="remarck fancybox">
+                    <h2 class="data__caption"> Вызов модалки <span>*</span></h2>
+                </a> -->
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="https://vk.com/maks_winter" class="link" rel="nofollow" target="_blank">winter inside © 2022</a>
+        </footer>
+<!--
+        <div class="modal" id="remarck" style="display: none;">
+            <div class="modal__remarck">
+                <p>Почему счетчик проектов больше, чем количество представленных ссылками?</p>
+                <p>Некоторые из проектов, над которыми я работал, <i>возможно</i> , стали не актуальны, или закрыты, или показать их я могу только по Вашему запросу, не выставляя на публичный обзор.</p>
+                <p>То же касается и тестовых заданий &#128578;  </p>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/libs/fancybox/source/jquery.fancybox.js"></script>
+    <script>
+      $(".fancybox").fancybox();
+    </script>
+    <script src="js/libs/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
