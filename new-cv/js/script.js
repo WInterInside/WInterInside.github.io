@@ -7,6 +7,11 @@ $(document).ready(function() {
     });
 });
 
+//home
+$(window).scroll(function() {
+    $('.home').toggleClass('home--show', $(this).scrollTop() > 50);
+});
+
 //тень на скролле
 $(window).scroll(function() {
     $('header').toggleClass('header--shadow', $(this).scrollTop() > 50);
