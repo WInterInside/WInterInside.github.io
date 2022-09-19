@@ -7,9 +7,9 @@ $(document).ready(function() {
     });
 });
 
-//home
+//homw
 $(window).scroll(function() {
-    $('.home').toggleClass('home--show', $(this).scrollTop() > 50);
+    $('home').toggleClass('home--show', $(this).scrollTop() > 50);
 });
 
 //тень на скролле
