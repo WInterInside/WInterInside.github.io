@@ -4,7 +4,7 @@
  */
 /*! Gecko-Picture - v1.0
  * https://github.com/scottjehl/picturefill/tree/3.0/src/plugins/gecko-picture
- * Firefox"s early picture implementation (prior to FF41) is static and does
+ * Firefox's early picture implementation (prior to FF41) is static and does
  * not react to viewport changes. This tiny module fixes this.
  */
 
@@ -134,7 +134,7 @@
 
   // Reusable, non-"g" Regexes
 
-  // (Don"t use \s, to avoid matching non-breaking space.)
+  // (Don't use \s, to avoid matching non-breaking space.)
   var regexLeadingSpaces = /^[ \t\n\r\u000c]+/,
       regexLeadingCommasOrSpaces = /^[, \t\n\r\u000c]+/,
       regexLeadingNotSpaces = /^[^ \t\n\r\u000c]+/,
@@ -244,7 +244,7 @@
   })();
 
   var setResolution = function( candidate, sizesattr ) {
-    if ( candidate.w ) { // h = means height: || descriptor.type === "h" do not handle yet...
+    if ( candidate.w ) { // h = means height: || descriptor.type === 'h' do not handle yet...
       candidate.cWidth = pf.calcListLength( sizesattr || "100vw" );
       candidate.res = candidate.w / candidate.cWidth ;
     } else {
@@ -312,7 +312,7 @@
   types[ "image/png" ] = true;
 
   function detectTypeSupport( type, typeUri ) {
-    // based on Modernizr"s lossless img-webp test
+    // based on Modernizr's lossless img-webp test
     // note: asynchronous
     var image = new window.Image();
     image.onerror = function() {
@@ -441,7 +441,7 @@
 
     // SPEC mismatch intended for size and perf:
     // actually only source elements preceding the img should be used
-    // also note: don"t use qsa here, because IE8 sometimes doesn"t like source as the key part in a selector
+    // also note: don't use qsa here, because IE8 sometimes doesn't like source as the key part in a selector
     var sources = picture.getElementsByTagName( "source" );
 
     for ( i = 0, len = sources.length; i < len; i++ ) {
@@ -506,7 +506,7 @@
     * Adds descriptor properties to a candidate, pushes to the candidates array
     * @return undefined
     */
-    // (Declared outside of the while loop so that it"s only created once.
+    // (Declared outside of the while loop so that it's only created once.
     // (This fn is defined before it is used, in order to pass JSHINT.
     // Unfortunately this breaks the sequencing of the spec comments. :/ )
     function parseDescriptors() {
@@ -516,7 +516,7 @@
 
       // 10. Let width be absent.
       // 11. Let density be absent.
-      // 12. Let future-compat-h be absent. (We"re implementing it now as h)
+      // 12. Let future-compat-h be absent. (We're implementing it now as h)
           w, d, h, i,
           candidate = {},
           desc, lastChar, value, intVal, floatVal;
@@ -724,7 +724,7 @@
 
       // 5. If position is past the end of input, return candidates and abort these steps.
       if (pos >= inputLength) {
-        return candidates; // (we"re done, this is the sole return path)
+        return candidates; // (we're done, this is the sole return path)
       }
 
       // 6. Collect a sequence of characters that are not space characters,
@@ -895,7 +895,7 @@
     }
 
     // When asked to parse a sizes attribute from an element, parse a
-    // comma-separated list of component values from the value of the element"s
+    // comma-separated list of component values from the value of the element's
     // sizes attribute (or the empty string, if the attribute is absent), and let
     // unparsed sizes list be the result.
     // http://dev.w3.org/csswg/css-syntax/#parse-comma-separated-list-of-component-values
@@ -912,7 +912,7 @@
 
       // If unparsed size is now empty, that is a parse error; continue to the next
       // iteration of this algorithm.
-      // ( parseComponentValues() won"t push an empty array. )
+      // ( parseComponentValues() won't push an empty array. )
 
       // 2. If the last component value in unparsed size is a valid non-negative
       // <source-size-value>, let size be its value and remove the component value
@@ -977,7 +977,7 @@
     })(document.createElement("img"));
   }
 
-  // Safari9 has basic support for sizes, but does"t expose the `sizes` idl attribute
+  // Safari9 has basic support for sizes, but does't expose the `sizes` idl attribute
   if (pf.supSrcset && !pf.supSizes) {
 
     (function() {
@@ -1221,7 +1221,7 @@
     if ( curCan && curCan.set === candidates[ 0 ].set ) {
 
       // if browser can abort image request and the image has a higher pixel density than needed
-      // and this image isn"t downloaded yet, we skip next part and try to save bandwidth
+      // and this image isn't downloaded yet, we skip next part and try to save bandwidth
       abortCurSrc = (supportAbort && !img.complete && curCan.res - 0.1 > dpr);
 
       if ( !abortCurSrc ) {
@@ -1248,7 +1248,7 @@
           j = i - 1;
 
           // we have found the perfect candidate,
-          // but let"s improve this a little bit with some assumptions ;-)
+          // but let's improve this a little bit with some assumptions ;-)
           if (candidates[ j ] &&
             (abortCurSrc || curSrc !== pf.makeUrl( candidate.url )) &&
             chooseLowRes(candidates[ j ].res, candidate.res, dpr, candidates[ j ].cached)) {
@@ -1281,7 +1281,7 @@
     var origWidth;
     img.src = bestCandidate.url;
 
-    // although this is a specific Safari issue, we don"t want to take too much different code paths
+    // although this is a specific Safari issue, we don't want to take too much different code paths
     if ( bestCandidate.set.type === "image/svg+xml" ) {
       origWidth = img.style.width;
       img.style.width = (img.offsetWidth + 1) + "px";
@@ -1434,7 +1434,7 @@
     }
   };
 
-  // If picture is supported, well, that"s awesome.
+  // If picture is supported, well, that's awesome.
   if ( pf.supPicture ) {
     picturefill = noop;
     pf.fillImg = noop;
