@@ -567,7 +567,7 @@ img {
   .header__menu.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: 9px; }
+    top: 11px; }
   .header__menu.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -816,10 +816,10 @@ img {
     transition: all 0.5s; }
     @media (min-width: 768px) {
       .data__item .data__link {
-        padding: 10px 30px; } }
-    .data__item .data__link:hover {
-      color: #1a6585;
-      background-color: #fff; }
+        padding: 10px 30px; }
+        .data__item .data__link:hover {
+          color: #1a6585;
+          background-color: #fff; } }
   .data__item--work {
     width: 100%;
     padding: 10px;
