@@ -1394,6 +1394,19 @@ img {
   .add:hover {
     color: #fff;
     background-color: rgba(94, 94, 94, 0.574); }
+  @media (max-width: 991px) {
+    .add {
+      position: relative;
+      -webkit-transition: all 1.5s ease;
+      transition: all 1.5s ease;
+      -webkit-transform: unset;
+              transform: unset;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      transform: unset; } }
 
 .ready {
   position: relative;
