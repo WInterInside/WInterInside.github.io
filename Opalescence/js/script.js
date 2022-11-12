@@ -140,3 +140,9 @@ moveList.addEventListener(`dragover`, (evt) => {
 
     moveList.insertBefore(activeElement, nextElement);
 });
+
+// кнопка с доп заданием
+
+onscroll = function(){
+    if(window.scrollY+1 >= document.documentElement.scrollHeight-document.documentElement.clientHeight) document.querySelector('.add').classList.add("ready");;
+};
