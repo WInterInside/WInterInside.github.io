@@ -593,8 +593,7 @@ img {
     font-weight: 700;
     background-color: #fff;
     padding: 18px 30px;
-    border: 1px solid #FFFFFF;
-    border-radius: 0px 20px 20px 32px; }
+    border-radius: 0 20px 20px 32px; }
   .banner__controls {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -610,7 +609,7 @@ img {
     background-color: #000;
     left: calc(50% - 81px);
     bottom: -20px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
     border-radius: 30px; }
   .banner__center {
     position: absolute;
@@ -685,16 +684,16 @@ img {
             justify-content: center;
     gap: 82px;
     background-color: #000;
-    border: 1px solid #D9D9D9;
+    border: 0.5px solid #D9D9D9;
     -webkit-transition: all 1.5s ease;
     transition: all 1.5s ease; }
     @media (max-width: 1048px) {
       .banner__bar {
         gap: 22px; } }
     .banner__bar--top {
-      top: 0px;
+      top: 0;
       right: 0;
-      border-radius: 0px 0px 0px 30px;
+      border-radius: 0 0 0 30px;
       border-top-color: transparent;
       border-right-color: transparent; }
       .banner__bar--top::before {
@@ -702,35 +701,35 @@ img {
         display: block;
         position: absolute;
         z-index: 4;
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 25px;
         background-color: transparent;
-        border-top: 0.5px solid #D9D9D9;
-        border-right: 0.5px solid #D9D9D9;
+        border-top: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
         border-radius: 0 30px 0 0;
         -webkit-box-shadow: 17px -16px 0px 15px #000000;
                 box-shadow: 17px -16px 0px 15px #000000;
-        left: -29px;
-        top: 0px; }
+        left: -40px;
+        top: -1px; }
       .banner__bar--top::after {
         content: "";
         display: block;
         position: absolute;
         z-index: 4;
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 25px;
         background-color: transparent;
-        border-top: 0.5px solid #D9D9D9;
-        border-right: 0.5px solid #D9D9D9;
+        border-top: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
         border-radius: 0 30px 0 0;
         -webkit-box-shadow: 17px -16px 0px 15px #000000;
                 box-shadow: 17px -16px 0px 15px #000000;
-        right: 0px;
-        bottom: -29px; }
+        right: -1px;
+        bottom: -25px; }
     .banner__bar--bottom {
-      bottom: -2px;
-      right: -1px;
-      border-radius: 30px 0px 0px 0px;
+      bottom: 0;
+      right: -2px;
+      border-radius: 30px 0 0 0;
       border-bottom-color: transparent;
       border-right-color: transparent; }
       .banner__bar--bottom::before {
@@ -738,35 +737,31 @@ img {
         display: block;
         position: absolute;
         z-index: 4;
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 25px;
         background-color: transparent;
-        border-top: 0.5px solid #D9D9D9;
-        border-right: 0.5px solid #D9D9D9;
-        border-radius: 0 30px 0 0;
-        -webkit-box-shadow: 17px -16px 0px 15px #000000;
-                box-shadow: 17px -16px 0px 15px #000000;
-        left: -30px;
-        bottom: 1px;
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg); }
+        border-bottom: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
+        border-radius: 0 0 30px 0;
+        -webkit-box-shadow: 17px 16px 0 15px #000000;
+                box-shadow: 17px 16px 0 15px #000000;
+        bottom: 0;
+        left: -40px; }
       .banner__bar--bottom::after {
         content: "";
         display: block;
         position: absolute;
         z-index: 4;
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 25px;
         background-color: transparent;
-        border-top: 0.5px solid #D9D9D9;
-        border-right: 0.5px solid #D9D9D9;
-        border-radius: 0 30px 0 0;
-        -webkit-box-shadow: 17px -16px 0px 15px #000000;
-                box-shadow: 17px -16px 0px 15px #000000;
-        right: 1px;
-        top: -29px;
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg); }
+        border-bottom: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
+        border-radius: 0 0 30px 0;
+        -webkit-box-shadow: 17px 16px 0 15px #000000;
+                box-shadow: 17px 16px 0 15px #000000;
+        top: -25px;
+        right: 1px; }
 
 .banner--bars .banner__bar--top {
   -webkit-transform: translateY(-300px);
