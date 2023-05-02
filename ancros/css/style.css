@@ -315,34 +315,6 @@ template {
   font-style: normal;
   font-display: swap; }
 
-@font-face {
-  font-family: 'ABC Favorit Extended Book';
-  src: url("../fonts/ABCFavoritExtended-Book.woff2") format("woff2"), url("../fonts/ABCFavoritExtended-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'ABC Favorit Extended';
-  src: url("../fonts/ABCFavoritExtended-Light.woff2") format("woff2"), url("../fonts/ABCFavoritExtended-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'ABC Favorit Extended';
-  src: url("../fonts/ABCFavoritExtended-Medium.woff2") format("woff2"), url("../fonts/ABCFavoritExtended-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'ABC Favorit Extended';
-  src: url("../fonts/ABCFavoritExtended-Regular.woff2") format("woff2"), url("../fonts/ABCFavoritExtended-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
 *,
 *::before,
 *::after {
@@ -593,7 +565,9 @@ img {
     font-weight: 700;
     background-color: #fff;
     padding: 18px 30px;
-    border-radius: 0 20px 20px 32px; }
+    border-radius: 0 20px 20px 32px;
+    font-family: 'ABC Favorit Extended';
+    font-weight: 400; }
   .banner__controls {
     display: -webkit-box;
     display: -ms-flexbox;
