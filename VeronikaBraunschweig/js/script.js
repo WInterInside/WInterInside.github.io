@@ -1,9 +1,11 @@
+// home button
 $(window).scroll(function() {
     $('.home').toggleClass('home--show', $(this).scrollTop() > 50);
 });
 
+// smooth scroll
 $(document).ready(function(){
-    $('.header__nav-link').bind("click", function(e){
+    $('.anchor-link').bind("click", function(e){
         var anchor = $(this);
         $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top - 180
@@ -13,6 +15,7 @@ $(document).ready(function(){
 return false;
 });
 
+//slider
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,6 +58,7 @@ function showSlides() {
 	setTimeout(showSlides, 3500);
 }
 
+// acordion logic
 var faq__accordion = (function (element) {
 	var _getItem = function (elements, className) {
 		var element = undefined;
@@ -99,5 +103,25 @@ var faq__accordion = (function (element) {
 	}
 })();
 
+//acordion start
 var faq__accordion1 = faq__accordion();
 faq__accordion1.init('#faq__accordion');
+
+
+// modal
+var btn = document.querySelector(".leistung__btn");
+var popup = document.querySelector(".modal");
+var body = document.querySelector('body');
+var closeBtn = document.querySelector(".modal__close");
+
+btn.addEventListener("click", function(evn) {
+    evn.preventDefault();
+    popup.classList.add("modal-show");
+	body.classList.add("is-modal");
+});
+
+closeBtn.addEventListener("click", function(evn) {
+    evn.preventDefault();
+    popup.classList.remove("modal-show");
+	body.classList.remove("is-modal");
+});

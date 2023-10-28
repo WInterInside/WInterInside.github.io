@@ -27,11 +27,11 @@
 						<span></span>
 						</label>
 						<ul class="menu__box">
-							<li><a class="menu__item" href="#">HOME</a></li>
-							<li><a class="menu__item" href="#">GALERI</a></li>
-							<li><a class="menu__item" href="#">LEISTUNGE</a></li>
-							<li><a class="menu__item" href="#">ÜBER MICH</a></li>
-							<li><a class="menu__item" href="#">KONTAKT</a></li>
+							<li><a class="menu__item anchor-link" href="#home">HOME</a></li>
+							<li><a class="menu__item anchor-link" href="#galeri">GALERI</a></li>
+							<li><a class="menu__item anchor-link" href="#leist">LEISTUNGE</a></li>
+							<li><a class="menu__item anchor-link" href="#mich">ÜBER MICH</a></li>
+							<li><a class="menu__item anchor-link" href="#cont">KONTAKT</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -43,7 +43,7 @@
 			<h1 class="hidden">Veronika Braunschweig</h1>
 
 			<div class="container">
-				<article id="mobil">
+				<article>
 
 					<div id="mobilText">
 						<h2>Mobil fotoschooting</h2>
@@ -59,28 +59,28 @@
 							<div class="faq__content">
 								<div id="faq__accordion" class="faq__accordion">
 									<div class="faq__accordion-item show">
-									<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 1<span class="faq__arrow"></span></p>
-									<div class="faq__accordion-item-content">
-										<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestias, minus, iure explicabo quisquam quo inventore in ipsa aliquam est non sed repellendus nesciunt labore exercitationem atque magnam reiciendis dolores.
-										</p>
-									</div>
-									</div>
-									<div class="faq__accordion-item">
-									<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 2<span class="faq__arrow"></span></p>
-									<div class="faq__accordion-item-content">
-										<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, perferendis officiis! Saepe, tempore cumque, doloribus id dolor aliquid adipisci distinctio, modi debitis culpa aspernatur ad illo! Enim quos provident itaque?
-										</p>
-									</div>
+										<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 1<span class="faq__arrow"></span></p>
+										<div class="faq__accordion-item-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestias, minus, iure explicabo quisquam quo inventore in ipsa aliquam est non sed repellendus nesciunt labore exercitationem atque magnam reiciendis dolores.
+											</p>
+										</div>
 									</div>
 									<div class="faq__accordion-item">
-									<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 3<span class="faq__arrow"></span></p>
-									<div class="faq__accordion-item-content">
-										<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus doloribus eos voluptatum inventore voluptate maxime, id, dicta iure rerum in mollitia aliquid repudiandae numquam quae qui illo, nobis ut!
-										</p>
+										<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 2<span class="faq__arrow"></span></p>
+										<div class="faq__accordion-item-content">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, perferendis officiis! Saepe, tempore cumque, doloribus id dolor aliquid adipisci distinctio, modi debitis culpa aspernatur ad illo! Enim quos provident itaque?
+											</p>
+										</div>
 									</div>
+									<div class="faq__accordion-item">
+										<p class="faq__accordion-item-header"><span class="faq__icon"><span>?</span></span>Вопрос 3<span class="faq__arrow"></span></p>
+										<div class="faq__accordion-item-content">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus doloribus eos voluptatum inventore voluptate maxime, id, dicta iure rerum in mollitia aliquid repudiandae numquam quae qui illo, nobis ut!
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -89,7 +89,7 @@
 				</article>
 			</div>
 
-				<section class="slider">
+				<section class="slider" id="galeri">
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
@@ -181,12 +181,12 @@
 				</section>
 			</div>
 
-			<section class="leistung">
+			<section id="leist" class="leistung">
 				<img src="img/info.jpg" alt="" width="100%">
 				<button class="leistung__btn">Leistung</button>
 			</section>
 
-			<div class="container">
+			<div id="mich" class="container">
 				<section class="ich">
 					<div class="ich__top">
 						<img class="ich__img" src="img/ich.jpg" alt="meinFoto">
@@ -195,7 +195,7 @@
 					<p class="mobilText" >Verwandeln Sie Ihre Momente in zauberhafte Erinnerungen mit unserem mobilen Fotoshooting im Umkreis von 40 Kilometern von München!</p>
 				</section>
 
-				<section class="contacts">
+				<section id="cont" class="contacts">
 					<p>Es ist Zeit, Erinnerungen zu schaffen. Lassen Sie uns Ihre besonderen Momente gemeinsam festhalten. Schließen Sie sich uns an und verleihen Sie Ihrer Geschichte Glanz.</p>
 
 					<div class="contacts__icons">
@@ -241,12 +241,38 @@
 				</nav>
 			</div>
 			<div class="home">
-				<a class="header__nav-link" href="#home" aria-label="home"></a>
+				<a class="anchor-link" href="#home" aria-label="home"></a>
 			</div>
 		</footer>
 
-		<script src="js/jquery.js"></script>
-		<script src="js/script.js"></script>
+		<div class="modal">
+			<button class="modal__close">X</button>
+			<h2>Preisliste</h2>
+			<ul>
+				<li>
+					<h3>Hochzeitsfotografie:</h3>
+					<h4>Paket - "Essentials": 500€</h4> 
+					<ul>
+						<li>- Bis zu 6 Stunden fotografische Begleitung</li>
+						<li>- Professionelle Bearbeitung der besten 100 Fotos</li>
+						<li>- Hochauflösende digitale Dateien auf USB-Stick</li>
+					</ul>
+				</li>
+
+				<li>
+					<h3>Familiensitzung: 200€</h3>
+					<ul>
+						<li>- Ca. 2-stündige Fotosession für bis zu 5 Personen (jede weitere Person +30€)</li>
+						<li>- Professionelle Bearbeitung der besten 20 Fotos</li>
+						<li>- Hochauflösende digitale Dateien per E-Mail oder Online-Galerie</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+
+		<script src="JS/jquery.js"></script>
+		<script src="JS/script.js"></script>
 	</body>
 
 </html>
