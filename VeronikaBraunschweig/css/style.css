@@ -202,7 +202,7 @@ section {
 .header {
 	min-height: 500px;
 	background-image: url("../img/kamera.jpg");
-	background-position: center center;
+	/* background-position: center center; */
 	background-repeat: no-repeat;
 	background-size: cover;
 }
