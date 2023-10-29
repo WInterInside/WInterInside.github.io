@@ -195,14 +195,13 @@ section {
 .container {
 	min-width: 320px;
 	max-width: 950px;
-	padding: 0 30px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 
 .header {
 	min-height: 500px;
 	background-image: url("../img/kamera.jpg");
-	/* background-position: center center; */
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -239,12 +238,6 @@ h2 {
 
 p {
 	color: #545454;
-}
-
-.mobilText {
-	border-radius: 5px;
-	padding: 10px;
-	background-color: #bbbbbb39;
 }
 
 .kunde {
@@ -333,8 +326,7 @@ input[type=submit]:hover {
 }
 
 .contacts {
-	padding: 20px;
-	border-radius: 5px;
+	padding: 20px 0;
 	color: #fff;
 	background-color: #616161;
 }
@@ -659,7 +651,6 @@ input[type=submit]:hover {
 		padding-top: 25px;
 	}
 }
-
 
 body.is-modal {
 	overflow: hidden;
