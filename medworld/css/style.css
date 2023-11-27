@@ -762,6 +762,14 @@ img {
   border-radius: 6px;
   overflow: hidden;
   margin: 0 auto; }
+  .catalogue__item img {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s; }
+  .catalogue__item:hover img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
 
 .catalogue__caption {
   position: absolute;
