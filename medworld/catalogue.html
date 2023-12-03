@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedWorld | Каталог</title>
+    <link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="js/libs/modal/modal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+    <script>
+		// Picture element HTML5 shiv
+		document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+    <div id="home" class="wrapper">
+
+        <div class="sprite" style="display:none">
+        	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="chart"><path d="M31.927 8.391h-3.852c-.192-2.108-1.232-4.072-2.912-5.504C23.483 1.456 21.283.661 19 .661c-2.282 0-4.482.795-6.163 2.226-1.68 1.432-2.72 3.396-2.912 5.504H6.073c-1.428 0-2.798.526-3.809 1.462-1.01.936-1.577 2.206-1.577 3.53v21.964c0 1.324.567 2.594 1.577 3.53 1.01.936 2.38 1.462 3.81 1.462h25.853c1.429 0 2.799-.526 3.809-1.462 1.01-.936 1.577-2.206 1.577-3.53V13.383c0-1.324-.567-2.594-1.577-3.53-1.01-.936-2.38-1.462-3.809-1.462zM19 2.651c1.712.004 3.363.592 4.638 1.65 1.276 1.058 2.088 2.514 2.282 4.09H12.08c.194-1.576 1.006-3.032 2.282-4.09 1.275-1.058 2.926-1.646 4.638-1.65zm16.16 32.696c0 .794-.34 1.556-.947 2.118a3.366 3.366 0 01-2.285.877H6.073a3.368 3.368 0 01-2.285-.877 2.888 2.888 0 01-.947-2.118V13.383c0-.794.34-1.556.947-2.118a3.366 3.366 0 012.285-.877h25.854c.857 0 1.68.315 2.285.877a2.89 2.89 0 01.947 2.118v21.964z" fill="#807E7E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M28.682 7.73h3.245c1.602 0 3.144.59 4.285 1.647C37.353 10.435 38 11.875 38 13.383v21.964c0 1.508-.647 2.948-1.788 4.006C35.072 40.41 33.529 41 31.927 41H6.073c-1.602 0-3.144-.59-4.285-1.647C.646 38.295 0 36.855 0 35.347V13.383c0-1.508.646-2.948 1.788-4.006C2.928 8.319 4.471 7.73 6.073 7.73h3.245c.336-2.05 1.416-3.934 3.064-5.338C14.191.852 16.552 0 19 0c2.447 0 4.81.851 6.618 2.392 1.648 1.404 2.728 3.289 3.064 5.338zm-.607.661h3.852c1.429 0 2.799.526 3.809 1.462 1.01.936 1.577 2.206 1.577 3.53v21.964c0 1.324-.567 2.594-1.577 3.53-1.01.936-2.38 1.462-3.809 1.462H6.073c-1.428 0-2.798-.526-3.809-1.462-1.01-.936-1.577-2.206-1.577-3.53V13.383c0-1.324.567-2.594 1.577-3.53 1.01-.936 2.38-1.462 3.81-1.462h3.851c.192-2.108 1.232-4.072 2.912-5.504C14.518 1.456 16.717.661 19 .661c2.283 0 4.482.795 6.163 2.226 1.68 1.432 2.72 3.396 2.912 5.504zm-4.885-3.59c-1.149-.952-2.64-1.484-4.19-1.49-1.55.006-3.041.538-4.19 1.49a5.75 5.75 0 00-1.904 2.929h12.188a5.75 5.75 0 00-1.904-2.928zm2.611 2.929c-.314-1.32-1.067-2.52-2.163-3.429-1.275-1.058-2.926-1.646-4.638-1.65-1.712.004-3.363.592-4.638 1.65-1.095.908-1.849 2.11-2.163 3.429a6.047 6.047 0 00-.12.661H25.92a6.048 6.048 0 00-.119-.661zm7.935 29.258c.475-.44.736-1.03.736-1.641V13.383c0-.61-.261-1.202-.736-1.641a2.665 2.665 0 00-1.809-.693H6.073c-.683 0-1.334.252-1.809.693a2.239 2.239 0 00-.736 1.64v21.965c0 .61.261 1.201.736 1.641.475.44 1.126.693 1.809.693h25.854c.683 0 1.334-.252 1.809-.693zm.476.477a2.888 2.888 0 00.947-2.118V13.383c0-.794-.34-1.556-.947-2.118a3.366 3.366 0 00-2.285-.877H6.073c-.857 0-1.679.315-2.285.877a2.888 2.888 0 00-.947 2.118v21.964c0 .794.34 1.556.947 2.118a3.366 3.366 0 002.285.877h25.854c.857 0 1.68-.316 2.285-.877z" fill="#807E7E"></path></symbol><symbol id="search"><path d="M46 42L33.289 30.444m5.378-11.777c0 9.204-8.209 16.666-18.334 16.666S2 27.871 2 18.667C2 9.462 10.208 2 20.333 2 30.46 2 38.667 9.462 38.667 18.667z" stroke="#807E7E" stroke-opacity=".933" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></symbol></svg>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__menu header__menu--dark">
+                        <span></span>
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item header__nav-item--dark"><a href="about.html#contacts" class="header__nav-link">Контакты</a></li>
+                            <li class="header__nav-item header__nav-item--dark"><a href="about.html#info" class="header__nav-link">доставка</a></li>
+                        </ul>
+                    </nav>
+
+					<a href="index.html" class="logo logo--dark">
+						<span class="logo__dark-caption">Med World</span>
+					</a>
+
+					<div class="header__controls">
+						<div class="header__controls-btn header__controls-btn--small header__controls-btn--search">
+							<div class="search">
+								<input type="text" id="searchInput" placeholder="поиск">
+								<button class="header__controls-btn header__controls-btn--small header__controls-btn--search" onclick="searchOnPage()"></button>
+							</div>
+						</div>
+
+						<div class="cart header__controls-btn header__controls-btn--small header__controls-btn--cart">
+							<div class="cart__value">0</div>
+
+							<div class="cart__content">
+								<h3 class="cart__caption">Корзина: <span class="cart__value-inner"></span></h3>
+
+								<ul class="cart__list"></ul>
+
+								<div class="cart__bottom">
+									<div class="cart__full">
+										<span>Итог:</span>
+										<span class="cart__full-price"></span>
+									</div>
+									<button class="cart__btn" data-graph-path="modal" data-graph-animation="fadeInUp">Оформить</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+			<h1 class="hidden">MedWorld</h1>
+
+			<section class="section catalogue-page">
+				<div class="container">
+
+					<section class="medicine">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="medicine">Лекарства</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#pain">боль,&nbsp;температура</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#nose">нос</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#stomach">желудок</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#allergy">аллергия</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/1.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="allergy">Аллергия</h2>
+							</div>
+							<div class="catalogue-page__list-line">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/1.1.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Супрастин</span> <span class="catalogue-page__data-price">150&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/1.4.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Цетрин</span> <span class="catalogue-page__data-price">170&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/1.3.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Ганатон</span> <span class="catalogue-page__data-price">990&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/1.2.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Супрастинекст</span> <span class="catalogue-page__data-price">490&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="pain">Боль, <br> температура</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/2.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Анальгин</span> <span class="catalogue-page__data-price">125&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/2.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Миг</span> <span class="catalogue-page__data-price">165&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/2.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Нурофен</span> <span class="catalogue-page__data-price">207&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/2.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Валдексал</span> <span class="catalogue-page__data-price">395&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/2.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Клодифен</span> <span class="catalogue-page__data-price">761&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="stomach">Желудок</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Микролакс</span> <span class="catalogue-page__data-price">1425&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Мезим</span> <span class="catalogue-page__data-price">245&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Буксопан</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Фестал</span> <span class="catalogue-page__data-price">1050&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Альфаксин</span> <span class="catalogue-page__data-price">745&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="nose">Нос</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/4.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">ЛинАква</span> <span class="catalogue-page__data-price">338&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/4.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Наксимин</span> <span class="catalogue-page__data-price">245&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/4.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Лормарин</span> <span class="catalogue-page__data-price">245&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/4.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Нафтизин</span> <span class="catalogue-page__data-price">50&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/4.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Оксифрин</span> <span class="catalogue-page__data-price">280&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="hygiene">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="hygiene">Гигиена</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#woman">Женская гигиена</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#paper">Ватные и бумажные изделия</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#mouth">Уход за полостью рта</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/2.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="woman">Женская гигиена</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Nivea гель</span> <span class="catalogue-page__data-price">761&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">м. чаша</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">м. чаша</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Антик</span> <span class="catalogue-page__data-price">785&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Дефимилема</span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="paper">Ватные и бумажные изделия</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/6.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Туалетная <br> бумага</span> <span class="catalogue-page__data-price">461&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/6.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">вл. <br> туалетная <br> бумага </span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/6.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">вл. <br> cалфетки</span> <span class="catalogue-page__data-price">125&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/6.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">вл. <br> туалетная <br> бумага </span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/6.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">вл. <br> cалфетки</span> <span class="catalogue-page__data-price">125&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="mouth">Уход за полостью рта</h2>
+							</div>
+							<div class="catalogue-page__list-line">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/7.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Ирригатор</span> <span class="catalogue-page__data-price">5240&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/7.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Зубная <br> паста </span> <span class="catalogue-page__data-price">240&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/7.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Опаласкиватель</span> <span class="catalogue-page__data-price">440&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/7.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Зубная щетка</span> <span class="catalogue-page__data-price">550&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="sport">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="sport">Спорт и питание</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#tapes">Тейпы</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#protein">Протеин и аминокислоты</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#adds">Спортивные добавки</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/3.png" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="tapes">Тейпы</h2>
+							</div>
+							<div class="catalogue-page__list-line">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/8.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name"></span> <span class="catalogue-page__data-price">650&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/8.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name"></span> <span class="catalogue-page__data-price">670&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/8.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name"></span> <span class="catalogue-page__data-price">290&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add"></button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/8.44.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name"></span> <span class="catalogue-page__data-price">490&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="protein">Протеин и аминокислоты</h2>
+								</div>
+								<div class="catalogue-page__list">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/9.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Vplab BCAA <br> 8:1:1</span> <span class="catalogue-page__data-price">1250&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/9.2.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Невронорм</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/9.3.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Протеин</span> <span class="catalogue-page__data-price">2545&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/9.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Протеин</span> <span class="catalogue-page__data-price">1785&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/9.5.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Протеин</span> <span class="catalogue-page__data-price">1345&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="adds">Спортивные добавки</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/10.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">L-карнитин</span> <span class="catalogue-page__data-price">1250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/10.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">L-карнитин</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/10.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Нейромексол</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/10.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">КЛК</span> <span class="catalogue-page__data-price">785&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/10.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Турамин <br> Хром</span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="bads">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="bads">БАДы и витамины</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#anti">Антиоксиданты</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#vision">БАД для зрения</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#d3">Витамин Д3</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#joints">БАД для суставов</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/4.png" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="anti">Антиоксиданты</h2>
+							</div>
+							<div class="catalogue-page__list-line">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Мукосат</span> <span class="catalogue-page__data-price">2210&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Коэнзим</span> <span class="catalogue-page__data-price">550&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Спирулина</span> <span class="catalogue-page__data-price">650&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add"></button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Брейнмакс</span> <span class="catalogue-page__data-price">4490&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="vision">БАД для зрения</h2>
+								</div>
+								<div class="catalogue-page__list catalogue-page__list--large-right">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/12.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Сироп</span> <span class="catalogue-page__data-price">250&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/12.2.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Супероптик</span> <span class="catalogue-page__data-price">399&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/12.3.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Витамины</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/12.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Витамины</span> <span class="catalogue-page__data-price">515&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/12.5.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Витамины</span> <span class="catalogue-page__data-price">535&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="d3">Витамин Д3</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/13.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Детримакс</span> <span class="catalogue-page__data-price">880&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/13.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Piluli</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/13.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Витамин Д3</span> <span class="catalogue-page__data-price">335&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/13.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Витамин Д3</span> <span class="catalogue-page__data-price">325&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/13.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Витамин Д3</span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="joints">БАД для суставов</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/14.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Геладринк <br> Фаст</span> <span class="catalogue-page__data-price">4250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/14.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">KWC <br> коллаген</span> <span class="catalogue-page__data-price">3345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/14.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Артрорелиф</span> <span class="catalogue-page__data-price">845&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/14.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Piluli <br> коллаген</span> <span class="catalogue-page__data-price">785&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/14.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Арта <br> МСМ</span> <span class="catalogue-page__data-price">2345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="beauty">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="beauty">Красота</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#men">Для мужчин</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#body">Уход за телом</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#face">Уход за лицом</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#decorative">Декоративная косметика </a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/5.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="men">Для мужчин</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/15.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Gillette <br> mach3</span> <span class="catalogue-page__data-price">2250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/15.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">DR.Sea <br> гель для душа</span> <span class="catalogue-page__data-price">645&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/15.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Borodatos</span> <span class="catalogue-page__data-price">445&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/15.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Apivita</span> <span class="catalogue-page__data-price">1285&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/15.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Apivita</span> <span class="catalogue-page__data-price">1345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="body">Уход за телом</h2>
+								</div>
+								<div class="catalogue-page__list catalogue-page__list--large-right">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/16.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Avene <br> XeraCalm</span> <span class="catalogue-page__data-price">950&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/16.2.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Veno Doc</span> <span class="catalogue-page__data-price">345&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/16.3.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Скип-кап</span> <span class="catalogue-page__data-price">2245&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/16.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Каламин</span> <span class="catalogue-page__data-price">785&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/16.5.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Bioderma</span> <span class="catalogue-page__data-price">2325&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="face">Уход за лицом</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/17.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Gezatone <br> Аппарат</span> <span class="catalogue-page__data-price">11250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/17.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Gezatone <br> Biolift</span> <span class="catalogue-page__data-price">4345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/17.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Gezatone <br> Biolift</span> <span class="catalogue-page__data-price">4345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/17.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Дерсонваль</span> <span class="catalogue-page__data-price">8950&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/17.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">TOUCHBeauty</span> <span class="catalogue-page__data-price">4945&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="decorative">Декоративная косметика</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/18.1.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Тушь для ресниц</span> <span class="catalogue-page__data-price">945&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/18.3.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Подводка</span> <span class="catalogue-page__data-price">3345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/18.2.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Помада</span> <span class="catalogue-page__data-price">845&nbsp;₽</span> <span class="catalogue-page__data-discount">2235&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/18.4.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Карандаш <br> для глаз</span> <span class="catalogue-page__data-price">785&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/18.5.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Пудра</span> <span class="catalogue-page__data-price">2345&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</section>
+
+					<section class="devices">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="dev">Приборы</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#hear">Слуховые аппараты</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#mass">Массажеры</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#term">Термометры</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/6.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="hear">Слуховые аппараты</h2>
+							</div>
+							<div class="catalogue-page__list-line">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/19.1.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">11150&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/19.4.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">42370&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/19.3.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">1333390&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/19.2.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">133390&nbsp;₽</span> <span class="catalogue-page__data-discount">233390&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="mass">Массажеры</h2>
+								</div>
+								<div class="catalogue-page__list">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name"><span class="catalogue-page__data-price">2250&nbsp;₽</span>
+										</span></div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.2.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">2645&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.3.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">1445&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">3285&nbsp;₽</span> <span class="catalogue-page__data-discount">4485&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.5.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">1345&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="term">Термометры</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">5250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">645&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">445&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">125&nbsp;₽</span> <span class="catalogue-page__data-discount">225&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">135&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="mother">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="baby">Мама и малыш</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#diapers">Подгузники</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#food">Детское питание</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#chem">Бытовая химия</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#forbaby">Гигиена малыша</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/7.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="diapers">Подгузники</h2>
+							</div>
+							<div class="catalogue-page__list-line catalogue-page__list--large-right">
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/22.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">1150&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/22.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">4370&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item">
+									<img class="catalogue-page__img" src="img/catalogue-items/22.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">3390&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--last-child">
+									<img class="catalogue-page__img" src="img/catalogue-items/22.4.jpeg.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">1390&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="food">Детское питание</h2>
+								</div>
+								<div class="catalogue-page__list">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">1130&nbsp;₽</span> <span class="catalogue-page__data-discount">1520&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.2.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">645&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.3.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">445&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">325&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.5.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">435&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="chem">Бытовая химия</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/24.5.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">550&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/24.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Для мытья пола</span> <span class="catalogue-page__data-price">645&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/24.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Для мытья <br> игрушек</span> <span class="catalogue-page__data-price">675&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/24.4.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">525&nbsp;₽</span> <span class="catalogue-page__data-discount">625&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/24.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Для мытья <br> посуды</span> <span class="catalogue-page__data-price">535&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="forbaby">Гигиена малыша</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/25.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Крем</span><span class="catalogue-page__data-price">250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/25.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Крем</span><span class="catalogue-page__data-price">675&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/25.3.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Крем</span><span class="catalogue-page__data-price">645&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/25.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Пеленки </span><span class="catalogue-page__data-price">525&nbsp;₽</span> <span class="catalogue-page__data-discount">225&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/25.5.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Пеленки </span><span class="catalogue-page__data-price">735&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="promo">
+						<div class="section__caption section__caption--simple">
+							<h2 class="section__caption-text" id="medicine">Акции</h2>
+						</div>
+
+						<nav class="section__nav">
+							<ul class="section__nav-list">
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#disc">Скидки</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#sets">Наборы</a></li>
+								<li class="section__nav-item"><a class="section__nav-link header__nav-link" href="#you">Для Вас</a></li>
+							</ul>
+						</nav>
+
+						<picture>
+							<img class="section__img" src="img/banners/8.jpg" alt="about img">
+						</picture>
+
+						<section class="section">
+								<div class="section__caption">
+									<h2 class="section__caption-text" id="disc">Скидки</h2>
+								</div>
+								<div class="catalogue-page__list">
+									<div class="catalogue-page__item catalogue-page__item--large-left">
+										<img class="catalogue-page__img" src="img/catalogue-items/23.1.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">1130&nbsp;₽</span> <span class="catalogue-page__data-discount">1520&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--1">
+										<img class="catalogue-page__img" src="img/catalogue-items/25.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Пеленки </span><span class="catalogue-page__data-price">525&nbsp;₽</span> <span class="catalogue-page__data-discount">225&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--2">
+										<img class="catalogue-page__img" src="img/catalogue-items/18.2.png" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-name">Помада</span> <span class="catalogue-page__data-price">845&nbsp;₽</span> <span class="catalogue-page__data-discount">2235&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--3">
+										<img class="catalogue-page__img" src="img/catalogue-items/19.2.png" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">133390&nbsp;₽</span> <span class="catalogue-page__data-discount">233390&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+									<div class="catalogue-page__item catalogue-page__item--4">
+										<img class="catalogue-page__img" src="img/catalogue-items/20.4.png.webp" alt="about img">
+										<div class="catalogue-page__data">
+											<span class="catalogue-page__data-price">3285&nbsp;₽</span> <span class="catalogue-page__data-discount">4485&nbsp;₽</span>
+										</div>
+										<div class="catalogue-page__overlay">
+											<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+											<button class="catalogue-page__add">В корзину</button>
+										</div>
+									</div>
+								</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="sets">Наборы</h2>
+							</div>
+							<div class="catalogue-page__list">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/26.5.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">1130&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/26.1.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">525&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/26.2.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">845&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/26.3.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">1390&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/26.4.png" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">3285&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__caption">
+								<h2 class="section__caption-text" id="you">Для Вас</h2>
+							</div>
+							<div class="catalogue-page__list catalogue-page__list--large-right">
+								<div class="catalogue-page__item catalogue-page__item--large-left">
+									<img class="catalogue-page__img" src="img/catalogue-items/21.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-price">5250&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--1">
+									<img class="catalogue-page__img" src="img/catalogue-items/5.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">м. чаша</span> <span class="catalogue-page__data-price">545&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--2">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.2.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Коэнзим</span> <span class="catalogue-page__data-price">550&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--3">
+									<img class="catalogue-page__img" src="img/catalogue-items/11.4.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Брейнмакс</span> <span class="catalogue-page__data-price">4490&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+								<div class="catalogue-page__item catalogue-page__item--4">
+									<img class="catalogue-page__img" src="img/catalogue-items/3.1.png.webp" alt="about img">
+									<div class="catalogue-page__data">
+										<span class="catalogue-page__data-name">Мезим</span> <span class="catalogue-page__data-price">245&nbsp;₽</span>
+									</div>
+									<div class="catalogue-page__overlay">
+										<img class="catalogue-page__add-img" src="img/add-cart.svg" alt="about img">
+										<button class="catalogue-page__add">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				</div>
+			</section>
+        </main>
+
+        <footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<h2 class="footer__caption">MedWorld</h2>
+					<h3 class="footer__map-caption">Наш пункт самовывоза</h3>
+				</div>
+			</div>
+			<div class="footer__content">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__contacts">
+							<h3 class="footer__contacts-caption">Контакты:</h3>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--phone" href="tel:88008008808">8-800-800-88-08</a>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--wa" href="https://api.whatsapp.com/send/?phone=88008008808">WhatsApp<a>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--mail" href="mailto:medworld@gmail.com">medworld@gmail.com</a>
+						</a></a></div>
+						<div class="footer__map">
+							<script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A778a8b4df2136ec4031a8ae6281ee37031d7e3a843572fbd8dd77bbfd411d28f&amp;width=514&amp;height=327&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+        </footer>
+
+		<div class="modal">
+			<div class="modal__container fadeInUp animate-open" role="dialog" aria-modal="true" data-graph-target="modal">
+				<div class="modal-content order-modal__content">
+					<div class="order-modal__top">
+						<span class="logo__dark-caption">Med World</span>
+					</div>
+					<form action="#" class="order-modal__form order">
+						<input type="hidden" name="theme" value="Обратный звонок">
+						<input type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+						<input type="text" required="" name="Имя" class="order__input" placeholder="ваше ФИО">
+						<input type="tel" required="" name="Телефон" class="order__input form__input--tel" placeholder="+7 (___)-___-__-__">
+						<button class="order__btn cart__btn btn">Оформить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="thx">
+			<div class="modal-content order-modal__content">
+				<div class="order-modal__top">
+					<span class="logo__dark-caption">Med World</span>
+				</div>
+				<div class="order__thx">
+					<h2>Cпасибо</h2>
+					<span>за заказ</span>
+				</div>
+				<a href="catalogue.html" class="order__btn cart__btn btn">Продолжить
+			</a></div>
+		</div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+	<script src="js/libs/modal/modal.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+
+</html>
