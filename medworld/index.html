@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedWorld | Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+    <script>
+		// Picture element HTML5 shiv
+		document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+    <div id="home" class="wrapper">
+
+        <div class="sprite" style="display:none">
+        	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="chart"><path d="M31.927 8.391h-3.852c-.192-2.108-1.232-4.072-2.912-5.504C23.483 1.456 21.283.661 19 .661c-2.282 0-4.482.795-6.163 2.226-1.68 1.432-2.72 3.396-2.912 5.504H6.073c-1.428 0-2.798.526-3.809 1.462-1.01.936-1.577 2.206-1.577 3.53v21.964c0 1.324.567 2.594 1.577 3.53 1.01.936 2.38 1.462 3.81 1.462h25.853c1.429 0 2.799-.526 3.809-1.462 1.01-.936 1.577-2.206 1.577-3.53V13.383c0-1.324-.567-2.594-1.577-3.53-1.01-.936-2.38-1.462-3.809-1.462zM19 2.651c1.712.004 3.363.592 4.638 1.65 1.276 1.058 2.088 2.514 2.282 4.09H12.08c.194-1.576 1.006-3.032 2.282-4.09 1.275-1.058 2.926-1.646 4.638-1.65zm16.16 32.696c0 .794-.34 1.556-.947 2.118a3.366 3.366 0 01-2.285.877H6.073a3.368 3.368 0 01-2.285-.877 2.888 2.888 0 01-.947-2.118V13.383c0-.794.34-1.556.947-2.118a3.366 3.366 0 012.285-.877h25.854c.857 0 1.68.315 2.285.877a2.89 2.89 0 01.947 2.118v21.964z" fill="#807E7E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M28.682 7.73h3.245c1.602 0 3.144.59 4.285 1.647C37.353 10.435 38 11.875 38 13.383v21.964c0 1.508-.647 2.948-1.788 4.006C35.072 40.41 33.529 41 31.927 41H6.073c-1.602 0-3.144-.59-4.285-1.647C.646 38.295 0 36.855 0 35.347V13.383c0-1.508.646-2.948 1.788-4.006C2.928 8.319 4.471 7.73 6.073 7.73h3.245c.336-2.05 1.416-3.934 3.064-5.338C14.191.852 16.552 0 19 0c2.447 0 4.81.851 6.618 2.392 1.648 1.404 2.728 3.289 3.064 5.338zm-.607.661h3.852c1.429 0 2.799.526 3.809 1.462 1.01.936 1.577 2.206 1.577 3.53v21.964c0 1.324-.567 2.594-1.577 3.53-1.01.936-2.38 1.462-3.809 1.462H6.073c-1.428 0-2.798-.526-3.809-1.462-1.01-.936-1.577-2.206-1.577-3.53V13.383c0-1.324.567-2.594 1.577-3.53 1.01-.936 2.38-1.462 3.81-1.462h3.851c.192-2.108 1.232-4.072 2.912-5.504C14.518 1.456 16.717.661 19 .661c2.283 0 4.482.795 6.163 2.226 1.68 1.432 2.72 3.396 2.912 5.504zm-4.885-3.59c-1.149-.952-2.64-1.484-4.19-1.49-1.55.006-3.041.538-4.19 1.49a5.75 5.75 0 00-1.904 2.929h12.188a5.75 5.75 0 00-1.904-2.928zm2.611 2.929c-.314-1.32-1.067-2.52-2.163-3.429-1.275-1.058-2.926-1.646-4.638-1.65-1.712.004-3.363.592-4.638 1.65-1.095.908-1.849 2.11-2.163 3.429a6.047 6.047 0 00-.12.661H25.92a6.048 6.048 0 00-.119-.661zm7.935 29.258c.475-.44.736-1.03.736-1.641V13.383c0-.61-.261-1.202-.736-1.641a2.665 2.665 0 00-1.809-.693H6.073c-.683 0-1.334.252-1.809.693a2.239 2.239 0 00-.736 1.64v21.965c0 .61.261 1.201.736 1.641.475.44 1.126.693 1.809.693h25.854c.683 0 1.334-.252 1.809-.693zm.476.477a2.888 2.888 0 00.947-2.118V13.383c0-.794-.34-1.556-.947-2.118a3.366 3.366 0 00-2.285-.877H6.073c-.857 0-1.679.315-2.285.877a2.888 2.888 0 00-.947 2.118v21.964c0 .794.34 1.556.947 2.118a3.366 3.366 0 002.285.877h25.854c.857 0 1.68-.316 2.285-.877z" fill="#807E7E"></path></symbol><symbol id="search"><path d="M46 42L33.289 30.444m5.378-11.777c0 9.204-8.209 16.666-18.334 16.666S2 27.871 2 18.667C2 9.462 10.208 2 20.333 2 30.46 2 38.667 9.462 38.667 18.667z" stroke="#807E7E" stroke-opacity=".933" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></symbol></svg>
+        </div>
+
+        <header class="header header--main">
+            <div class="container">
+                <div class="header__body header__body--main">
+                    <div class="header__menu">
+                        <span></span>
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="catalogue.html" class="header__nav-link">каталог</a></li>
+                            <li class="header__nav-item"><a href="about.html" class="header__nav-link">о нас</a></li>
+                            <li class="header__nav-item"><a href="about.html#info" class="header__nav-link">доставка</a></li>
+                        </ul>
+                    </nav>
+
+					<a href="index.html" class="logo">
+                        <picture>
+                            <img class="logo__img" src="img/logo.svg" alt="site logo">
+                        </picture>
+						<span class="logo__caption">Med World</span>
+					</a>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+			<h1 class="hidden">MedWorld</h1>
+
+			<section class="hero">
+				<div class="hero__content">
+					<div class="container">
+						<h2 class="hero__caption">Ваш надежный помощник в&nbsp;вопросах здоровья</h2>
+						<button class="hero__btn"></button>
+					</div>
+				</div>
+			</section>
+
+			<section id="catalogue" class="section catalogue">
+				<div class="container">
+					<div class="section__caption section__caption--catalogue">
+						<h2 class="section__caption-text section__caption-text--main">Каталог</h2>
+					</div>
+
+					<div class="catalogue__list">
+						<div class="catalogue__item">
+							<a href="catalogue.html#medicine" class="catalogue__link">
+								<div class="img-bg"><img src="img/catalogue/1.jpg" alt="catalogue img"></div>
+								<h3 class="catalogue__caption">Лекарства</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#hygiene" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/2.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									Гигиена
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#sport" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/3.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									Спорт и питание
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#beauty" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/4.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									Красота
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#baby" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/5.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									Мама и малыш
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#dev" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/6.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									Приборы
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#bads" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/7.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption">
+									БАДы и витамины
+								</h3>
+							</a>
+						</div>
+						<div class="catalogue__item">
+							<a href="catalogue.html#promo" class="catalogue__link">
+								<div class="img-bg">
+									<img src="img/catalogue/8.jpg" alt="catalogue img">
+								</div>
+
+								<h3 class="catalogue__caption catalogue__caption--light">
+									Акции
+								</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<h2 class="footer__caption">MedWorld</h2>
+					<h3 class="footer__map-caption">Наш пункт самовывоза</h3>
+				</div>
+			</div>
+			<div class="footer__content">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__contacts">
+							<h3 class="footer__contacts-caption">Контакты:</h3>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--phone" href="tel:88008008808">8-800-800-88-08</a>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--wa" href="https://api.whatsapp.com/send/?phone=88008008808">WhatsApp<a>
+							<a target="_blank" class="footer__contacts-link footer__contacts-link--mail" href="mailto:medworld@gmail.com">medworld@gmail.com</a>
+						</a></a></div>
+						<div class="footer__map">
+							<script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A778a8b4df2136ec4031a8ae6281ee37031d7e3a843572fbd8dd77bbfd411d28f&amp;width=514&amp;height=327&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+        </footer>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
