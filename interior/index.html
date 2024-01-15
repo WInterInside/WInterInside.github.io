@@ -5,59 +5,57 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Дизайн интерьера</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="icon" type="image/svg" href="./img/logo-black.svg">
 
 	<script>
-		// Picture element HTML5 shiv
-		document.createElement("picture");
+		document.createElement('picture');
 	</script>
 	<script src="js/picturefill.js" async=""></script>
 </head>
 
 <body>
-	<div class="wrapper">
+	<div id="home" class="wrapper">
 
-        <header class="header">
-            <div class="container">
-                <div class="header__body">
-                    <a href="/" class="logo">
-                        <picture>
-                            <!-- <source media="(min-width: 1300px)" srcset="img/logo.svg">
-                            <source media="(min-width: 768px)" srcset="img/logo.svg"> -->
-                            <img class="logo__img" src="img/logo.svg" alt="site logo" width="72" height="50">
-                        </picture>
-                    </a>
+		<header>
+			<div class="container">
+				<div class="header__body">
+					<a class="logo">
+						<picture>
+							<img class="logo__img" src="img/logo.svg" alt="site logo" width="72" height="50">
+						</picture>
+					</a>
 
-                    <div class="header__menu">
-                        <span></span>
-                    </div>
+					<div class="header__menu">
+						<span></span>
+					</div>
 
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="#services" class="header__nav-link">Услуги</a></li>
-                            <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Портфолио</a></li>
-                            <li class="header__nav-item"><a href="#price" class="header__nav-link">Цены</a></li>
-                            <li class="header__nav-item"><a href="#about" class="header__nav-link">О нас</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a href="#services" class="header__nav-link">Услуги</a></li>
+							<li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Портфолио</a>
+							</li>
+							<li class="header__nav-item"><a href="#price" class="header__nav-link">Цены</a></li>
+							<li class="header__nav-item"><a href="#about" class="header__nav-link">О нас</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-		<main class="main">
+		<main>
 			<h1 class="hidden">Дизайн интерьера</h1>
 
 			<section class="hero">
 				<div class="container">
 					<div class="hero__content">
 						<h2 class="hero__caption">Дизайн интерьера от картинки до реализации</h2>
-						<button class="btn btn--order">Заказать дизайн</button>
+						<button class="btn btn-order">Заказать дизайн</button>
 					</div>
 
 					<div class="slider-dots"></div>
@@ -66,17 +64,17 @@
 				<div class="slider">
 					<div class="slider__item">
 						<div class="slider__content">
-							<img class="slider__img" src="img/1.png" alt="hero img">
+							<img class="slider__img" src="img/slider/slider_1.png" alt="slide">
 						</div>
 					</div>
 					<div class="slider__item">
 						<div class="slider__content">
-							<img class="slider__img" src="img/1.png" alt="slide">
+							<img class="slider__img" src="img/slider/slider_2.jpg" alt="slide">
 						</div>
 					</div>
 					<div class="slider__item">
 						<div class="slider__content">
-							<img class="slider__img" src="img/1.png" alt="slide">
+							<img class="slider__img" src="img/slider/slider_3.jpg" alt="slide">
 						</div>
 					</div>
 				</div>
@@ -84,23 +82,27 @@
 
 			<section id="services" class="services">
 				<div class="container">
-					<h2 class="services__caption">Наша задача — помочь вам сформулировать, что такое идеальный интерьер именно для вас, вложить в ваш проект весь наш талант и опыт.</h2>
+					<h2 class="services__caption">Наша задача — помочь вам сформулировать, что такое идеальный интерьер
+						именно для вас, вложить в ваш проект весь наш талант и опыт.</h2>
 
 					<ul class="services__list">
 						<li class="services__item">
 							<span class="services__index">01</span>
 							<h3 class="services__name">Дизайн-проект интерьера</h3>
-							<p class="services__description">Комплект всех необходимых чертежей для строителей с визуализацией, ведомостями отделки помещений и проработкой отдельных узлов.</p>
+							<p class="services__description">Комплект всех необходимых чертежей для строителей с
+								визуализацией, ведомостями отделки помещений и проработкой отдельных узлов.</p>
 						</li>
 						<li class="services__item">
 							<span class="services__index">02</span>
 							<h3 class="services__name">Спецификация позиций</h3>
-							<p class="services__description">Спецификация лицевых отделочных материалов и заказных позиций с указанием артикулов и стоимостью.</p>
+							<p class="services__description">Спецификация лицевых отделочных материалов и заказных
+								позиций с указанием артикулов и стоимостью.</p>
 						</li>
 						<li class="services__item">
 							<span class="services__index">03</span>
 							<h3 class="services__name">Авторский надзор</h3>
-							<p class="services__description">Помощь в сопровождении строительства (по Вашему желанию).</p>
+							<p class="services__description">Помощь в сопровождении строительства (по Вашему желанию).
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -111,15 +113,17 @@
 					<div class="about__wrapper">
 						<div class="about__content">
 							<h2 class="about__caption">Дизайн и покупка <br> в одном месте</h2>
-							<p class="about__description">Создавайте мудборды с товарами из каталога. Получите мгновенные расценки, включая стоимость доставки. Отслеживайте заказы от завода к месту от каждого поставщика.</p>
+							<p class="about__description">Создавайте мудборды с товарами из каталога. Получите
+								мгновенные расценки, включая стоимость доставки. Отслеживайте заказы от завода к месту
+								от каждого поставщика.</p>
 						</div>
 						<div class="about__img">
-							<img src="img/about.jpg">
+							<img src="img/about.jpg" alt="about">
 							<div class="about__img-block">
-								<div class="about__img-block-item"><img src="img/about-block (1).jpg"></div>
-								<div class="about__img-block-item"><img src="img/about-block (2).jpg"></div>
-								<div class="about__img-block-item"><img src="img/about-block (3).jpg"></div>
-								<div class="about__img-block-item"><img src="img/about-block (4).jpg"></div>
+								<div class="about__img-block-item"><img src="img/chair.jpg" alt="chair"></div>
+								<div class="about__img-block-item"><img src="img/lamp.jpg" alt="lamp"></div>
+								<div class="about__img-block-item"><img src="img/pillow.jpg" alt="pillow"></div>
+								<div class="about__img-block-item"><img src="img/bench.jpg" alt="bench"></div>
 							</div>
 						</div>
 					</div>
@@ -130,8 +134,9 @@
 				<div class="container">
 					<div class="furniture__wrapper">
 						<h2 class="furniture__caption">Подберите мебель для любого проекта</h2>
-						<p class="furniture__description">Новый способ для профессионалов интерьера покупать мебель. Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
-						<button class="btn btn--order btn--black">Заказать дизайн</button>
+						<p class="furniture__description">Новый способ для профессионалов интерьера покупать мебель.
+							Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
+						<button class="btn btn-order btn-black">Заказать дизайн</button>
 					</div>
 				</div>
 
@@ -143,63 +148,63 @@
 							<div class="scrolled__block-dot"></div>
 						</div>
 						<div class="scrolled__content">
-							<div class="scrolled__line scrolled__line--1">
+							<div class="scrolled__line scrolled__line-1">
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (1).jpg">
-									<img src="img/scrolled/1 (2).jpg">
-									<img src="img/scrolled/1 (3).jpg">
-									<img src="img/scrolled/1 (4).jpg">
+									<img src="img/scrolled/1.jpg" alt="chair">
+									<img src="img/scrolled/2.jpg" alt="bench">
+									<img src="img/scrolled/3.jpg" alt="pedestal">
+									<img src="img/scrolled/4.jpg" alt="pedestal">
 								</div>
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (1).jpg">
-									<img src="img/scrolled/1 (2).jpg">
-									<img src="img/scrolled/1 (3).jpg">
-									<img src="img/scrolled/1 (4).jpg">
-								</div>
-							</div>
-
-							<div class="scrolled__line scrolled__line--2">
-								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (5).jpg">
-									<img src="img/scrolled/1 (6).jpg">
-									<img src="img/scrolled/1 (7).jpg">
-									<img src="img/scrolled/1 (8).jpg">
-								</div>
-								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (5).jpg">
-									<img src="img/scrolled/1 (6).jpg">
-									<img src="img/scrolled/1 (7).jpg">
-									<img src="img/scrolled/1 (8).jpg">
+									<img src="img/scrolled/1.jpg" alt="chair">
+									<img src="img/scrolled/2.jpg" alt="bench">
+									<img src="img/scrolled/3.jpg" alt="pedestal">
+									<img src="img/scrolled/4.jpg" alt="pedestal">
 								</div>
 							</div>
 
-							<div class="scrolled__line scrolled__line--3">
+							<div class="scrolled__line scrolled__line-2">
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (9).jpg">
-									<img src="img/scrolled/1 (10).jpg">
-									<img src="img/scrolled/1 (11).jpg">
-									<img src="img/scrolled/1 (12).jpg">
+									<img src="img/scrolled/5.jpg" alt="chair">
+									<img src="img/scrolled/6.jpg" alt="pedestal">
+									<img src="img/scrolled/7.jpg" alt="table">
+									<img src="img/scrolled/8.jpg" alt="table">
 								</div>
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (9).jpg">
-									<img src="img/scrolled/1 (10).jpg">
-									<img src="img/scrolled/1 (11).jpg">
-									<img src="img/scrolled/1 (12).jpg">
+									<img src="img/scrolled/5.jpg" alt="chair">
+									<img src="img/scrolled/6.jpg" alt="pedestal">
+									<img src="img/scrolled/7.jpg" alt="table">
+									<img src="img/scrolled/8.jpg" alt="table">
 								</div>
 							</div>
 
-							<div class="scrolled__line scrolled__line--4">
+							<div class="scrolled__line scrolled__line-3">
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (13).jpg">
-									<img src="img/scrolled/1 (14).jpg">
-									<img src="img/scrolled/1 (15).jpg">
-									<img src="img/scrolled/1 (16).jpg">
+									<img src="img/scrolled/9.jpg" alt="bench">
+									<img src="img/scrolled/10.jpg" alt="shelf">
+									<img src="img/scrolled/11.jpg" alt="chair">
+									<img src="img/scrolled/12.jpg" alt="table">
 								</div>
 								<div class="scrolled__line-content">
-									<img src="img/scrolled/1 (13).jpg">
-									<img src="img/scrolled/1 (14).jpg">
-									<img src="img/scrolled/1 (15).jpg">
-									<img src="img/scrolled/1 (16).jpg">
+									<img src="img/scrolled/9.jpg" alt="bench">
+									<img src="img/scrolled/10.jpg" alt="shelf">
+									<img src="img/scrolled/11.jpg" alt="chair">
+									<img src="img/scrolled/12.jpg" alt="table">
+								</div>
+							</div>
+
+							<div class="scrolled__line scrolled__line-4">
+								<div class="scrolled__line-content">
+									<img src="img/scrolled/13.jpg" alt="table">
+									<img src="img/scrolled/14.jpg" alt="table">
+									<img src="img/scrolled/15.jpg" alt="shelf">
+									<img src="img/scrolled/16.jpg" alt="bench">
+								</div>
+								<div class="scrolled__line-content">
+									<img src="img/scrolled/13.jpg" alt="table">
+									<img src="img/scrolled/14.jpg" alt="table">
+									<img src="img/scrolled/15.jpg" alt="shelf">
+									<img src="img/scrolled/16.jpg" alt="bench">
 								</div>
 							</div>
 						</div>
@@ -210,30 +215,36 @@
 					<ul class="furniture__info-list">
 						<li class="furniture__info-item">
 							<h3 class="furniture__info-name">650+ брендов</h3>
-							<p class="furniture__info-description">Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
+							<p class="furniture__info-description">Просмотрите миллионы продуктов от ведущих мировых
+								брендов.</p>
 						</li>
 						<li class="furniture__info-item">
 							<h3 class="furniture__info-name">Актуальные цены</h3>
-							<p class="furniture__info-description">Смотрите актуальные цены и сроки выполнения заказов прямо сейчас.</p>
+							<p class="furniture__info-description">Смотрите актуальные цены и сроки выполнения заказов
+								прямо сейчас.</p>
 						</li>
 						<li class="furniture__info-item">
 							<h3 class="furniture__info-name">Бесплатные образцы</h3>
-							<p class="furniture__info-description">Получите бесплатные образцы ткани, дерева, мрамора и ковров.</p>
+							<p class="furniture__info-description">Получите бесплатные образцы ткани, дерева, мрамора и
+								ковров.</p>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="about about--team">
+			<section class="about about-team">
 				<div class="container">
-					<div class="about__wrapper about__wrapper--team">
-						<div class="about__content about__content--team">
+					<div class="about__wrapper about__wrapper-team">
+						<div class="about__content about__content-team">
 							<h2 class="about__caption">Наша команда позаботится о вашем комфорте</h2>
-							<p class="about__description">У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением. Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их по необходимости.</p>
-							<button class="btn btn--order btn--black">Заказать дизайн</button>
+							<p class="about__description">У вас есть одно контактное лицо - мы. Мы займемся каждым
+								поставщиком и всем управлением. Установка на месте, включая сборку, размещение, снятие
+								зацепов и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их
+								по необходимости.</p>
+							<button class="btn btn-order btn-black">Заказать дизайн</button>
 						</div>
-						<div class="about__img about__img--team">
-							<img src="img/team.jpg">
+						<div class="about__img about__img-team">
+							<img src="img/team.jpg" alt="team">
 						</div>
 					</div>
 				</div>
@@ -245,41 +256,54 @@
 
 					<ul class="reviews__list">
 						<li class="reviews__item">
-							<img class="reviews__author" src="img/author (4).jpg" alt="review author">
+							<img class="reviews__author" src="img/Kirill.jpg" alt="Kirill">
 							<div class="reviews__content">
 								<h3 class="reviews__author-name">Кирилл Тимофеев</h3>
 								<p class="reviews__text">
-									Все было сделано отлично. Особенно это понимаешь после того, как прожил несколько месяцев в реализованном интерьере.Студия смогла предложить нам интересные идеи, детали для оформления интерьера. При этом все предложенные и реализованные решения радуют нас ежедневно.
+									Все было сделано отлично. Особенно это понимаешь после того, как прожил несколько
+									месяцев в реализованном интерьере.Студия смогла предложить нам интересные идеи,
+									детали для оформления интерьера. При этом все предложенные и реализованные решения
+									радуют нас ежедневно.
 								</p>
 							</div>
 						</li>
 
 						<li class="reviews__item">
-							<img class="reviews__author" src="img/author (3).jpg" alt="review author">
+							<img class="reviews__author" src="img/Petr.jpg" alt="Petr">
 							<div class="reviews__content">
 								<h3 class="reviews__author-name">Петр Морозов</h3>
 								<p class="reviews__text">
-									У нас было изначально понимание того, что ремонт в своей квартире мы будем делать своими силами. Ваши работы нам очень нравятся — цветовые решения, планировки и т.д. — поэтому были очень благодарны, что вы предложили такую форму сотрудничества, как платная консультация.
+									У нас было изначально понимание того, что ремонт в своей квартире мы будем делать
+									своими силами. Ваши работы нам очень нравятся — цветовые решения, планировки и т.д.
+									— поэтому были очень благодарны, что вы предложили такую форму сотрудничества, как
+									платная консультация.
 								</p>
 							</div>
 						</li>
 
 						<li class="reviews__item">
-							<img class="reviews__author" src="img/author (2).jpg" alt="review author">
+							<img class="reviews__author" src="img/Alina.jpg" alt="Alina">
 							<div class="reviews__content">
 								<h3 class="reviews__author-name">Алина Богданова</h3>
 								<p class="reviews__text">
-									После первой консультации у меня была полная неразбериха в голове, но потом я все обдумала и мне очень понравились новые идеи. У меня, так сказать, появилось новое вдохновение. Для меня это было ценно.Стало проще. Многие вопросы, по которым я никак не могла принять решения — разрешились.
+									После первой консультации у меня была полная неразбериха в голове, но потом я все
+									обдумала и мне очень понравились новые идеи. У меня, так сказать, появилось новое
+									вдохновение. Для меня это было ценно. Стало проще. Многие вопросы, по которым я
+									никак
+									не могла принять решения — разрешились.
 								</p>
 							</div>
 						</li>
 
 						<li class="reviews__item">
-							<img class="reviews__author" src="img/author (1).jpg" alt="review author">
+							<img class="reviews__author" src="img/Maria.jpg" alt="Maria">
 							<div class="reviews__content">
 								<h3 class="reviews__author-name">Мария Сахорова</h3>
 								<p class="reviews__text">
-									Здорово каждый день ощущать, что планировка квартиры очень продуманная. Проявляется это в мелочах, но из них и складывается комфорт. Решение с проемом, соединяющим кухню и гостиную — главная фишка — позволила вытянуть изначально безнадёжную планировку и сделать подобие большой гостиной.
+									Здорово каждый день ощущать, что планировка квартиры очень продуманная. Проявляется
+									это в мелочах, но из них и складывается комфорт. Решение с проемом, соединяющим
+									кухню и гостиную — главная фишка — позволила вытянуть изначально безнадёжную
+									планировку и сделать подобие большой гостиной.
 								</p>
 							</div>
 						</li>
@@ -290,16 +314,22 @@
 			<section id="portfolio" class="portfolio">
 				<div class="container">
 					<div class="portfolio__top">
-						<h2 class="portfolio__caption">Проекты</h2>
+						<h2 class="portfolio__caption-project">Проекты</h2>
 						<div class="portfolio__controls">
-							<button class="portfolio__control portfolio__control--prev">
-								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M32.55 19.5416V22.4583H15.05L23.0708 30.4791L21 32.5499L9.45001 20.9999L21 9.44995L23.0708 11.5208L15.05 19.5416H32.55Z" fill="black"></path>
+							<button class="portfolio__control portfolio__control-prev">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M32.55 19.5416V22.4583H15.05L23.0708 30.4791L21 32.5499L9.45001 20.9999L21 9.44995L23.0708 11.5208L15.05 19.5416H32.55Z"
+										fill="black"></path>
 								</svg>
 							</button>
-							<button class="portfolio__control portfolio__control--next">
-								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.45001 19.5416V22.4583H26.95L18.9292 30.4791L21 32.5499L32.55 20.9999L21 9.44995L18.9292 11.5208L26.95 19.5416H9.45001Z" fill="black"></path>
+							<button class="portfolio__control portfolio__control-next">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.45001 19.5416V22.4583H26.95L18.9292 30.4791L21 32.5499L32.55 20.9999L21 9.44995L18.9292 11.5208L26.95 19.5416H9.45001Z"
+										fill="black"></path>
 								</svg>
 							</button>
 						</div>
@@ -308,59 +338,71 @@
 					<div class="portfolio__list">
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (4).jpg">
+								<img class="portfolio__img" src="img/portfolio/Moscow-City.jpg" alt="Moscow City">
 							</div>
 							<h3 class="portfolio__caption">Москва-Сити</h3>
-							<p class="portfolio__description">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+							<p class="portfolio__description">Эти апартаменты, на 79-м этаже башни Федерация в
+								Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут
+								переночевать.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (3).jpg">
+								<img class="portfolio__img" src="img/portfolio/SS70.jpg" alt="SS70">
 							</div>
 							<h3 class="portfolio__caption">SS70</h3>
-							<p class="portfolio__description">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
+							<p class="portfolio__description">Эта квартира в ЖК Сердце столицы, ещё в процессе
+								согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к
+								первому варианту.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (2).jpg">
+								<img class="portfolio__img" src="img/portfolio/Voron.jpg" alt="Voron">
 							</div>
 							<h3 class="portfolio__caption">Voron, 170</h3>
-							<p class="portfolio__description">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
+							<p class="portfolio__description">Стена за телевизором, это архитектурный бетон. По заказу
+								клиента выполненный в стилистике природного камня.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (1).jpg">
+								<img class="portfolio__img" src="img/portfolio/Studio.jpg" alt="Studio">
 							</div>
 							<h3 class="portfolio__caption">Studio, 80</h3>
-							<p class="portfolio__description">Квартира без стен с&nbsp;единым пространством, открытым потолком и&nbsp;темными стенами, с&nbsp;акцентом на&nbsp;центральную колонну.</p>
+							<p class="portfolio__description">Квартира без стен с&nbsp;единым пространством, открытым
+								потолком и&nbsp;темными стенами, с&nbsp;акцентом на&nbsp;центральную колонну.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (4).jpg">
+								<img class="portfolio__img" src="img/portfolio/Moscow-City.jpg" alt="Moscow City">
 							</div>
 							<h3 class="portfolio__caption">Москва-Сити</h3>
-							<p class="portfolio__description">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+							<p class="portfolio__description">Эти апартаменты, на 79-м этаже башни Федерация в
+								Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут
+								переночевать.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (3).jpg">
+								<img class="portfolio__img" src="img/portfolio/SS70.jpg" alt="SS70">
 							</div>
 							<h3 class="portfolio__caption">SS70</h3>
-							<p class="portfolio__description">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
+							<p class="portfolio__description">Эта квартира в ЖК Сердце столицы, ещё в процессе
+								согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к
+								первому варианту</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (2).jpg">
+								<img class="portfolio__img" src="img/portfolio/Voron.jpg" alt="Voron">
 							</div>
 							<h3 class="portfolio__caption">Voron, 170</h3>
-							<p class="portfolio__description">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
+							<p class="portfolio__description">Стена за телевизором, это архитектурный бетон. По заказу
+								клиента выполненный в стилистике природного камня.</p>
 						</div>
 						<div class="portfolio__item">
 							<div class="portfolio__prev">
-								<img class="portfolio__img" src="img/portfolio/portfolio (1).jpg">
+								<img class="portfolio__img" src="img/portfolio/Studio.jpg" alt="Studio">
 							</div>
 							<h3 class="portfolio__caption">Studio, 80</h3>
-							<p class="portfolio__description">Квартира без стен с&nbsp;единым пространством, открытым потолком и&nbsp;темными стенами, с&nbsp;акцентом на&nbsp;центральную колонну.</p>
+							<p class="portfolio__description">Квартира без стен с&nbsp;единым пространством, открытым
+								потолком и&nbsp;темными стенами, с&nbsp;акцентом на&nbsp;центральную колонну.</p>
 						</div>
 					</div>
 				</div>
@@ -368,60 +410,59 @@
 
 			<section id="contact" class="contact">
 				<div class="container">
-					<h2 class="contact__caption">Оставьте ваш Email и мы свяжемся с вами</h2>
+					<h2 class="contact__caption">Оставьте ваш Email и <br> мы свяжемся с вами</h2>
 					<form class="contact__form" action="">
 						<div class="contact__form-field">
-							<input class="contact__form-input" type="email" id="email" pattern=".+@.+\..+" placeholder="Email" required="">
-							<input class="btn btn--black btn--submit" type="submit" value="Отправить">
+							<input class="contact__form-input" type="email" id="email" pattern=".+@.+\..+"
+								placeholder="Email" required="">
+							<input class="btn btn-black btn-submit" type="submit" value="Отправить">
 						</div>
 					</form>
 				</div>
 			</section>
 
+			<div class="home">
+				<a class="header__nav-link" href="#home" aria-label="home"></a>
+			</div>
+
 		</main>
 
-		<footer class="footer">
+		<footer>
 			<div class="container">
 				<div class="footer__body">
-					<a href="/" class="logo">
+					<a class="logo">
 						<picture>
-							<!-- <source media="(min-width: 1300px)" srcset="img/logo.svg">
-							<source media="(min-width: 768px)" srcset="img/logo.svg"> -->
-							<img class="logo__img" src="img/logo-black.svg" alt="site logo" width="72" height="50">
+							<img class="logo__img" src="img/logo-black.svg" alt="logo-black" width="72" height="50">
 						</picture>
 					</a>
 
 					<ul class="footer__social">
 						<li class="footer__social-item">
 							<a href="#">
-								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect opacity="0.1" width="40" height="40" rx="4" fill="#2F3337"></rect>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0016 9.33325C17.1047 9.33325 16.7411 9.34592 15.6033 9.3977C14.4678 9.4497 13.6926 9.62948 13.0144 9.89326C12.3128 10.1657 11.7177 10.5302 11.1248 11.1233C10.5315 11.7162 10.167 12.3113 9.89371 13.0126C9.62926 13.6911 9.44926 14.4664 9.39815 15.6015C9.34726 16.7393 9.33392 17.1031 9.33392 20C9.33392 22.8969 9.34681 23.2594 9.39837 24.3972C9.45059 25.5328 9.63037 26.3079 9.89393 26.9861C10.1666 27.6877 10.531 28.2828 11.1242 28.8757C11.7168 29.469 12.312 29.8344 13.0131 30.1068C13.6917 30.3706 14.4671 30.5504 15.6024 30.6024C16.7402 30.6541 17.1036 30.6668 20.0003 30.6668C22.8974 30.6668 23.2599 30.6541 24.3976 30.6024C25.5332 30.5504 26.3092 30.3706 26.9879 30.1068C27.6892 29.8344 28.2835 29.469 28.8761 28.8757C29.4695 28.2828 29.8339 27.6877 30.1073 26.9863C30.3695 26.3079 30.5495 25.5325 30.6028 24.3974C30.6539 23.2596 30.6673 22.8969 30.6673 20C30.6673 17.1031 30.6539 16.7396 30.6028 15.6018C30.5495 14.4662 30.3695 13.6911 30.1073 13.0128C29.8339 12.3113 29.4695 11.7162 28.8761 11.1233C28.2828 10.5299 27.6895 10.1655 26.9872 9.89326C26.3072 9.62948 25.5317 9.4497 24.3961 9.3977C23.2583 9.34592 22.8961 9.33325 19.9983 9.33325H20.0016ZM19.0446 11.2555C19.3286 11.255 19.6455 11.2555 20.0015 11.2555C22.8496 11.2555 23.1871 11.2657 24.3118 11.3168C25.3518 11.3644 25.9163 11.5381 26.2923 11.6841C26.7901 11.8775 27.145 12.1086 27.5181 12.4819C27.8914 12.8553 28.1225 13.2108 28.3163 13.7086C28.4623 14.0842 28.6363 14.6486 28.6836 15.6886C28.7347 16.8131 28.7459 17.1509 28.7459 19.9976C28.7459 22.8443 28.7347 23.182 28.6836 24.3065C28.6361 25.3465 28.4623 25.911 28.3163 26.2865C28.123 26.7843 27.8914 27.1387 27.5181 27.5119C27.1447 27.8852 26.7903 28.1163 26.2923 28.3096C25.9167 28.4563 25.3518 28.6296 24.3118 28.6772C23.1874 28.7283 22.8496 28.7394 20.0015 28.7394C17.1533 28.7394 16.8157 28.7283 15.6913 28.6772C14.6513 28.6292 14.0868 28.4554 13.7106 28.3094C13.2128 28.1161 12.8572 27.885 12.4839 27.5116C12.1106 27.1383 11.8795 26.7836 11.6857 26.2856C11.5397 25.9101 11.3657 25.3456 11.3183 24.3056C11.2672 23.1811 11.257 22.8434 11.257 19.9949C11.257 17.1464 11.2672 16.8104 11.3183 15.686C11.3659 14.6459 11.5397 14.0815 11.6857 13.7055C11.879 13.2077 12.1106 12.8521 12.4839 12.4788C12.8572 12.1055 13.2128 11.8744 13.7106 11.6806C14.0866 11.5339 14.6513 11.3606 15.6913 11.3128C16.6753 11.2684 17.0566 11.255 19.0446 11.2528V11.2555ZM25.6954 13.0266C24.9887 13.0266 24.4154 13.5993 24.4154 14.3062C24.4154 15.0128 24.9887 15.5862 25.6954 15.5862C26.4021 15.5862 26.9754 15.0128 26.9754 14.3062C26.9754 13.5995 26.4021 13.0266 25.6954 13.0266ZM20.0016 14.5222C16.9765 14.5222 14.5238 16.9749 14.5238 20C14.5238 23.0251 16.9765 25.4767 20.0016 25.4767C23.0268 25.4767 25.4786 23.0251 25.4786 20C25.4786 16.9749 23.0268 14.5222 20.0016 14.5222ZM20.0016 16.4444C21.9651 16.4444 23.5572 18.0362 23.5572 20C23.5572 21.9636 21.9651 23.5556 20.0016 23.5556C18.0378 23.5556 16.446 21.9636 16.446 20C16.446 18.0362 18.0378 16.4444 20.0016 16.4444Z" fill="#2F3337"></path>
-								</svg>
+								<picture>
+									<img src="img/Instagram.svg" alt="Instagram" width="40" height="40">
+								</picture>
 							</a>
 						</li>
 						<li class="footer__social-item">
 							<a href="#">
-								<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect opacity="0.1" x="0.999939" width="40" height="40" rx="4" fill="#2F3337"></rect>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M31.3338 19.9854C31.3338 20.7067 31.2603 21.4271 31.1161 22.1293C30.9754 22.8148 30.7671 23.4878 30.4942 24.1312C30.2275 24.7632 29.8968 25.3722 29.5103 25.9401C29.1296 26.5045 28.691 27.0339 28.2092 27.5166C27.7263 27.9971 27.195 28.4345 26.631 28.8169C26.0611 29.2007 25.4513 29.5309 24.8189 29.7988C24.1746 30.0703 23.5001 30.2783 22.8151 30.4188C22.112 30.5634 21.389 30.6372 20.6666 30.6372C19.9437 30.6372 19.2207 30.5634 18.5186 30.4188C17.8326 30.2783 17.1581 30.0703 16.5143 29.7988C15.882 29.5309 15.2715 29.2007 14.7017 28.8169C14.1376 28.4346 13.6064 27.9971 13.1246 27.5166C12.6423 27.0339 12.2037 26.5045 11.8224 25.9401C11.438 25.3722 11.1067 24.7631 10.839 24.1312C10.5661 23.4878 10.3572 22.8148 10.2161 22.1293C10.0734 21.4271 10.0004 20.7067 10.0004 19.9854C10.0004 19.2635 10.0733 18.5416 10.2161 17.8409C10.3573 17.1554 10.5661 16.4814 10.8391 15.839C11.1068 15.2066 11.4381 14.597 11.8225 14.0291C12.2037 13.4642 12.6423 12.9358 13.1246 12.4526C13.6064 11.972 14.1377 11.5357 14.7018 11.1539C15.2716 10.7685 15.8821 10.4382 16.5144 10.1698C17.1582 9.89777 17.8326 9.68924 18.5186 9.54987C19.2208 9.40633 19.9437 9.3335 20.6667 9.3335C21.3891 9.3335 22.112 9.40633 22.8152 9.54987C23.5001 9.68928 24.1746 9.89781 24.8189 10.1698C25.4513 10.4382 26.0612 10.7685 26.631 11.1539C27.1951 11.5357 27.7264 11.972 28.2092 12.4526C28.691 12.9358 29.1296 13.4642 29.5103 14.0291C29.8968 14.597 30.2275 15.2066 30.4942 15.839C30.7671 16.4814 30.9754 17.1554 31.1161 17.8409C31.2603 18.5416 31.3338 19.2635 31.3338 19.9854ZM16.7799 11.7577C14.2396 12.9556 12.3437 15.2929 11.7525 18.1098C11.9927 18.1119 15.7887 18.1598 20.1624 16.9994C18.5857 14.2022 16.9013 11.9195 16.7799 11.7577ZM20.9171 18.4001C16.2268 19.8023 11.726 19.7014 11.5645 19.6952C11.5619 19.7929 11.5572 19.8876 11.5572 19.9854C11.5572 22.3222 12.4401 24.4526 13.8912 26.0634C13.8881 26.0587 16.3809 21.6424 21.2968 20.0551C21.4155 20.0156 21.5364 19.9802 21.6562 19.9458C21.4276 19.4289 21.178 18.9108 20.9171 18.4001ZM26.6825 13.1584C25.0788 11.7463 22.973 10.8897 20.6666 10.8897C19.9264 10.8897 19.2082 10.9792 18.5201 11.1446C18.6566 11.3277 20.3676 13.5943 21.9255 16.4507C25.3627 15.1639 26.6601 13.1917 26.6825 13.1584ZM22.2771 21.4531C22.2568 21.4598 22.2365 21.4656 22.2167 21.4729C16.842 23.3439 15.0869 27.1144 15.0679 27.1556C16.6143 28.3565 18.554 29.081 20.6666 29.081C21.9281 29.081 23.1298 28.8246 24.223 28.3602C24.0881 27.5654 23.5589 24.7797 22.2771 21.4531ZM25.757 27.529C27.8024 26.1508 29.255 23.9622 29.6602 21.4271C29.4727 21.3667 26.9242 20.5611 23.9839 21.0318C25.1788 24.3106 25.6642 26.9809 25.757 27.529ZM22.6266 17.8061C22.8381 18.2399 23.0428 18.6814 23.2319 19.1251C23.2991 19.2843 23.3647 19.4403 23.4287 19.5963C26.5581 19.2031 29.641 19.8647 29.7729 19.8917C29.752 17.7353 28.9796 15.7563 27.7014 14.2069C27.6842 14.2313 26.2232 16.3394 22.6266 17.8061Z" fill="#2F3337"></path>
-								</svg>
+								<picture>
+									<img src="img/Dribbble.svg" alt="Dribble" width="40" height="40">
+								</picture>
 							</a>
 						</li>
 						<li class="footer__social-item">
 							<a href="#">
-								<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect opacity="0.1" x="0.00012207" width="40" height="40" rx="4" fill="#2F3337"></rect>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7343 16.2565L19.7763 16.9485L19.0768 16.8638C16.5307 16.539 14.3064 15.4373 12.4178 13.5872L11.4944 12.6692L11.2566 13.3471C10.753 14.8583 11.0748 16.4542 12.124 17.5276C12.6836 18.1208 12.5577 18.2055 11.5924 17.8524C11.2566 17.7394 10.9628 17.6547 10.9349 17.6971C10.8369 17.7959 11.1727 19.0812 11.4385 19.5896C11.8022 20.2958 12.5437 20.9878 13.3551 21.3974L14.0406 21.7222L13.2292 21.7364C12.4457 21.7364 12.4178 21.7505 12.5017 22.0471C12.7815 22.9651 13.8867 23.9396 15.1178 24.3633L15.9851 24.6599L15.2297 25.1118C14.1105 25.7615 12.7955 26.1287 11.4805 26.157C10.8509 26.1711 10.3333 26.2276 10.3333 26.27C10.3333 26.4112 12.04 27.2021 13.0333 27.5128C16.0131 28.4308 19.5525 28.0354 22.2105 26.4677C24.0991 25.3519 25.9877 23.1346 26.869 20.9878C27.3447 19.8438 27.8203 17.7536 27.8203 16.7508C27.8203 16.1011 27.8623 16.0164 28.6457 15.2396C29.1073 14.7877 29.541 14.2933 29.625 14.1521C29.7649 13.8838 29.7509 13.8838 29.0374 14.1239C27.8483 14.5476 27.6804 14.4911 28.268 13.8555C28.7016 13.4036 29.2193 12.5844 29.2193 12.3443C29.2193 12.302 29.0094 12.3726 28.7716 12.4997C28.5198 12.6409 27.9602 12.8528 27.5405 12.9799L26.7851 13.22L26.0996 12.7539C25.7219 12.4997 25.1903 12.2172 24.9105 12.1325C24.197 11.9347 23.1058 11.963 22.4623 12.189C20.7136 12.8245 19.6084 14.4628 19.7343 16.2565Z" fill="#2F3337"></path>
-								</svg>
+								<picture>
+									<img src="img/Twitter.svg" alt="Twitter" width="40" height="40">
+								</picture>
 							</a>
 						</li>
 						<li class="footer__social-item">
 							<a href="#">
-								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect opacity="0.1" width="40" height="40" rx="4" fill="#2F3337"></rect>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M28.3347 13.1245C29.2527 13.3764 29.9756 14.1186 30.2209 15.0611C30.6667 16.7693 30.6667 20.3334 30.6667 20.3334C30.6667 20.3334 30.6667 23.8974 30.2209 25.6057C29.9756 26.5482 29.2527 27.2904 28.3347 27.5424C26.6712 28.0001 20 28.0001 20 28.0001C20 28.0001 13.3289 28.0001 11.6653 27.5424C10.7473 27.2904 10.0244 26.5482 9.77907 25.6057C9.33337 23.8974 9.33337 20.3334 9.33337 20.3334C9.33337 20.3334 9.33337 16.7693 9.77907 15.0611C10.0244 14.1186 10.7473 13.3764 11.6653 13.1245C13.3289 12.6667 20 12.6667 20 12.6667C20 12.6667 26.6712 12.6667 28.3347 13.1245ZM18.0001 17.3333V24L23.3334 20.6668L18.0001 17.3333Z" fill="#2F3337"></path>
-								</svg>
+								<picture>
+									<img src="img/Youtube.svg" alt="Youtube" width="40" height="40">
+								</picture>
 							</a>
 						</li>
 					</ul>
