@@ -907,13 +907,18 @@ img {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.contact {
+  padding: 30px; }
+
 .contact__caption {
   position: relative;
   z-index: 1;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
-  line-height: 52px; }
+  line-height: 52px;
+  margin: 0;
+  margin-top: 100px; }
 
 .contact__form {
   width: 100%;
@@ -936,7 +941,7 @@ img {
       gap: 50px; } }
 
 .contact__btn {
-  margin: 150px auto 0 auto; }
+  margin: 150px auto 20px auto; }
 
 .contact__form-caption {
   text-align: center;
@@ -1015,13 +1020,12 @@ textarea {
 
 .modal {
   z-index: 1000;
-  padding: 24px;
   border-radius: 5px;
   position: fixed;
-  left: calc(50% - 400px);
-  top: 10%;
-  max-width: 800px;
-  height: 80vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   overflow-y: scroll;
   background-color: #0F3920;
   -webkit-box-shadow: 1px 1px 17px 16px #0000006f;
@@ -1035,6 +1039,7 @@ textarea {
 
 .modal__close {
   position: absolute;
+  z-index: 11;
   right: 20px;
   top: 20px;
   cursor: pointer; }
@@ -1042,13 +1047,6 @@ textarea {
 .modal-show {
   -webkit-transform: none;
           transform: none; }
-
-@media screen and (max-width: 600px) {
-  .modal {
-    width: 100%;
-    max-width: unset;
-    left: 0;
-    bottom: 0; } }
 
 body.is-modal {
   overflow: hidden; }
