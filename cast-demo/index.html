@@ -2,16 +2,17 @@
 
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1 ">
 		<script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+		<link rel="stylesheet" href="style.css" media="all" />
 	</head>
 	<body>
+		<h1>Screencast demo</h1>
 
-		<video id="videoPlayer" width="400" height="300" controls="controls">
-			<source src="video.mp4" type="video/mp4">
-		</video>
-		
+		<iframe id="videoPlayer" src="https://www.youtube.com/embed/_awjFymn-GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 		<button class="button">Loading</button>
-		
+
 		<script>
 			function initializeCastApi() {
 			console.log('initializeCastApi');
@@ -44,19 +45,18 @@
 
 			if(availability === chrome.cast.ReceiverAvailability.AVAILABLE) {
 				document.querySelector(".button").removeAttribute("disabled");
-				document.querySelector(".button").textContent = "Start";
+				document.querySelector(".button").textContent = "Start cast on tv =>";
 			}
 			}
 
 			function onSessionRequestSuccess(session) {
 				console.log('onSessionRequestSuccess', session);
 
-				var video = document.getElementById('videoPlayer');
 				var mediaInfo = new chrome.cast.media.MediaInfo(
-					video.src,
-					video.type
+					'https://www.youtube.com/embed/_awjFymn-GA',
+					'video/mp4'
 				);
-				
+
 				var request = new chrome.cast.media.LoadRequest(mediaInfo);
 				session.loadMedia(request, onMediaLoadSuccess, onError);
 			}
