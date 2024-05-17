@@ -5,7 +5,13 @@
 		<script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 	</head>
 	<body>
+
+		<video width="400" height="300" controls="controls">
+			<source src="video.mp4" type="video/mp4">
+		</video>
+
 		<button class="button">Loading</button>
+		
 		<script>
 			function initializeCastApi() {
 			console.log('initializeCastApi');
@@ -43,13 +49,16 @@
 			}
 
 			function onSessionRequestSuccess(session) {
-			console.log('onSessionRequestSuccess', session);
+				console.log('onSessionRequestSuccess', session);
 
-			var mediaInfo = new chrome.cast.media.MediaInfo(
-				"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-				"video/mp4");
-			var request = new chrome.cast.media.LoadRequest(mediaInfo);
-			session.loadMedia(request, onMediaLoadSuccess, onError);
+				var video = document.getElementById('videoPlayer');
+				var mediaInfo = new chrome.cast.media.MediaInfo(
+					video.src,
+					video.type
+				);
+				
+				var request = new chrome.cast.media.LoadRequest(mediaInfo);
+				session.loadMedia(request, onMediaLoadSuccess, onError);
 			}
 
 			function onMediaLoadSuccess(e) {
