@@ -1,0 +1,102 @@
+.slider {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.slider--friends {
+  padding-top: 100px;
+  border-top: 1px solid #E7B656;
+}
+.slider__slide {
+  position: absolute;
+  inset: 0;
+}
+.slider__slide--text {
+  position: relative;
+}
+.slider__slides {
+  position: relative;
+  height: 430px;
+  width: 745px;
+}
+.slider__slides--text {
+  height: auto;
+}
+.slider__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.slider__nav-item {
+  width: 20px;
+  height: 20px;
+  background-color: #434242;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__nav-item.active {
+  background-color: #E7B656;
+}
+.slider__controls-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+}
+.slider__controls-wrapper--friends {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: 0;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.slider__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 105px;
+}
+.slider__arrow {
+  height: 32px;
+  width: 70px;
+  cursor: pointer;
+}
+.slider__arrow--right {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider__gold-text {
+  font-size: 128px;
+  line-height: 115px;
+  color: #E7B656;
+}
