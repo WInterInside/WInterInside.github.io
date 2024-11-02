@@ -53,6 +53,11 @@
   position: relative;
   padding: 70px 0 92px 0;
 }
+@media only screen and (max-width: 769px) {
+  .equipment {
+    padding: 40px 0;
+  }
+}
 .equipment__logo {
   z-index: 0;
   position: absolute;
@@ -68,6 +73,12 @@
   font-weight: 700;
   color: #214250;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 769px) {
+  .equipment__caption {
+    font-size: 30px;
+    line-height: 46px;
+  }
 }
 .equipment__list {
   display: grid;
@@ -90,6 +101,7 @@
 @media only screen and (max-width: 769px) {
   .equipment__list {
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
 .equipment__item {
@@ -112,6 +124,7 @@
 @media only screen and (max-width: 769px) {
   .equipment__item {
     min-width: 100%;
+    min-height: 200px;
   }
 }
 .equipment__link {
@@ -156,6 +169,11 @@
 .equipment__image img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media only screen and (max-width: 769px) {
+  .equipment__image {
+    height: 130px;
+  }
 }
 .equipment__name {
   font-size: 18px;
@@ -1011,8 +1029,8 @@ body.is-scrolled .main {
 @media only screen and (max-width: 769px) {
   .hero__caption {
     font-weight: 600;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 .hero__wrapper {
@@ -1162,6 +1180,12 @@ body.is-scrolled .main {
   color: #214250;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 769px) {
+  .news__caption {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
 .news__logo {
   z-index: -1;
   position: absolute;
@@ -1180,6 +1204,11 @@ body.is-scrolled .main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 769px) {
+  .news__header {
+    margin-bottom: 30px;
+  }
 }
 .news__items {
   display: -webkit-box;
