@@ -162,6 +162,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 160px;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
