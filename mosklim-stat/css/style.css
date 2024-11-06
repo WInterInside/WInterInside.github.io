@@ -271,6 +271,220 @@
   -webkit-box-shadow: inset 0px 0px 15px 0px #518311;
           box-shadow: inset 0px 0px 15px 0px #518311;
 }
+.catalog {
+  position: relative;
+  padding: 26px 0 66px 0;
+}
+.catalog__content {
+  position: relative;
+}
+@media only screen and (max-width: 1100px) {
+  .catalog__content {
+    gap: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.catalog aside {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 333px;
+  padding: 24px 20px;
+  background-color: #F2FCFF;
+  border-radius: 10px;
+}
+.catalog aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.catalog aside ul li {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.catalog aside ul li:not(:last-child) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.catalog aside ul li a {
+  color: #214250;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.catalog aside ul li a.is-current {
+  color: #518311;
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .catalog aside ul li a:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .catalog aside {
+    position: relative;
+    gap: 16px;
+    width: 458px;
+    padding: 20px;
+    width: 100%;
+  }
+  .catalog aside h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .catalog aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  .catalog aside ul li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .catalog aside ul li a {
+    color: #214250;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+}
+@media only screen and (max-width: 1100px) and (hover: hover) {
+  .catalog aside ul li a:hover {
+    opacity: 0.7;
+  }
+}
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  min-height: 100vh;
+  width: calc(100% - 360px);
+  margin-left: auto;
+}
+@media only screen and (max-width: 1100px) {
+  .catalog__list {
+    width: 100%;
+  }
+}
+.catalog__item {
+  width: 31%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #F7F8F5;
+  padding: 18px 18px 32px 18px;
+  border-radius: 20px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.catalog__item-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #214250;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.catalog__item-description {
+  color: #214250;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.catalog__item-img {
+  position: relative;
+  width: 100%;
+  height: 265px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.catalog__item-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: width 0.3s, height 0.3s;
+  transition: width 0.3s, height 0.3s;
+}
+@media only screen and (max-width: 796px) {
+  .catalog__item {
+    width: 100%;
+  }
+}
+@media (hover: hover) {
+  .catalog__item:hover {
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(112, 112, 112, 0.6);
+            box-shadow: 0px 4px 6px 0px rgba(112, 112, 112, 0.6);
+  }
+  .catalog__item:hover .catalog__item-name {
+    opacity: 0.7;
+  }
+  .catalog__item:hover .catalog__item-description {
+    opacity: 0.7;
+  }
+  .catalog__item:hover .catalog__item-img img {
+    width: 105%;
+    height: 105%;
+  }
+}
+.catalog h1 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 769px) {
+  .catalog h1 {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+}
 .contacts {
   position: relative;
   padding: 26px 0 54px 0;
@@ -2265,27 +2479,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "DIN Pro";
-  src: url("../fonts/DINPro.woff2") format("woff2"), url("../fonts/DINPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DIN Pro bold";
-  src: url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DIN Pro medium";
-  src: url("../fonts/DINPro-Medium.woff2") format("woff2"), url("../fonts/DINPro-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 *,
 *::before,
 *::after {
@@ -2798,27 +2991,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "DIN Pro";
-  src: url("../fonts/DINPro.woff2") format("woff2"), url("../fonts/DINPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DIN Pro bold";
-  src: url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DIN Pro medium";
-  src: url("../fonts/DINPro-Medium.woff2") format("woff2"), url("../fonts/DINPro-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 *,
 *::before,
 *::after {
