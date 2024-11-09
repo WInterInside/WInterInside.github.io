@@ -414,7 +414,7 @@
 					<span class="footer__bottom-copy">
 						&copy; Copyright 2024 г.
 					</span>
-					
+
 					<a class="footer__bottom-studio" href="#" target="_blank" rel="nofollow">
 						<span>Сделано в</span>
 						<img src="img/sheer.svg" alt="studio logo">
@@ -425,6 +425,28 @@
 	</div>
 </div>
 
+<div data-element="orderForm" class="popup">
+	<div class="popup__overlay"></div>
+	<div class="popup__content">
+		<button class="popup__close" data-element="popupClose">x</button>
+		<button class="popup__swipe" data-element="popupSwipe"></button>
+		<h2 class="popup__name">Обратная связь</h2>
+
+		<form class="form" action="">
+
+			<input class="form__input" type="text" name="name" required="" placeholder="Имя">
+			<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="Телефон" maxlength="18">
+			<textarea class="form__input" name="message" placeholder="Сообщение"></textarea>
+
+			<button class="form__button button button--green" type="submit">Отправить</button>
+
+			<div class="form__wrapper form__wrapper--agreement">
+				<input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked required="">
+				<label class="form__label form__label--checkbox" for="agreement-doc">Cогласие на обработку персональных данных</label>
+			</div>
+		</form>
+	</div>
+</div>
 
 	</div>
 
