@@ -611,6 +611,12 @@
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (max-width: 796px) {
+  .catalog__content--card aside {
+    display: none;
+  }
+}
 .contacts {
   position: relative;
   padding: 26px 0 54px 0;
@@ -909,6 +915,11 @@
           flex-direction: column;
   gap: 8px;
 }
+@media only screen and (max-width: 769px) {
+  .equipment__labels {
+    display: none;
+  }
+}
 .equipment__label {
   padding: 10px;
   border-radius: 10px;
@@ -996,6 +1007,13 @@
   width: auto;
   height: 222px;
 }
+@media only screen and (max-width: 769px) {
+  .equipment--page .equipment__image {
+    position: relative;
+    top: auto;
+    height: 130px;
+  }
+}
 .equipment--page .equipment__name {
   position: relative;
   z-index: 1;
@@ -1014,6 +1032,11 @@
     padding: 10px;
     border-radius: 10px;
     background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .equipment--page .equipment__name {
+    text-align: center;
   }
 }
 @charset "UTF-8";
@@ -2491,12 +2514,14 @@ body.is-scrolled .main {
   border-radius: 8px;
 }
 .popup__name {
+  display: inline-block;
   font-size: 32px;
   font-weight: 500;
   line-height: 42px;
   color: #214250;
   margin-bottom: 26px;
   text-align: center;
+  width: 100%;
 }
 .popup__overlay {
   position: absolute;
@@ -2512,7 +2537,6 @@ body.is-scrolled .main {
   overflow: hidden;
   max-width: 456px;
   width: 456px;
-  min-height: 530px;
   padding: 30px 62px;
   border-radius: 16px;
   background-color: #EBEBEB;
