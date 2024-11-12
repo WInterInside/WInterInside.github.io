@@ -153,6 +153,9 @@
   .footer {
     padding: 24px 0;
   }
+  .footer__copy {
+    text-align: center;
+  }
   .footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -336,7 +339,7 @@
   width: 100%;
   z-index: 10;
 }
-@media only screen and (max-width: 1272px) {
+@media only screen and (max-width: 1300px) {
   .header__button {
     display: none;
   }
@@ -655,16 +658,16 @@
 }
 .hero__content {
   width: 50%;
-  padding-top: 303px;
+  padding-top: 213px;
 }
 @media only screen and (max-width: 1690px) {
   .hero__content {
     padding-top: 203px;
   }
 }
-@media only screen and (max-width: 1272px) {
+@media only screen and (max-width: 1250px) {
   .hero__content {
-    padding-top: 153px;
+    padding-top: 253px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -822,8 +825,7 @@
 }
 .nav {
   width: 100%;
-  position: relative;
-  z-index: 11;
+  margin-bottom: 90px;
 }
 .nav__list {
   list-style: none;
@@ -832,21 +834,151 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav__item {
-  text-transform: uppercase;
-  padding: 20px 32px;
-  border-radius: 64px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  border-radius: 64px;
+  overflow: hidden;
 }
 .nav__item.is-current {
   background-color: #F1F1F1;
 }
 .nav__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: rgba(26, 26, 26, 0.8588235294);
+  text-transform: uppercase;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 0.3s, background-color 0.3s, opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+@media (hover: hover) {
+  .nav__item a:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 1690px) {
+  .nav__item a {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav__item a {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .nav {
+    position: absolute;
+    z-index: 11;
+    top: 128px;
+    left: 0;
+    background-color: rgba(207, 207, 207, 0.5);
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    overflow-x: scroll;
+  }
+}
+
+.nav-dynamic {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 11;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  pointer-events: none;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: #33af73;
+}
+.nav-dynamic__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-dynamic__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 64px;
+  overflow: hidden;
+}
+.nav-dynamic__item.is-current {
+  background-color: #F1F1F1;
+}
+.nav-dynamic__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(26, 26, 26, 0.8588235294);
+  text-transform: uppercase;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 0.3s, background-color 0.3s, opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, opacity 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+@media (hover: hover) {
+  .nav-dynamic__item a:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 1690px) {
+  .nav-dynamic__item a {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav-dynamic__item a {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav-dynamic {
+    overflow-x: scroll;
+  }
+}
+
+body.is-scroll .nav-dynamic {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
+  pointer-events: auto;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
