@@ -1151,7 +1151,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18.2px;
-  color: rgba(255, 255, 255, 0.6392156863);
+  color: rgba(255, 255, 255, 0.6392156863) !important;
 }
 @media only screen and (max-width: 610px) {
   .footer__requisites {
@@ -2038,11 +2038,9 @@
   }
 }
 .header__burger {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  right: 0;
+  top: 2px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2057,7 +2055,6 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 8px;
-  position: relative;
   z-index: 100;
   cursor: pointer;
   -webkit-transition: background-color 0.3s;
@@ -2066,6 +2063,7 @@
 }
 .header__burger i {
   display: block;
+  position: relative;
   height: 3px;
   width: 100%;
   border-radius: 2px;
@@ -2082,10 +2080,9 @@
 }
 @media only screen and (max-width: 1000px) {
   .header__burger {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (hover: hover) {
@@ -2280,6 +2277,13 @@ body.is-scrolled .header__nav {
   }
 }
 @media only screen and (max-width: 1000px) {
+  body.is-scrolled .header {
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+@media only screen and (max-width: 500px) {
   body.is-scrolled .header {
     -webkit-transform: translateY(-44px);
         -ms-transform: translateY(-44px);
@@ -3559,15 +3563,15 @@ button::-moz-selection {
   font-display: swap;
 }
 @font-face {
-  font-family: "Peignot_cyr";
-  src: local("Peignot_cyr"), url("../fonts/Peignot_cyr.woff2") format("woff2"), url("../fonts/Peignot_cyr.woff") format("woff");
+  font-family: "Optima";
+  src: local("Optima"), url("../fonts/Optima.woff2") format("woff2"), url("../fonts/Optima.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Optima";
-  src: local("Optima"), url("../fonts/Optima.woff2") format("woff2"), url("../fonts/Optima.woff") format("woff");
+  font-family: "Peignot_cyr";
+  src: local("Peignot_cyr"), url("../fonts/Peignot_cyr.woff2") format("woff2"), url("../fonts/Peignot_cyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
