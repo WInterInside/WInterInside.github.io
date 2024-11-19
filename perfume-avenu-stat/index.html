@@ -27,6 +27,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
 	<title>PERFUME AVENUE | Главная</title>
 </head>
 
@@ -79,66 +81,64 @@
 			</a>
 
 			<div class="menu">
-				<div class="scrollable-nav-container">
-					<div class="search">
-						<input type="text" id="search-input" placeholder="Поиск">
+				<div class="search">
+					<input type="text" id="search-input" placeholder="Поиск">
 
-						<button type="submit" id="search-button">
-							<span>
-								<svg class="svg-icon" viewBox="0 0 15 15" width="15" height="15"><use xlink:href="img/sprite.svg#sprite--search"></use></svg>
-							</span>
-						</button>
-					</div>
+					<button type="submit" id="search-button">
+						<span>
+							<svg class="svg-icon" viewBox="0 0 15 15" width="15" height="15"><use xlink:href="img/sprite.svg#sprite--search"></use></svg>
+						</span>
+					</button>
+				</div>
 
-					<div class="header__contacts">
-						<div class="header__tel">
-							<div class="header__tel-list">
-								<a class="header__tel-link" href="tel:+79009456470">+7 (900) 945-64-70</a>
-								<a class="header__tel-link" href="tel:+79066786852">+7 (906) 678-68-52</a>
-							</div>
+				<div class="header__contacts">
+					<div class="header__tel">
+						<div class="header__tel-list">
+							<a class="header__tel-link" href="tel:+79009456470">+7 (900) 945-64-70</a>
+							<a class="header__tel-link" href="tel:+79066786852">+7 (906) 678-68-52</a>
+						</div>
 
-							<div class="icons">
-								<a class="icons__link" target="_blank" href="">
-									<svg class="svg-icon" viewBox="0 0 13 11" width="13" height="11"><use xlink:href="img/sprite.svg#sprite--tg"></use></svg>
-								</a>
-								<a class="icons__link" target="_blank" href="">
-									<svg class="svg-icon" viewBox="0 0 17 17" width="17" height="17"><use xlink:href="img/sprite.svg#sprite--wa"></use></svg>
-								</a>
-								<a class="icons__link" target="_blank" href="">
-									<svg class="svg-icon" viewBox="0 0 15 16" width="15" height="16"><use xlink:href="img/sprite.svg#sprite--arrow-ring"></use></svg>
-								</a>
-							</div>
+						<div class="icons">
+							<a class="icons__link" target="_blank" href="">
+								<svg class="svg-icon" viewBox="0 0 13 11" width="13" height="11"><use xlink:href="img/sprite.svg#sprite--tg"></use></svg>
+							</a>
+							<a class="icons__link" target="_blank" href="">
+								<svg class="svg-icon" viewBox="0 0 17 17" width="17" height="17"><use xlink:href="img/sprite.svg#sprite--wa"></use></svg>
+							</a>
+							<a class="icons__link" target="_blank" href="">
+								<svg class="svg-icon" viewBox="0 0 15 16" width="15" height="16"><use xlink:href="img/sprite.svg#sprite--arrow-ring"></use></svg>
+							</a>
 						</div>
 					</div>
-
-					<a href="" class="header__button header__button--reg button">Регистрация оптового клиента</a>
-
-					<nav class="header__nav">
-						<ul class="header__nav-list">
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="/">Lazell</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="equipment.html">10th Avenue</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="catalog.html">GALAXE</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="/">AREEN</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="contacts.html">Shirley May Deluxe</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="contacts.html">Cindy C.</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="contacts.html">Giorgio Monti</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
+
+				<a href="" class="header__button header__button--reg button">Регистрация оптового клиента</a>
+
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="/">Lazell</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="equipment.html">10th Avenue</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="catalog.html">GALAXE</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="/">AREEN</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="contacts.html">Shirley May Deluxe</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="contacts.html">Cindy C.</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="contacts.html">Giorgio Monti</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -148,176 +148,727 @@
 
 
 		<main class="main">
-			<section class="hero">
-				<div class="container">
-					<div class="hero__wrapper">
-						<h1>PERFUME AVENUE</h1>
-						<!-- <div class="hero__content">
-							<p class="hero__caption">Производим более 70 моделей сертифицированных систем&nbsp;вентиляции&nbsp;с:</p>
-							<ul class="hero__list">
-								<li class="hero__item">- Гарантией от 3 до 5 лет</li>
-								<li class="hero__item">- Полным сервисным обслуживанием</li>
-								<li class="hero__item">- Доставкой по всей РФ </li>
-							</ul>
-							<a href="/" class="hero__button button button--green">Посмотреть модели</a>
-						</div>
 
-						<div class="hero__img">
-							<img src="img/hero-logo.png" alt="large logo">
-						</div> -->
+			<section class="hero">
+	<div class="container">
+		<div class="hero__wrapper">
+			<div class="hero__caption">
+				<h1 class="hero__title">PERFUME AVENUE</h1>
+				<span class="hero__subtitle">ОРИГИНАЛЬНАЯ ЛЮКСОВАЯ ПАРФЮМЕРИЯ ОПТОМ</span>
+			</div>
+
+			<ul class="hero__list">
+				<li class="hero__item">Бережная упаковка</li>
+				<li class="hero__item">Выгодные условия для партнеров</li>
+				<li class="hero__item">Весь товар сертифицирован</li>
+
+				<li class="hero__item">Маркировка честным знаком</li>
+				<li class="hero__item">Выгодные условия для партнеров</li>
+				<li class="hero__item">Минимальный заказ&nbsp;<strong> от 25 000 ₽</strong></li>
+			</ul>
+
+			<a class="button hero__button" href="catalog.html">
+				<span>Перейти в каталог</span>
+				<span class="icon">
+					<svg class="svg-icon" viewBox="0 0 7 11" width="7" height="11"><use xlink:href="img/sprite.svg#sprite--icon-arrow"></use></svg>
+				</span>
+			</a>
+		</div>
+
+		<div class="hero__slider">
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/1.png" alt="">
+					</div>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Парфюмерная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE JARDIN DE PARIS
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<!-- <section class="equipment">
-				<div class="container">
-					<div class="equipment__logo">
-						<img src="img/equipment-logo.svg" alt="large logo">
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/2.png" alt="">
 					</div>
-					<h2 class="equipment__caption">Оборудование</h2>
-					<ul class="equipment__list">
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Крышные вентиляторы</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/roof.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Туалетная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE BY NIGHT
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/3.png" alt="">
+					</div>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Парфюмерная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE LADY DREAM
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/1.png" alt="">
+					</div>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Парфюмерная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE JARDIN DE PARIS
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/2.png" alt="">
+					</div>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Туалетная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE BY NIGHT
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="hero__slide">
+					<div class="hero__slide-img">
+						<img src="img/hero-slider/3.png" alt="">
+					</div>
+					<div class="hero__slide-content">
+						<span class="hero__slide-caption">
+							Парфюмерная вода
+						</span>
+						<h3 class="hero__slide-name">
+							10TH AVENUE LADY DREAM
+						</h3>
+						<a href="" class="button hero__slide-link">узнать оптовую цену</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="advantages">
+	<div class="container">
+		<div class="advantages__header">
+			<span class="advantages__header-value">
+				90%
+			</span>
+			<h2 class="advantages__header-text">
+				наших партнеров выбирают&nbsp;нас для оптовых закупок парфюмерии
+			</h2>
+		</div>
+
+		<div class="advantages__wrapper">
+			<div class="advantages__img">
+				<img src="img/woman.png" alt="">
+				<div class="advantages__img-text">
+					<span>
+						Мы внимательно <br>
+						относимся к выбору <br>
+						ассортимента и стремимся
+						к безупречному <br>
+						обслуживанию <br>
+						клиентов
+					</span>
+				</div>
+			</div>
+
+			<ul class="advantages__list">
+				<li class="advantages__item">
+					<h3 class="advantages__heading">7 лет на рынке</h3>
+					<p class="advantages__text">Занимаемся оптовыми продажами парфюмерии с 2017 года. Мы можем предложить конкурентные цены и обеспечить быструю доставку заказов. </p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__heading">Работаем без посредников</h3>
+					<p class="advantages__text">Обеспечиваем высокое качество продукции и своевременные поставки благодаря прямым контрактам с производителями.</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__heading">Тестерные программы</h3>
+					<p class="advantages__text">Предоставляем возможность самостоятельно убедиться в качестве нашей парфюмерии. Это позволит вам принять обоснованное решение о покупке и убедиться в подлинности и эффективности нашей продукции.</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__heading">Поддержка в бизнесе</h3>
+					<p class="advantages__text">Оказываем поддержку в реализации нашей продукции. Учитываем особенности вашего бизнеса, анализируем конкурентов и разрабатываем стратегию продвижения, которая учитывает специфику вашей ниши.</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__heading">Удобная доставка</h3>
+					<p class="advantages__text">Предлагаем гибкую систему доставки товара, позволяющую индивидуально обсуждать оптимальные условия для каждого клиента, которая обеспечивает удобство и экономичность процесса</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__heading">Наличие сертификатов</h3>
+					<p class="advantages__text">Вся ввозимая нами продукция проходит маркировку в системе честный знак. Предоставляем сертификаты соответствия качества на всю продукцию.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+			<section class="assortment">
+	<div class="container">
+		<div class="assortment__header">
+			<h2 class="assortment__header-text">
+				Предлагаем широкий ассортимент 
+				женских и мужских ароматов 
+				под оптовый заказ
+			</h2>
+		</div>
+
+		<div class="assortment__list">
+			<a href="" class="assortment__item assortment__item--lazzel">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--lazell"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						Lazell
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/Lazell2.png" alt="">
+				<img class="assortment__item-img assortment__item-img--bottom" src="img/assortment/Lazell1.png" alt="">
+			</a>
+
+			<a href="" class="assortment__item assortment__item--10th">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--10th"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						10th Avenue
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/10th.png" alt="">
+			</a>
+
+			<a href="" class="assortment__item assortment__item--galaxy">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--galaxy"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						GALAXy
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/galaxy.png" alt="">
+			</a>
+
+			<a href="" class="assortment__item assortment__item--areen">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--galaxy"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						AREEN
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/areen.png" alt="">
+			</a>
+
+			<a href="" class="assortment__item assortment__item--shirley">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--galaxy"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						Shirley May Deluxe
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/shirley1.png" alt="">
+				<img class="assortment__item-img assortment__item-img--bottom" src="img/assortment/shirley2.png" alt="">
+			</a>
+
+			<a href="" class="assortment__item assortment__item--cindy">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--10th"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						Cindy C.
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/cindy2.png" alt="">
+				<img class="assortment__item-img assortment__item-img--bottom" src="img/assortment/cindy.png" alt="">
+			</a>
+			
+			<a href="" class="assortment__item assortment__item--giorgio">
+				<div class="assortment__item-header">
+					<span class="assortment__item-icon">
+						<svg class="svg-icon" viewBox="0 0 28 28" width="28" height="28"><use xlink:href="img/sprite.svg#sprite--10th"></use></svg>
+					</span>
+					<h3 class="assortment__item-name">
+						Cindy C.
+					</h3>
+				</div>
+				<span class="assortment__item-text">
+					Фирма «Lazell Parfums» была основана в 2001 году. Туалетные марки фирмы "Lazell" созданы для клиентов, которые ценят качество и интересный дизайн продуктов, и все это по доступной цене.
+				</span>
+
+				<img class="assortment__item-img assortment__item-img--top" src="img/assortment/giorgion.png" alt="">
+			</a>
+
+		</div>
+	</div>
+</section>
+			<section class="work">
+	<div class="container">
+		<div class="work__header">
+			<h2 class="work__header-text">
+				Работать с нами - просто
+			</h2>
+		</div>
+
+		<ul class="work__steps">
+			<li class="work__step work__step--1">
+				<span class="work__step-number">01</span>
+				<span class="work__step-text">
+					Вы оставляете заявку на нашем сайте или по номеру телефона, наш менеджер связывается
+					с вами для уточнения деталей заказа.
+				</span>
+			</li>
+			<li class="work__step work__step--2">
+				<span class="work__step-number">02</span>
+				<span class="work__step-text">
+					Оформляем вас как оптового покупателя, запрашиваем все необходимые данные.
+					После этого предоставляем вам доступ к оптовым прайсам нашей продукции.
+				</span>
+			</li>
+			<li class="work__step work__step--3">
+				<span class="work__step-number">03</span>
+				<span class="work__step-text">
+					Вы получаете оптовые прайсы нашей продукции. Наш менеджер помогает выбрать товары для закупки.
+				</span>
+			</li>
+			<li class="work__step work__step--4">
+				<span class="work__step-number">04</span>
+				<span class="work__step-text">
+					Готовим и заключаем договор. Формируем счет.
+				</span>
+			</li>
+			<li class="work__step work__step--5">
+				<span class="work__step-number">05</span>
+				<span class="work__step-text">
+					Собираем ваш заказ и отправляем в ваш город удобным для вас способом.
+				</span>
+			</li>
+		</ul>
+
+		<form class="form" action="">
+			<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 XXX XXX XX XX" maxlength="18">
+			<button class="work__button button" type="submit">Стать оптовым покупателем</button>
+		</form>
+
+	</div>
+</section>
+			<section class="partner">
+	<div class="container">
+		<div class="partner__wrapper">
+
+			<div class="partner__content">
+				<div class="partner__header">
+					<h2 class="partner__header-text">
+						Хотите стать нашим партнером?
+					</h2>
+				</div>
+
+				<ul class="partner__list">
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							Бесплатная доставка при отгрузке на сумму более 300 000 рублей
+						</span>
+					</li>
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							Гибкая система скидок в зависимости от объёма закупки
+						</span>
+					</li>
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							Тестерные программы
+						</span>
+					</li>
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							Программы по мотивации торговых представителей
+						</span>
+					</li>
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							На всю продукцию предоставляется разрешительная документация
+						</span>
+					</li>
+					<li class="partner__item">
+						<span class="partner__icon icon">
+							<svg class="svg-icon" viewBox="0 0 32 32" width="32" height="32"><use xlink:href="img/sprite.svg#sprite--gray-marker"></use></svg>
+						</span>
+						<span class="partner__text">
+							Возможна отсрочка платежа (обговаривается с каждым клиентом индивидуально)
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="partner__form">
+				<h3 class="partner__form-heading">
+					Стать партнером легко
+				</h3>
+				<span class="partner__form-caption">
+					Оставьте свои контакты и менеджер свяжется с вами в ближайшее время
+				</span>
+				<form class="form" action="">
+					<input class="form__input" type="text" name="name" required="" placeholder="Ваше имя">
+					<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 (000) 000 - 00 - 00" maxlength="18">
+					<input class="form__input form__input--mail" type="email" name="mail" required="" placeholder="ваша_почта@email.com">
+					<input class="form__input" type="text" name="inn" required="" placeholder="ИНН">
+					
+					<div class="form__input-custom">
+						<input type="file" id="card_file" name="card_file" required style="display: none;" />
+						<label for="card_file" class="form__label-custom">Загрузить карточку предприятия</label>
+					</div>
+
+					<button class="form__button button button--green" type="submit">Стать партнером</button>
+
+					<div class="form__wrapper form__wrapper--agreement">
+						<input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked required="">
+						<label class="form__label form__label--checkbox" for="agreement-doc">
+							Нажимая на кнопку, вы даете согласие на обработку персональных данных
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="map">
+	<div class="container">
+		<div class="map__header">
+			<h2 class="assortment__header-text">
+				Поставляем парфюмерию оптом по всей России
+			</h2>
+		</div>
+
+		<div class="map__mobile">
+			<img src="img/mobile-map.svg" alt="russia map">
+			<ul class="map__list">
+				<li class="map__item">Москва</li>
+				<li class="map__item">Ростов на Дону</li>
+				<li class="map__item">Сочи</li>
+				<li class="map__item">Астрахань</li>
+				<li class="map__item">Ставрополь</li>
+				<li class="map__item">Краснодар</li>
+				<li class="map__item">Симферополь</li>
+				<li class="map__item">Калининград</li>
+				<li class="map__item">Череповец</li>
+				<li class="map__item">Санкт-Петербург</li>
+				<li class="map__item">Тамбов</li>
+				<li class="map__item">Пенза</li>
+				<li class="map__item">Рязань</li>
+				<li class="map__item">Иркутск</li>
+				<li class="map__item">Барнаул</li>
+				<li class="map__item">Абакан</li>
+				<li class="map__item">Красноярск</li>
+				<li class="map__item">Донецк</li>
+				<li class="map__item">Мариуполь</li>
+				<li class="map__item">Головка</li>
+				<li class="map__item">Луганск</li>
+				<li class="map__item">Белгород</li>
+				<li class="map__item">Липецк</li>
+				<li class="map__item"">Киров</li>
+				<li class="map__item">Ижевск</li>
+				<li class="map__item">Волгоград</li>
+				<li class="map__item">Самара</li>
+				<li class="map__item">Воронеж</li>
+			</ul>
+		</div>
+
+		<div class="map__desktop">
+			<img class="map__map" src="img/map.svg" alt="russia map">
+
+			<span class="map__marker map__marker--moskva">
+				<span class="map__marker-label">
+					Москва
+				</span>
+			</span>
+			<span class="map__marker map__marker--rostov">
+				<span class="map__marker-label">
+					Ростов&nbsp;на&nbsp;Дону
+				</span>
+			</span>
+			<span class="map__marker map__marker--sochi">
+				<span class="map__marker-label">
+					Сочи
+				</span>
+			</span>
+			<span class="map__marker map__marker--astrakhan">
+				<span class="map__marker-label">
+					Астрахань
+				</span>
+			</span>
+			<span class="map__marker map__marker--stavropol">
+				<span class="map__marker-label">
+					Ставрополь
+				</span>
+			</span>
+			<span class="map__marker map__marker--krasnodar">
+				<span class="map__marker-label">
+					Краснодар
+				</span>
+			</span>
+			<span class="map__marker map__marker--simferopol">
+				<span class="map__marker-label">
+					Симферополь
+				</span>
+			</span>
+			<span class="map__marker map__marker--kaliningrad">
+				<span class="map__marker-label">
+					Калининград
+				</span>
+			</span>
+			<span class="map__marker map__marker--cherepovets">
+				<span class="map__marker-label">
+					Череповец
+				</span>
+			</span>
+			<span class="map__marker map__marker--spb">
+				<span class="map__marker-label">
+					Санкт-Петербург
+				</span>
+			</span>
+			<span class="map__marker map__marker--tambov">
+				<span class="map__marker-label">
+					Тамбов
+				</span>
+			</span>
+			<span class="map__marker map__marker--penza">
+				<span class="map__marker-label">
+					Пенза
+				</span>
+			</span>
+			<span class="map__marker map__marker--ryazan">
+				<span class="map__marker-label">
+					Рязань
+				</span>
+			</span>
+			<span class="map__marker map__marker--irkutsk">
+				<span class="map__marker-label">
+					Иркутск
+				</span>
+			</span>
+			<span class="map__marker map__marker--barnaul">
+				<span class="map__marker-label">
+					Барнаул
+				</span>
+			</span>
+			<span class="map__marker map__marker--abakan">
+				<span class="map__marker-label">
+					Абакан
+				</span>
+			</span>
+			<span class="map__marker map__marker--krasnoyarsk">
+				<span class="map__marker-label">
+					Красноярск
+				</span>
+			</span>
+			<span class="map__marker map__marker--donetsk">
+				<span class="map__marker-label">
+					Донецк
+				</span>
+			</span>
+			<span class="map__marker map__marker--mariupol">
+				<span class="map__marker-label">
+					Мариуполь
+				</span>
+			</span>
+			<span class="map__marker map__marker--golovka">
+				<span class="map__marker-label">
+					Головка
+				</span>
+			</span>
+			<span class="map__marker map__marker--lugansk">
+				<span class="map__marker-label">
+					Луганск
+				</span>
+			</span>
+			<span class="map__marker map__marker--belgorod">
+				<span class="map__marker-label">
+					Белгород
+				</span>
+			</span>
+			<span class="map__marker map__marker--lipeck">
+				<span class="map__marker-label">
+					Липецк
+				</span>
+			</span>
+			<span class="map__marker map__marker--kirov">
+				<span class="map__marker-label">
+					Киров
+				</span>
+			</span>
+			<span class="map__marker map__marker--izhevsk">
+				<span class="map__marker-label">
+					Ижевск
+				</span>
+			</span>
+			<span class="map__marker map__marker--volgograd">
+				<span class="map__marker-label">
+					Волгоград
+				</span>
+			</span>
+			<span class="map__marker map__marker--samara">
+				<span class="map__marker-label">
+					Самара
+				</span>
+			</span>
+			<span class="map__marker map__marker--voronezh">
+				<span class="map__marker-label">
+					Воронеж
+				</span>
+			</span>
+		</div>
+	</div>
+</section>
+			<section class="coop">
+	<div class="container">
+		<div class="coop__content">
+
+			<div class="coop__form">
+				<h3 class="coop__form-heading">
+					стать оптовым покупателем
+				</h3>
+				<form class="form" action="">
+					<input class="form__input" type="text" name="name" required="" placeholder="Ваше имя">
+					<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 (000) 000 - 00 - 00" maxlength="18">
+					<input class="form__input form__input--mail" type="email" name="mail" required="" placeholder="ваша_почта@email.com">
+					<input class="form__input" type="text" name="inn" required="" placeholder="ИНН">
+
+					<button class="form__button button button--green" type="submit">Стать партнером</button>
+
+					<div class="form__wrapper form__wrapper--agreement">
+						<input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked required="">
+						<label class="form__label form__label--checkbox" for="agreement-doc">
+							Нажимая на кнопку, вы даете согласие на обработку персональных данных
+						</label>
+					</div>
+				</form>
+			</div>
+
+			<div class="coop__wrapper">
+				<h2 class="coop__heading">МЫ Открыты к сотрудничеству:</h2>
+
+				<div class="coop__content coop__content--list">
+					<ul class="coop__list">
+						<li class="coop__item">
+							<span class="coop__icon coop__icon--bags icon">
+								<svg class="svg-icon" viewBox="0 0 46 47" width="46" height="47"><use xlink:href="img/sprite.svg#sprite--bags"></use></svg>
+							</span>
+							<span class="coop__text">
+								Крупными и мелкими торговыми площадками
+							</span>
 						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Радиальные вентиляторы</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/radial.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
+						<li class="coop__item">
+							<span class="coop__icon icon">
+								<svg class="svg-icon" viewBox="0 0 39 40" width="39" height="40"><use xlink:href="img/sprite.svg#sprite--bag-marker"></use></svg>
+							</span>
+							<span class="coop__text">
+								Сетевыми магазинами
+							</span>
 						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Осевые вентиляторы</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/osevie.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
+						<li class="coop__item">
+							<span class="coop__icon icon">
+								<svg class="svg-icon" viewBox="0 0 41 42" width="41" height="42"><use xlink:href="img/sprite.svg#sprite--hand-app"></use></svg>
+							</span>
+							<span class="coop__text">
+								Интернет-магазинами
+							</span>
 						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">канальные вентиляторы</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/kanal.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
-						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Отопительное&nbsp;оборудование и&nbsp;нагреватели</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/otopitel.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
-						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Клапаны воздушного и&nbsp;специального&nbsp;назначения</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/klapan.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
-						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Противопожарные клапаны</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/fire.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
-						</li>
-						<li class="equipment__item">
-							<a class="equipment__link" href="/">
-								<h3 class="equipment__name">Автоматика и шкафы <br> управления</h3>
-								<div class="equipment__image">
-									<img class="equipment__prev" src="img/equipment/auto.png" alt="equipment preview">
-								</div>
-								<span class="equipment__arrow"></span>
-							</a>
+						<li class="coop__item">
+							<span class="coop__icon icon">
+								<svg class="svg-icon" viewBox="0 0 43 44" width="43" height="44"><use xlink:href="img/sprite.svg#sprite--label"></use></svg>
+							</span>
+							<span class="coop__text">
+								Опенмаркетами
+							</span>
 						</li>
 					</ul>
-				</div>
-			</section>
 
-			<section class="hero hero--atom">
-				<div class="container">
-					<div class="hero__wrapper hero__wrapper--atom">
-						<div class="hero__content hero__content--atom">
-							<p class="hero__caption hero__caption--atom">ООО «МОСКЛИМ» - официально рекомендованный производитель вентиляционного оборудования на объекты АЭС Госкорпорации «Росатом»</p>
-
-							<img class="hero__atom-leefs" src="img/leefs.png" alt="rosatom img">
-						</div>
-
-						<div class="hero__img hero__img--atom">
-							<img src="img/rosatom-form.png" alt="rosatom img">
-							<img class="hero__atom-logo" src="img/rosatom.png" alt="rosatom img">
-						</div>
+					<div class="coop__img">
+						<img src="img/woman-boxes.png" alt="">
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section class="news">
-				<div class="container">
-					<div class="news__header">
-						<h2 class="news__caption">Новости</h2>
-						<a href="news.html" class="button button--sm">Все новости</a>
-					</div>
-
-					<div class="news__items">
-
-						<a href="article.html" class="news__item">
-							<div class="news__img">
-								<img src="img/news/1.jpg" alt="news preview">
-							</div>
-							<time class="news__date" datetime="2024-09-25">25.09.2024</time>
-							<h2 class="news__item-caption">
-								Важность вентиляции складских помещений
-							</h2>
-						</a>
-
-						<a href="article.html" class="news__item">
-							<div class="news__img">
-								<img src="img/news/2.jpg" alt="news preview">
-							</div>
-							<time class="news__date" datetime="2024-09-25">25.09.2024</time>
-							<h2 class="news__item-caption">
-								Проблема слабой тяги на верхних этажах МКД
-							</h2>
-						</a>
-
-						<a href="article.html" class="news__item">
-							<div class="news__img">
-								<img src="img/news/3.jpg" alt="news preview">
-							</div>
-							<time class="news__date" datetime="2024-09-25">25.09.2024</time>
-							<h2 class="news__item-caption">
-								Зачем нужна регуляция воздуха в вентиляционных каналах
-							</h2>
-						</a>
-
-					</div>
-
-					<img class="news__leefs news__leefs--l" src="img/leefs.png" alt="rosatom img">
-					<img class="news__leefs news__leefs--r" src="img/leefs.png" alt="rosatom img">
-				</div>
-
-				<div class="news__logo">
-					<img src="img/equipment-logo.svg" alt="large logo">
-				</div>
-			</section> -->
+		</div>
+	</div>
+</section>
 
 		</main>
 
@@ -430,38 +981,14 @@
 	</div>
 </div>
 
-<div data-element="orderForm" class="popup">
-	<div class="popup__overlay"></div>
-	<div class="popup__content">
-		<button class="popup__close" data-element="popupClose">x</button>
-		<button class="popup__swipe" data-element="popupSwipe"></button>
-
-		<h2 class="popup__name">Для заказа напишите на почту:</h2>
-		<a class="popup__name" href="mailto:info@mos-clim.ru">info@mos-clim.ru</a>
-
-		<!-- <h2 class="popup__name">Обратная связь</h2> -->
-
-		<!-- <form class="form" action="">
-
-			<input class="form__input" type="text" name="name" required="" placeholder="Имя">
-			<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="Телефон" maxlength="18">
-			<textarea class="form__input" name="message" placeholder="Сообщение"></textarea>
-
-			<button class="form__button button button--green" type="submit">Отправить</button>
-
-			<div class="form__wrapper form__wrapper--agreement">
-				<input class="form__checkbox" id="agreement-doc" type="checkbox" name="agreement" checked required="">
-				<label class="form__label form__label--checkbox" for="agreement-doc">Cогласие на обработку персональных данных</label>
-			</div>
-		</form> -->
-
-
-	</div>
-</div>
-
 	</div>
 
 	<!-- <script src="js/libs.min.js"></script> -->
+ 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/main.min.js"></script>
 <!-- Подключение API Yandex карт -->
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
