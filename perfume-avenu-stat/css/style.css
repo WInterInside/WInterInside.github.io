@@ -6476,7 +6476,7 @@ button::-moz-selection {
 .tabs__scrolled-list {
   display: contents;
 }
-@media (max-width: 1340px) {
+@media (max-width: 900px) {
   .tabs__scrolled-list {
     min-width: 900px;
     display: -webkit-box;
@@ -6492,7 +6492,11 @@ button::-moz-selection {
   display: flex;
   margin-bottom: 32px;
   width: 100%;
-  overflow-x: scroll;
+}
+@media (max-width: 900px) {
+  .tabs__controls {
+    overflow-x: scroll;
+  }
 }
 .tabs__button {
   padding: 0 32px;
