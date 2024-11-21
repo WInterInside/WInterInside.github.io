@@ -3810,6 +3810,7 @@ body.is-scrolled .main--breadcrumbs {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 16px 24px 16px 0;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 700px) {
   .hero__slide-content {
@@ -3845,20 +3846,15 @@ body.is-scrolled .main--breadcrumbs {
   color: #755530;
   text-transform: uppercase;
   padding: 16px;
-  min-width: 132px;
-}
-@media only screen and (max-width: 700px) {
-  .hero__slide-link {
-    padding: 12px 5px;
-    font-size: 12px;
-    line-height: 16px;
-  }
+  width: 240px;
+  margin-left: 0 auto;
 }
 @media only screen and (max-width: 700px) {
   .hero__slide-link {
     padding: 12px 4px;
     font-size: 10px;
     line-height: 13px;
+    width: 132px;
   }
 }
 @media (hover: hover) {
