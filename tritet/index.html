@@ -14,7 +14,7 @@
 				type="image/svg+xml">
 
 	<link rel="stylesheet"
-				href="css/style.min.css">
+				href="css/style.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -341,7 +341,7 @@
 								Заполните форму обратной связи и получите бесплатную <br> консультацию от нашего специалиста с опытом работы более 15 лет 
 							</p>
 
-							<form class="form" action="">
+							<form>
 								<div class="form__wrapper">
 									<input class="form__input" type="text" name="name" required="" placeholder="Имя">
 									<input class="form__input form__input--mail" type="email" name="mail" required="" placeholder="E-mail">
@@ -349,10 +349,10 @@
 								</div>
 
 								<div class="form__wrapper">
-									<div class="form__agreement">
-										<input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required="">
-										<label class="form__label form__label--checkbox" for="agreement">
-											Согласие на обработку персональных данных
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" class="required" />
+											<span>Согласие на обработку персональных данных</span>
 										</label>
 									</div>
 
@@ -481,10 +481,10 @@
 
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 
-<script src="js/01_main.js"></script>
+<script src="js/app.js"></script>
 
 <!-- Подключение API Yandex карт -->
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 </body>
 
 </html>
