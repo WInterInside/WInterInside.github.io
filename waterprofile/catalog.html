@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.13" />
+	<link rel="stylesheet" href="css/main.css?ver=1.13" />
+	<link rel="stylesheet" href="css/media.css?ver=1.13" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="fixed-buttons">
+			<a href="#" target="_blank" class="fixed-buttons__btn">
+				<i class="fab fa-telegram-plane"></i>
+			</a>
+		</div>
+
+		<div class="buttons-mobile">
+			<div>
+				<a href="#" class="btn-mobile btn-mobile_filter">
+					<span class="btn-mobile__title">Фильтры</span>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="btn-mobile btn-mobile_wishlist">
+					<span class="btn-mobile__title">Избранное</span>
+					<div class="btn-mobile__value">0</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="btn-mobile btn-mobile_compare">
+					<span class="btn-mobile__title">Сравнить</span>
+					<div class="btn-mobile__value">0</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="btn-mobile btn-mobile_account">
+					<span class="btn-mobile__title">Личный кабинет</span>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="btn-mobile btn-mobile_basket">
+					<span class="btn-mobile__title">Корзина</span>
+					<div class="btn-mobile__value">0</div>
+				</a>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<p>г. Севастополь, ул. Индустриальная 28/22 (Магазин№22)</p>
+					<div class="header__mails">
+						<a href="mailto:info@waterprofile.ru">info@waterprofile.ru</a>
+						<a href="mailto:expert@waterprofile.ru">expert@waterprofile.ru</a>
+					</div>
+				</div>
+				<div class="header__main">
+					<div class="sandwich"><i class="far fa-bars"></i></div>
+					<div class="logo-wrap">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Продажа и установка систем водоснабжения и водоочистки</div>
+					</div>
+					<div class="catalog-wrap">
+						<div class="btn-catalog">
+							<i class="far fa-bars"></i>
+							<span>Каталог</span>
+							<i class="far fa-chevron-down"></i>
+						</div>
+						<div class="catalog-dropdown">
+							<ul>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Автономная канализация и жироуловители</a>
+									<ul>
+										<li><a href="#">Жироуловители</a></li>
+										<li><a href="#">Станции биологической очистки стоков</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Бытовые фильтры для воды</a>
+									<ul>
+										<li><a href="#">Комплектующие для фильтров</a></li>
+										<li><a href="#">Магистральные фильтры</a></li>
+										<li><a href="#">Проточные системы</a></li>
+										<li><a href="#">Системы обратного осмоса</a></li>
+										<li><a href="#">Сменные модули и картриджи</a></li>
+										<li><a href="#">Фильтры-кувшины</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Накопительные емкости</a>
+									<ul>
+										<li><a href="#">Вертикальные емкости</a></li>
+										<li><a href="#">Горизонтальные емкости</a></li>
+										<li><a href="#">Емкости для душа и бидоны</a></li>
+										<li><a href="#">Поплавки и врезки</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Насосное оборудование</a>
+									<ul>
+										<li><a href="#">Автоматика для насосов</a></li>
+										<li><a href="#">Гидроаккумуляторы</a></li>
+										<li><a href="#">Дренажные и фекальные насосы</a></li>
+										<li><a href="#">Канализационные установки</a></li>
+										<li><a href="#">Комплектующие для насосов</a></li>
+										<li><a href="#">Поверхностные насосы и станции</a></li>
+										<li><a href="#">Скважинные насосы</a></li>
+										<li><a href="#">Циркуляционные насосы</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Оборудование для бассейнов</a>
+									<ul>
+										<li><a href="#">Закладные элементы</a></li>
+										<li><a href="#">Насосы для бассейна</a></li>
+										<li><a href="#">Оборудование для дезинфекции</a></li>
+										<li><a href="#">Отделочные материалы</a></li>
+										<li><a href="#">ПВХ (клеевые) трубы и фитинги</a></li>
+										<li><a href="#">Уход и аксессуары</a></li>
+										<li><a href="#">Химия для бассейнов</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Отопительное оборудование</a>
+									<ul>
+										<li><a href="#">Водонагреватели</a></li>
+										<li><a href="#">Газовые котлы</a></li>
+										<li><a href="#">Запорная и регулирующая арматура</a></li>
+										<li><a href="#">КИП (Манометры, термометры)</a></li>
+										<li><a href="#">Коллекторы и Шкафы</a></li>
+										<li><a href="#">Насосные группы и гидрострелки</a></li>
+										<li><a href="#">Радиаторы и конвекторы</a></li>
+										<li><a href="#">Расширительные баки и кронштейны</a></li>
+										<li><a href="#">Теплый пол</a></li>
+										<li><a href="#">Термоизоляция</a></li>
+										<li><a href="#">Электрические котлы</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Сантехника и санфаянс</a>
+									<ul>
+										<li><a href="#">Водомеры</a></li>
+										<li><a href="#">Сифоны и водосточные трапы</a></li>
+										<li><a href="#">Смесители</a></li>
+										<li><a href="#">Унитазы, биде, инсталляции</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Системы Водоподготовки</a>
+									<ul>
+										<li><a href="#">Промышленные системы обратного осмоса</a></li>
+										<li><a href="#">Мешочные и дисковые фильтры</a></li>
+										<li><a href="#">Системы умягчения воды</a></li>
+										<li><a href="#">Сорбционные/угольные фильтры</a></li>
+										<li><a href="#">УФ обеззараживатели</a></li>
+										<li><a href="#">Фильтрующие загрузки и реагенты</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Техника для офиса и дома</a>
+									<ul>
+										<li><a href="#">Системы защиты от протечек</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Трубопроводы и арматура</a>
+									<ul>
+										<li><a href="#">Канализация</a></li>
+										<li><a href="#">Краны приборные</a></li>
+										<li><a href="#">Краны шаровые</a></li>
+										<li><a href="#">Резьбовой фитинг</a></li>
+										<li><a href="#">Труба и фитинги PP-R</a></li>
+										<li><a href="#">Труба и фитинги ПНД</a></li>
+										<li><a href="#">Электромагнитные клапаны</a></li>
+									</ul>
+								</li>
+								<li class="catalog-dropdown__haschild">
+									<a href="#">Электрооборудование</a>
+									<ul>
+										<li><a href="#">Кабель, провод, гофра</a></li>
+										<li><a href="#">Модульное оборудование</a></li>
+										<li><a href="#">Расходники для электромонтажа</a></li>
+										<li><a href="#">Релейное оборудование</a></li>
+										<li><a href="#">Розетки, выключатели, вилки</a></li>
+										<li><a href="#">Светосигнальная арматура</a></li>
+										<li><a href="#">Шкафы, боксы</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Инструменты и расходники</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="menu">
+						<li class="menu__haschild">
+							<a href="#">Услуги</a>
+							<div class="menu__dropdown">
+								<ul>
+									<li><a href="#">Подбор и монтаж всех видов отопительного оборудования</a></li>
+									<li><a href="#">Монтаж насосного оборудования</a></li>
+									<li><a href="#">Монтаж и обслуживание оборудования для бассейна</a></li>
+									<li><a href="#">Проектирование и монтаж систем водоочистки любой производительности</a></li>
+									<li><a href="#">Монтаж систем водоснабжения</a></li>
+									<li><a href="#">Монтаж теплых полов</a></li>
+									<li><a href="#">Подбор и монтаж станций биологической очистки</a></li>
+									<li><a href="#">Обслуживание станций биологической очистки</a></li>
+									<li><a href="#">Установка и обслуживание фильтров для воды</a></li>
+									<li><a href="#">Бесплатный экспресс-анализ воды</a></li>
+									<li><a href="#">Монтаж накопительных емкостей</a></li>
+									<li><a href="#">Монтаж гелиосистем и тепловых насосов</a></li>
+									<li><a href="#">Стыковая и электромуфтовая сварка ПНД труб любой сложности</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Наши работы</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="header__contacts">
+						<p><a href="tel:+79787965700">+7 (978) 796-57-00</a> - Инженер</p>
+						<p><a href="tel:+79782993490">+7 (978) 299-34-90</a> - Отдел продаж</p>
+						<p>пн-пт 9:00-18:00,сб 9:00-15:00</p>
+					</div>
+					<div class="header__buttons">
+						<a href="#" class="btn-header btn-header_search">
+							<span class="btn-header__icon"></span>
+						</a>
+						<a href="#" class="btn-header btn-header_user">
+							<span class="btn-header__icon"></span>
+						</a>
+						<a href="#" class="btn-header btn-header_compare">
+							<span class="btn-header__icon">
+								<span class="btn-header__value">0</span>
+							</span>
+						</a>
+						<a href="#" class="btn-header btn-header_favorites">
+							<span class="btn-header__icon">
+								<span class="btn-header__value">0</span>
+							</span>
+						</a>
+						<a href="#" class="btn-header btn-header_basket">
+							<span class="btn-header__icon">
+								<span class="btn-header__value">0</span>
+							</span>
+							<div class="btn-header__text">0 ₽</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="search-mobile">
+					<form>
+						<input type="text" placeholder="Поиск по товарам" required="required">
+						<button class="search-mobile__button"></button>
+					</form>
+				</div>
+				<ul class="tabs-menu">
+					<li class="active"><a href="#tab_menu1">Меню</a></li>
+					<li><a href="#tab_menu2">Категории</a></li>
+				</ul>
+				<div class="tab-container-menu">
+					<div class="tab-pane-menu" id="tab_menu1">
+						<ul class="menu-list">
+							<li class="menu-list__haschild">
+								<a href="#">Услуги</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Подбор и монтаж всех видов отопительного оборудования</a></li>
+									<li><a href="#">Монтаж насосного оборудования</a></li>
+									<li><a href="#">Монтаж и обслуживание оборудования для бассейна</a></li>
+									<li><a href="#">Проектирование и монтаж систем водоочистки любой производительности</a></li>
+									<li><a href="#">Монтаж систем водоснабжения</a></li>
+									<li><a href="#">Монтаж теплых полов</a></li>
+									<li><a href="#">Подбор и монтаж станций биологической очистки</a></li>
+									<li><a href="#">Обслуживание станций биологической очистки</a></li>
+									<li><a href="#">Установка и обслуживание фильтров для воды</a></li>
+									<li><a href="#">Бесплатный экспресс-анализ воды</a></li>
+									<li><a href="#">Монтаж накопительных емкостей</a></li>
+									<li><a href="#">Монтаж гелиосистем и тепловых насосов</a></li>
+									<li><a href="#">Стыковая и электромуфтовая сварка ПНД труб любой сложности</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li class="menu-list__wishlist"><a href="#">Избранное </a></li>
+							<li class="menu-list__compare"><a href="#">Сравнить</a></li>
+							<li class="menu-list__user"><a href="#">Войти / Зарегистрироваться</a></li>
+						</ul>
+					</div>
+					<div class="tab-pane-menu" id="tab_menu2">
+						<ul class="menu-list">
+							<li class="menu-list__haschild">
+								<a href="#">Автономная канализация и жироуловители</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Жироуловители</a></li>
+									<li><a href="#">Станции биологической очистки стоков</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Бытовые фильтры для воды</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Комплектующие для фильтров</a></li>
+									<li><a href="#">Магистральные фильтры</a></li>
+									<li><a href="#">Проточные системы</a></li>
+									<li><a href="#">Системы обратного осмоса</a></li>
+									<li><a href="#">Сменные модули и картриджи</a></li>
+									<li><a href="#">Фильтры-кувшины</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Накопительные емкости</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Вертикальные емкости</a></li>
+									<li><a href="#">Горизонтальные емкости</a></li>
+									<li><a href="#">Емкости для душа и бидоны</a></li>
+									<li><a href="#">Поплавки и врезки</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Насосное оборудование</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Автоматика для насосов</a></li>
+									<li><a href="#">Гидроаккумуляторы</a></li>
+									<li><a href="#">Дренажные и фекальные насосы</a></li>
+									<li><a href="#">Канализационные установки</a></li>
+									<li><a href="#">Комплектующие для насосов</a></li>
+									<li><a href="#">Поверхностные насосы и станции</a></li>
+									<li><a href="#">Скважинные насосы</a></li>
+									<li><a href="#">Циркуляционные насосы</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Оборудование для бассейнов</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Закладные элементы</a></li>
+									<li><a href="#">Насосы для бассейна</a></li>
+									<li><a href="#">Оборудование для дезинфекции</a></li>
+									<li><a href="#">Отделочные материалы</a></li>
+									<li><a href="#">ПВХ (клеевые) трубы и фитинги</a></li>
+									<li><a href="#">Уход и аксессуары</a></li>
+									<li><a href="#">Химия для бассейнов</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Отопительное оборудование</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Водонагреватели</a></li>
+									<li><a href="#">Газовые котлы</a></li>
+									<li><a href="#">Запорная и регулирующая арматура</a></li>
+									<li><a href="#">КИП (Манометры, термометры)</a></li>
+									<li><a href="#">Коллекторы и Шкафы</a></li>
+									<li><a href="#">Насосные группы и гидрострелки</a></li>
+									<li><a href="#">Радиаторы и конвекторы</a></li>
+									<li><a href="#">Расширительные баки и кронштейны</a></li>
+									<li><a href="#">Теплый пол</a></li>
+									<li><a href="#">Термоизоляция</a></li>
+									<li><a href="#">Электрические котлы</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Сантехника и санфаянс</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Водомеры</a></li>
+									<li><a href="#">Сифоны и водосточные трапы</a></li>
+									<li><a href="#">Смесители</a></li>
+									<li><a href="#">Унитазы, биде, инсталляции</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Системы Водоподготовки</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Промышленные системы обратного осмоса</a></li>
+									<li><a href="#">Мешочные и дисковые фильтры</a></li>
+									<li><a href="#">Системы умягчения воды</a></li>
+									<li><a href="#">Сорбционные/угольные фильтры</a></li>
+									<li><a href="#">УФ обеззараживатели</a></li>
+									<li><a href="#">Фильтрующие загрузки и реагенты</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Техника для офиса и дома</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Системы защиты от протечек</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Трубопроводы и арматура</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Канализация</a></li>
+									<li><a href="#">Краны приборные</a></li>
+									<li><a href="#">Краны шаровые</a></li>
+									<li><a href="#">Резьбовой фитинг</a></li>
+									<li><a href="#">Труба и фитинги PP-R</a></li>
+									<li><a href="#">Труба и фитинги ПНД</a></li>
+									<li><a href="#">Электромагнитные клапаны</a></li>
+								</ul>
+							</li>
+							<li class="menu-list__haschild">
+								<a href="#">Электрооборудование</a>
+								<span class="menu-list__open"><i class="far fa-chevron-right"></i></span>
+								<ul>
+									<li><a href="#">Кабель, провод, гофра</a></li>
+									<li><a href="#">Модульное оборудование</a></li>
+									<li><a href="#">Расходники для электромонтажа</a></li>
+									<li><a href="#">Релейное оборудование</a></li>
+									<li><a href="#">Розетки, выключатели, вилки</a></li>
+									<li><a href="#">Светосигнальная арматура</a></li>
+									<li><a href="#">Шкафы, боксы</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Инструменты и расходники</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="billbord-page billbord-page_catalog">
+			<div class="container">
+				<h1 class="title-page"><a href="#"><i class="fal fa-long-arrow-left"></i></a>Автономная канализация и жироуловители</h1>
+			</div>
+		</section>
+
+		<section class="page-catalog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="sidebar-catalog">
+							<div class="sidebar-catalog__close"><i class="fal fa-times"></i>закрыть</div>
+							<div class="sidebar-catalog__wrapper">
+								<div class="sidebar-catalog__title">Фильтр товаров:</div>
+								<div class="sidebar-catalog__subtitle">Каталог</div>
+								<ul class="list-sidebar">
+									<li class="active current">
+										<a href="#">Автономная канализация и жироуловители</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul style="display: block;">
+											<li><a href="#">Жироуловители</a></li>
+											<li><a href="#">Станции биологической очистки стоков</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Бытовые фильтры для воды</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Комплектующие для фильтров</a></li>
+											<li><a href="#">Магистральные фильтры</a></li>
+											<li><a href="#">Проточные системы</a></li>
+											<li><a href="#">Редукторы давления</a></li>
+											<li><a href="#">Системы обратного осмоса</a></li>
+											<li>
+												<a href="#">Сменные модули и картриджи</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Для кувшинов</a></li>
+													<li><a href="#">Для систем очистки</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Фильтры-кувшины</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Инструменты, расходники</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Лен, Фум, Паста, Силикон</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Накопительные емкости</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Вертикальные емкости</a></li>
+											<li><a href="#">Горизонтальные емкости</a></li>
+											<li><a href="#">Емкости для душа и бидоны</a></li>
+											<li><a href="#">Поплавки и врезки</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Насосное оборудование</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Автоматика для насосов</a></li>
+											<li>
+												<a href="#">Гидроаккумуляторы</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Термостатные чехлы TERMO//ZONT для гидроаккумуляторов</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Дренажные и фекальные насосы</a></li>
+											<li><a href="#">Запчасти</a></li>
+											<li><a href="#">Канализационные установки</a></li>
+											<li><a href="#">Комплектующие для насосов</a></li>
+											<li>
+												<a href="#">Поверхностные насосы и станции</a>
+												<ul>
+													<li><a href="#">Вертикальные многоступенчатые насосы</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Скважинные насосы</a></li>
+											<li><a href="#">Циркуляционные насосы</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Оборудование для бассейнов</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li>
+												<a href="#">Закладные элементы</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Освещение бассейна</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Насосы для бассейна</a></li>
+											<li><a href="#">Оборудование для дезинфекции</a></li>
+											<li><a href="#">Отделочные материалы</a></li>
+											<li><a href="#">ПВХ (клеевые) трубы и фитинги</a></li>
+											<li>
+												<a href="#">Уход и аксессуары</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Пылесосы для бассейна</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Фильтрационные установки и фильтры</a></li>
+											<li><a href="#">Химия для бассейнов</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Отопительное оборудование</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li>
+												<a href="#">Водонагреватели</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Косвенного нагрева</a></li>
+													<li><a href="#">Электрические</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Газовое оборудование, Газгольдеры</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Комплектующие для газгольдера</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Газовые котлы</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Комплектующие к котлам</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Запорная и регулирующая арматура</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Радиаторные краны и клапаны</a></li>
+												</ul>
+											</li>
+											<li><a href="#">КИП (Манометры, термометры)</a></li>
+											<li><a href="#">Насосные группы и гидрострелки</a></li>
+											<li>
+												<a href="#">Радиаторы и конвекторы</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Внутрипольные конвекторы</a></li>
+													<li><a href="#">Комплектующие и кронштейны</a></li>
+													<li><a href="#">Секционные радиаторы</a></li>
+													<li>
+														<a href="#">Стальные радиаторы</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+														<ul>
+															<li><a href="#">Боковое подключение</a></li>
+															<li><a href="#">Нижнее подключение</a></li>
+														</ul>
+													</li>
+													<li><a href="#">Трубчатые радиаторы</a></li>
+													<li><a href="#">Электрические конвекторы</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Расширительные баки и кронштейны</a></li>
+											<li><a href="#">Твердотопливные котлы</a></li>
+											<li>
+												<a href="#">Теплый пол</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Коллекторы и Шкафы</a></li>
+													<li><a href="#">Комплектующие для теплого пола</a></li>
+													<li><a href="#">Насосно-смесительные узлы</a></li>
+													<li><a href="#">Трубы для теплого пола</a></li>
+													<li><a href="#">Якорные крепления и фиксаторы</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Термоизоляция</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Демпферная лента</a></li>
+													<li><a href="#">Полистирол и дюбель зонты</a></li>
+													<li><a href="#">Фольга и скотч</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Электрические котлы</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Сантехника и санфаянс</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Водомеры</a></li>
+											<li>
+												<a href="#">Полотенцесушители</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Водяные полотенцесушители</a></li>
+													<li><a href="#">Электрические полотенцесушители</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Сифоны и водосточные трапы</a></li>
+											<li><a href="#">Смесители</a></li>
+											<li><a href="#">Умывальники/Мойки</a></li>
+											<li><a href="#">Унитазы, биде, инсталляции</a></li>
+											<li><a href="#">Шланги</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Системы Водоподготовки</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li>
+												<a href="#">Дозирующие насосы и станции</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Комплектующие к насосам дозаторам</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Колонны механической очистки</a></li>
+											<li>
+												<a href="#">Комплектующие и сменные модули</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Запчасти для систем обратного осмоса</a></li>
+													<li><a href="#">Корпусы фильтров и ДРС</a></li>
+													<li><a href="#">Обратноосмотические мембраны</a></li>
+													<li><a href="#">Солевые баки</a></li>
+													<li><a href="#">Термостатные чехлы TERMO//ZONT для колонн</a></li>
+													<li>
+														<a href="#">Управляющие клапаны</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+														<ul>
+															<li><a href="#">Комплектующие для клапанов</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li><a href="#">Мешочные и дисковые фильтры</a></li>
+											<li><a href="#">Промышленные системы обратного осмоса</a></li>
+											<li><a href="#">Системы напорной аэрации</a></li>
+											<li><a href="#">Системы умягчения воды</a></li>
+											<li><a href="#">Сорбционные/угольные фильтры</a></li>
+											<li><a href="#">УФ обеззараживатели</a></li>
+											<li><a href="#">Фильтрующие загрузки и реагенты</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Техника для офиса и дома</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li>Кулеры и пурифайеры</li>
+											<li>Системы защиты от протечек</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Трубопроводы и арматура</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li>
+												<a href="#">Канализация</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Внутренняя</a></li>
+													<li><a href="#">Гофра, труба дренажная</a></li>
+													<li><a href="#">Малошумная</a></li>
+													<li><a href="#">Наружняя</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Краны приборные</a></li>
+											<li><a href="#">Краны шаровые</a></li>
+											<li><a href="#">Крепления, хомуты</a></li>
+											<li><a href="#">Полив</a></li>
+											<li><a href="#">Резьбовой фитинг</a></li>
+											<li>
+												<a href="#">Труба и фитинги PP-R</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Ekoplastik</a></li>
+													<li><a href="#">Valtec</a></li>
+													<li><a href="#">Валфекс Белый</a></li>
+													<li><a href="#">Валфекс Серый</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Труба и фитинги нерж. сталь</a></li>
+											<li>
+												<a href="#">Труба и фитинги ПНД</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Компрессионный фитинг ПНД</a></li>
+													<li><a href="#">Терморезисторный и литой фитинг ПНД</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Трубная изоляция, мирелон, пешель</a></li>
+											<li>
+												<a href="#">Трубы из сшитого полиэтилена и фитинги</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+												<ul>
+													<li><a href="#">Аксиальный фитинг</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Фланцевая и запорная арматура</a></li>
+											<li><a href="#">Черный металл</a></li>
+											<li><a href="#">Электромагнитные клапаны</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Электрооборудование</a><div class="list-sidebar__arrow"><i class="far fa-chevron-down"></i></div>
+										<ul>
+											<li><a href="#">Кабель, провод, гофра</a></li>
+											<li><a href="#">Модульное оборудование</a></li>
+											<li><a href="#">Расходники для электромонтажа</a></li>
+											<li><a href="#">Релейное оборудование</a></li>
+											<li><a href="#">Розетки, выключатели, вилки</a></li>
+											<li><a href="#">Светосигнальная арматура</a></li>
+											<li><a href="#">Шкафы, боксы</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="sidebar-catalog__subtitle">Цена</div>
+								<div class="range-catalog">
+									<input type="text" name="my_range" value="" />
+								</div>
+								<div class="sidebar-catalog__subtitle">Изготовитель</div>
+								<div class="wrap-checks">
+									<div class="checkbox-radio">
+										<label>
+											<input type="checkbox"/>
+											<span>Евролос</span>
+										</label>
+									</div>
+									<div class="checkbox-radio">
+										<label>
+											<input type="checkbox"/>
+											<span>Юнилос</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<h4 class="title-catalog">Компания “Водный Профиль” является официальным дилером производителя систем очистки “Евролос”!</h4>
+						<div class="head-catalog">
+							<ul class="breadcrumbs breadcrumbs_page">
+								<li><a href="#">Главная </a></li>
+								<li>Каталог</li>
+							</ul>
+							<div class="per-page">
+								<div class="per-page__title">Показать :</div>
+								<a href="#" class="active">25</a>
+								<span>/</span>
+								<a href="#">50</a>
+								<span>/</span>
+								<a href="#">75</a>
+							</div>
+							<div class="views-catalog">
+								<a href="#" class="views-catalog_2"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve"><path d="M7,2v5H2V2H7 M9,0H0v9h9V0L9,0z"></path><path d="M17,2v5h-5V2H17 M19,0h-9v9h9V0L19,0z"></path><path d="M7,12v5H2v-5H7 M9,10H0v9h9V10L9,10z"></path><path d="M17,12v5h-5v-5H17 M19,10h-9v9h9V10L19,10z"></path></svg></a>
+								<a href="#" class="views-catalog_3"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve"><rect width="5" height="5"></rect><rect x="7" width="5" height="5"></rect><rect x="14" width="5" height="5"></rect><rect y="7" width="5" height="5"></rect><rect x="7" y="7" width="5" height="5"></rect><rect x="14" y="7" width="5" height="5"></rect><rect y="14" width="5" height="5"></rect><rect x="7" y="14" width="5" height="5"></rect><rect x="14" y="14" width="5" height="5"></rect></svg></a>
+								<a href="#" class="views-catalog_4"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve"><rect width="4" height="4"></rect><rect x="5" width="4" height="4"></rect><rect x="10" width="4" height="4"></rect><rect x="15" width="4" height="4"></rect><rect y="5" width="4" height="4"></rect><rect x="5" y="5" width="4" height="4"></rect><rect x="10" y="5" width="4" height="4"></rect><rect x="15" y="5" width="4" height="4"></rect><rect y="15" width="4" height="4"></rect><rect x="5" y="15" width="4" height="4"></rect><rect x="10" y="15" width="4" height="4"></rect><rect x="15" y="15" width="4" height="4"></rect><rect y="10" width="4" height="4"></rect><rect x="5" y="10" width="4" height="4"></rect><rect x="10" y="10" width="4" height="4"></rect><rect x="15" y="10" width="4" height="4"></rect></svg></a>
+							</div>
+							<div class="select-sorting">
+								<select>
+									<option value="menu_order" selected="selected">Исходная сортировка</option>
+									<option value="popularity">По популярности</option>
+									<option value="rating">По рейтингу</option>
+									<option value="date">По новизне</option>
+									<option value="price">Цены: по возрастанию</option>
+									<option value="price-desc">Цены: по убыванию</option>
+								</select>
+							</div>
+							<div class="result-count">Отображение 1–25 из 37</div>
+						</div>
+						<div class="btn-open-sidebar"><i class="far fa-bars"></i>Показать боковую панель</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-6">
+								<a href="#" class="unit-category">
+									<span class="unit-category__image">
+										<img src="img/unit_cat_catalog1.png" alt="alt">
+									</span>
+									<span class="unit-category__title">Жироуловители <strong>(2)</strong></span>
+									<span class="unit-category__descr">2 товара</span>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<a href="#" class="unit-category">
+									<span class="unit-category__image">
+										<img src="img/unit_cat_catalog2.jpg" alt="alt">
+									</span>
+									<span class="unit-category__title">Станции биологической очистки стоков <strong>(34)</strong></span>
+									<span class="unit-category__descr">34 товара</span>
+								</a>
+							</div>
+						</div>
+						<div class="row row_catalog">
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">3х-ходовой клапан термостат.CALIS-TS-E-3D 3/4″ HERZ (1774602) (правый), шт, 20%</a>
+										<div class="price-main">1 737 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">5-ти выводной штуцер 90мм Unipump</a>
+										<div class="price-main">829 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60 хлор-шок 1 кг</a>
+										<div class="price-main">1 217 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="item-catalog item-catalog_page">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.jpg" alt="alt">
+										<div class="item-catalog__hover">
+											<img src="img/hover_catalog1.jpg" alt="alt">
+										</div>
+										<div class="item-catalog__buttons">
+											<a href="#" class="btn-add"><span>В корзину</span></a>
+											<a href="#quick-order" class="btn-buy fancybox"> Купить в один клик</a>
+										</div>
+										<div class="item-catalog__action">
+											<a href="#" class="btn-action btn-action_compare"><span class="tooltip-main">Сравнить</span></a>
+											<a href="#quick-view" class="btn-action btn-action_view fancybox"><span class="tooltip-main">Быстрый просмотр </span></a>
+											<a href="#" class="btn-action btn-action_wishlist"><span class="tooltip-main">В избранное </span></a>
+										</div>
+									</div>
+									<div class="item-catalog__content">
+										<a href="#" class="item-catalog__title">AquaDoctor C-60T хлор-шок в таблетках 1 кг</a>
+										<div class="price-main">1 018 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pager">
+							<a class="prev page-numbers" href="#"><i class="far fa-chevron-left"></i></a>
+							<span aria-current="page" class="page-numbers current" href="#">1</span> 
+							<a class="page-numbers" href="#">2</a> 
+							<a class="page-numbers" href="#">3</a> 
+							<a class="next page-numbers" href="#"><i class="far fa-chevron-right"></i></a>
+						</div>
+						<div class="text-catalog">
+							<p><strong>Автономные канализации</strong> — это системы сбора и обработки сточных вод, которые функционируют независимо от центральной канализации. Такие системы канализации применяется в местах, где нет доступа к городским сетям канализации.</p>
+							<p><strong>Жироуловители</strong> — это отдельные устройства первичной очистки в различных канализационных системах (отдельных локальных канализационных системах или общих центральных канализационных системах).</p>
+							<p>Данный тип устройств используется для предотвращения попадания в канализацию сточных вод, насыщенных растительными и животными пищевыми жирами и маслами, от домашних кухонь, предприятий общественного питания и предприятий по производству и переработке продуктов питания.</p>
+							<h2>Покупка автономной канализации в интернет-магазине «Водный Профиль»</h2>
+							<p>Мы специализируемся на продаже и <a href="#">установке</a> полноценных автономных канализационных систем для домов и учреждений в Севастополе вдали от центральной канализации.</p>
+							<p>В каталоге компании “Водный профиль” представлены популярные модели оборудования и дополнительных конструкций для строительства автономных канализационных систем различной мощности, которые можно заказать с доставкой по Крыму.</p>
+							<p>На все оборудование предоставляется официальная гарантия. Бесплатная консультация по телефону +7 (978) 796-57-00.</p>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-6">
+								<a href="img/sert1.png" class="image-sertificat fancybox">
+									<img src="img/sert1.png" alt="alt">
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<a href="img/sert2.png" class="image-sertificat fancybox">
+									<img src="img/sert2.png" alt="alt">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="logo">
+							<img src="img/logo2.svg" alt="alt">
+						</a>
+						<div class="footer__contacts">
+							<p>г. Севастополь,</p>
+							<p>ул. Индустриальная 28/22</p>
+							<p>(Магазин №22)</p>
+							<br>
+							<p>Инженер:</p>
+							<p><a href="tel:+79787965700">+7 (978) 796-57-00</a></p>
+							<p>Отдел продаж:</p>
+							<p><a href="tel:+79782993490">+7 (978) 299-34-90</a></p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer__center">
+							<div class="footer__title">Каталог:</div>
+							<ul class="footer__nav footer__nav_columns">
+								<li><a href="#">Автономная канализация и жироуловители</a></li>
+								<li><a href="#">Бытовые фильтры для воды</a></li>
+								<li><a href="#">Накопительные емкости</a></li>
+								<li><a href="#">Насосное оборудование</a></li>
+								<li><a href="#">Оборудование для бассейнов</a></li>
+								<li><a href="#">Отопительное оборудование</a></li>
+								<li><a href="#">Сантехника и санфаянс</a></li>
+								<li><a href="#">Системы Водоподготовки</a></li>
+								<li><a href="#">Техника для офиса и дома</a></li>
+								<li><a href="#">Трубопроводы и арматура</a></li>
+								<li><a href="#">Инструменты и расходники</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__title">Клиентам:</div>
+						<ul class="footer__nav">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия и возврат</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__line">
+						<p>2024 <i class="fa fa-copyright"></i> Все права защищены <a href="#">HUNTERWEB - Разработка интернет-магазинов</a></p>
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="modal-icons">
+				<i aria-hidden="true" class="fas fa-circle"></i>
+				<i aria-hidden="true" class="fas fa-square-full"></i>
+				<i aria-hidden="true" class="fas fa-square-full"></i>
+			</div>
+			<div class="title-modal">Заказать обратный звонок</div>
+			<form>
+				<div class="item-form item-form_block">
+					<input type="text" placeholder="Ваше имя" required="required">
+				</div>
+				<div class="item-form item-form_block">
+					<input type="tel" placeholder="Ваш телефон" class="input-phone" inputmode="numeric" required="required">
+				</div>
+				<input type="submit" class="btn-main btn-main_block" value="Отправить">
+			</form>
+		</div>
+	</div>
+
+	<div id="quick-order" class="modal-block">
+		<div class="modal-quick">
+			<div class="modal-quick__title">Купить в один клик</div>
+			<div class="table-quick">
+				<table>
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Цена</th>
+							<th>Изображение</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Автономная канализация для высокого УГВ Евролос Грунт 3</td>
+							<td><div class="price-main">168 700 ₽</div></td>
+							<td>
+								<div class="image-td">
+									<img src="img/td1.png" alt="alt">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required="required">
+				</div>
+				<div class="item-form">
+					<input type="tel" placeholder="Ваш телефон" class="input-phone" inputmode="numeric" required="required">
+					<div class="item-form__descr">Формат +7 XXX XXX XX XX</div>
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="Ваш Email">
+				</div>
+				<div class="item-form">
+					<textarea placeholder="Комментарий к заказу"></textarea>
+				</div>
+				<div class="checkbox-main">
+					<label>
+						<input type="checkbox" required="required" />
+						<span>Я согласен на обработку <a href="#"><a href="/privacy-policy/">персональных данных</a></a></span>
+					</label>
+				</div>
+				<div class="quick-quantity">
+					<div class="quick-quantity__title">Количество</div>
+					<input type="number" value="1">
+				</div>
+				<div class="quick-button">
+					<input type="submit" class="btn-main" value="Заказать">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="quick-view" class="modal-block">
+		<div class="modal-view">
+			<div class="row">
+				<div class="col-lg-6 col-slider-view">
+					<ul class="slider-view">
+						<li>
+							<div class="slider-view__item">
+								<img src="img/slide_for1.png" alt="alt">
+							</div>
+						</li>
+						<li>
+							<div class="slider-view__item">
+								<img src="img/slide_for2.jpg" alt="alt">
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="btn-main">Посмотреть детали</a>
+				</div>
+				<div class="col-lg-6 col-view">
+					<div class="content-view">
+						<h2 class="title-card"><a href="#">Автономная канализация для высокого УГВ Евролос Грунт 3</a></h2>
+						<div class="price-main price-main_card">168 700₽</div>
+						<br>
+						<div class="card-descrpition">
+							<p>На основе септика Евролос ГРУНТ 3 можно построить канализационное очистное сооружение для очистки хозяйственно-бытовых сточных вод от отдельно стоящих индивидуальных домов, имеющих высокую степень благоустройства, либо домов, расположенных в населенных пунктах при отсутствии централизованных систем водоотведения.</p>
+							<p class="card-descrpition__title"><strong>Характеристики:</strong></p>
+							<ul>
+								<li>Кол-во пользователей: 2-3 человека;</li>
+								<li>Кол-во приборов: 2 крана, 1 туалет;</li>
+								<li>Производительность до 0,6 м3 в сутки.</li>
+							</ul>
+						</div>
+						<div class="subitle-card">под заказ</div>
+						<div class="card-actions">
+							<div class="quantity">
+								<div class="quantity-button quantity-down">–</div>
+								<input type="number" min="1" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+							<button class="btn-main btn-main_page">В корзину</button>
+							<a href="#quick-order" class="btn-main btn-main_page fancybox">Купить в один клик</a>
+							<a href="#" class="btn-main btn-main_wp"><svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m90 43.841c0 24.213-19.779 43.841-44.182 43.841-7.747 0-15.025-1.98-21.357-5.455l-24.461 7.773 7.975-23.522c-4.023-6.606-6.34-14.354-6.34-22.637 0-24.213 19.781-43.841 44.183-43.841 24.405 0 44.182 19.628 44.182 43.841zm-44.182-36.859c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61l-4.641 13.689 14.275-4.537c5.865 3.851 12.891 6.097 20.437 6.097 20.481 0 37.146-16.533 37.146-36.857s-16.664-36.861-37.147-36.861zm22.311 46.956c-0.273-0.447-0.994-0.717-2.076-1.254-1.084-0.537-6.41-3.138-7.4-3.495-0.993-0.358-1.717-0.538-2.438 0.537-0.721 1.076-2.797 3.495-3.43 4.212-0.632 0.719-1.263 0.809-2.347 0.271-1.082-0.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-0.631-1.075-0.066-1.656 0.475-2.191 0.488-0.482 1.084-1.255 1.625-1.882 0.543-0.628 0.723-1.075 1.082-1.793 0.363-0.717 0.182-1.344-0.09-1.883-0.27-0.537-2.438-5.825-3.34-7.977-0.902-2.15-1.803-1.792-2.436-1.792-0.631 0-1.354-0.09-2.076-0.09s-1.896 0.269-2.889 1.344c-0.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113 0.541 0.716 7.49 11.92 18.5 16.223 11.011 4.301 11.011 2.866 12.997 2.686 1.984-0.179 6.406-2.599 7.312-5.107 0.9-2.512 0.9-4.663 0.631-5.111z"></path></svg>Заказать через WhatsApp</a>
+						</div>
+						<div class="card-meta">
+							<p><strong>Код товара:</strong> УТ-00007377</p>
+							<p><strong>Категория:</strong> Станции биологической очистки стоков</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="quick-view" class="modal-block">
+		<div class="modal-view">
+			<div class="row">
+				<div class="col-lg-6 col-slider-view">
+					<ul class="slider-view">
+						<li>
+							<div class="slider-view__item">
+								<img src="img/slide_for1.png" alt="alt">
+							</div>
+						</li>
+						<li>
+							<div class="slider-view__item">
+								<img src="img/slide_for2.jpg" alt="alt">
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="btn-main">Посмотреть детали</a>
+				</div>
+				<div class="col-lg-6 col-view">
+					<div class="content-view">
+						<h2 class="title-card"><a href="#">Автономная канализация для высокого УГВ Евролос Грунт 3</a></h2>
+						<div class="price-main price-main_card">168 700₽</div>
+						<br>
+						<div class="card-descrpition">
+							<p>На основе септика Евролос ГРУНТ 3 можно построить канализационное очистное сооружение для очистки хозяйственно-бытовых сточных вод от отдельно стоящих индивидуальных домов, имеющих высокую степень благоустройства, либо домов, расположенных в населенных пунктах при отсутствии централизованных систем водоотведения.</p>
+							<p class="card-descrpition__title"><strong>Характеристики:</strong></p>
+							<ul>
+								<li>Кол-во пользователей: 2-3 человека;</li>
+								<li>Кол-во приборов: 2 крана, 1 туалет;</li>
+								<li>Производительность до 0,6 м3 в сутки.</li>
+							</ul>
+						</div>
+						<div class="subitle-card">под заказ</div>
+						<div class="card-actions">
+							<div class="quantity">
+								<div class="quantity-button quantity-down">–</div>
+								<input type="number" min="1" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+							<button class="btn-main btn-main_page">В корзину</button>
+							<a href="#quick-order" class="btn-main btn-main_page fancybox">Купить в один клик</a>
+							<a href="#" class="btn-main btn-main_wp"><svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m90 43.841c0 24.213-19.779 43.841-44.182 43.841-7.747 0-15.025-1.98-21.357-5.455l-24.461 7.773 7.975-23.522c-4.023-6.606-6.34-14.354-6.34-22.637 0-24.213 19.781-43.841 44.183-43.841 24.405 0 44.182 19.628 44.182 43.841zm-44.182-36.859c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61l-4.641 13.689 14.275-4.537c5.865 3.851 12.891 6.097 20.437 6.097 20.481 0 37.146-16.533 37.146-36.857s-16.664-36.861-37.147-36.861zm22.311 46.956c-0.273-0.447-0.994-0.717-2.076-1.254-1.084-0.537-6.41-3.138-7.4-3.495-0.993-0.358-1.717-0.538-2.438 0.537-0.721 1.076-2.797 3.495-3.43 4.212-0.632 0.719-1.263 0.809-2.347 0.271-1.082-0.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-0.631-1.075-0.066-1.656 0.475-2.191 0.488-0.482 1.084-1.255 1.625-1.882 0.543-0.628 0.723-1.075 1.082-1.793 0.363-0.717 0.182-1.344-0.09-1.883-0.27-0.537-2.438-5.825-3.34-7.977-0.902-2.15-1.803-1.792-2.436-1.792-0.631 0-1.354-0.09-2.076-0.09s-1.896 0.269-2.889 1.344c-0.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113 0.541 0.716 7.49 11.92 18.5 16.223 11.011 4.301 11.011 2.866 12.997 2.686 1.984-0.179 6.406-2.599 7.312-5.107 0.9-2.512 0.9-4.663 0.631-5.111z"></path></svg>Заказать через WhatsApp</a>
+						</div>
+						<div class="card-meta">
+							<p><strong>Код товара:</strong> УТ-00007377</p>
+							<p><strong>Категория:</strong> Станции биологической очистки стоков</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.13"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
