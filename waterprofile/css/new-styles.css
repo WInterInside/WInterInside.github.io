@@ -1108,7 +1108,7 @@ th {
 	color: rgb(16, 167, 249);
 }
 
-.gelio h2::before {
+.gelio .gelio__column h2::before {
 	position: absolute;
 	left: 0;
 	bottom: 0;
