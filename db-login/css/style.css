@@ -417,7 +417,7 @@ form a {
     border-bottom: 1px solid #ddd;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .specification {
     overflow-x: scroll;
   }
@@ -1391,9 +1391,6 @@ body {
   font-weight: 500;
   line-height: 26px;
 }
-body.is-popup-open {
-  overflow: hidden;
-}
 
 .wrapper {
   display: -webkit-box;
@@ -1487,25 +1484,6 @@ button {
 
 img {
   max-width: 100%;
-}
-
-.svg-icon {
-  fill: currentColor;
-}
-
-.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
 }
 
 a,
