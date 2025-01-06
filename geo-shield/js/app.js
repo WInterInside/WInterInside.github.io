@@ -441,6 +441,52 @@ $(document).ready(function() {
     $(window).on('scroll', checkVisibility);
 });
 
+$(document).ready(function () {
+    // Находим все элементы с классом .map__order
+    var orders = $('.map__order');
+
+    function checkOrderVisibility() {
+        orders.each(function (index, order) {
+            // Для каждого блока находим все вложенные div'ы
+            var childrenDivs = $(order).find('div');
+
+            childrenDivs.each(function (childIndex, childItem) {
+                if (isElementPartiallyVisible(childItem, 0.3)) { // Проверяем видимость на 30%
+                    setTimeout(function () {
+                        $(childItem).addClass('is-visible');
+                    }, childIndex * 1000); // Задержка в 1 секунду между каждым элементом
+                }
+            });
+        });
+    }
+
+    // Функция для проверки частичной видимости элемента на экране
+    function isElementPartiallyVisible(el, threshold) {
+        var rect = el.getBoundingClientRect();
+
+        // Высота и ширина элемента
+        var elementHeight = rect.height || el.offsetHeight;
+        var elementWidth = rect.width || el.offsetWidth;
+
+        // Видимая высота и ширина элемента
+        var visibleHeight = Math.max(0, window.innerHeight - rect.top);
+        var visibleWidth = Math.max(0, window.innerWidth - rect.left);
+
+        // Процент видимости по высоте и ширине
+        var heightPercentage = visibleHeight / elementHeight;
+        var widthPercentage = visibleWidth / elementWidth;
+
+        // Элемент считается частично видимым, если виден хотя бы на заданный процент
+        return (heightPercentage >= threshold && widthPercentage >= threshold);
+    }
+
+    // Запускаем проверку при загрузке страницы
+    checkOrderVisibility();
+
+    // Также проверяем видимость элементов при прокрутке окна
+    $(window).on('scroll', checkOrderVisibility);
+});
+
 // подсветка текущей станици в навигации - мб стоит подобрать другую реализацию, стили для класса написаны.
 $(document).ready(function () {
 	// Получаем текущий URL страницы

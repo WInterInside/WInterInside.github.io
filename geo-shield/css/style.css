@@ -2286,6 +2286,8 @@ body.is-scrolled .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 12px;
   width: 100%;
   padding: 64px 46px;
@@ -2303,9 +2305,12 @@ body.is-scrolled .header__wrapper {
   }
 }
 .map__order div {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   padding: 24px;
   background-color: rgba(36, 37, 42, 0.9607843137);
-  width: calc(33.333% - 6px);
+  width: calc(33% - 6px);
   border-radius: 8px;
 }
 @media only screen and (max-width: 1300px) {
@@ -2372,6 +2377,9 @@ body.is-scrolled .header__wrapper {
 }
 .map__order div ul > li {
   margin-bottom: 8px;
+}
+.map__order div.is-visible {
+  opacity: 1;
 }
 
 @-webkit-keyframes moveBackground {
