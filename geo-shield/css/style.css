@@ -122,6 +122,9 @@
 @media (max-width: 1000px) {
   .button--lg {
     min-width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
   }
 }
 .button--animated {
@@ -1292,11 +1295,11 @@ form .checkbox label input:checked + span:after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 32px;
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
   }
 }
 .header__contacts a {
@@ -1384,7 +1387,7 @@ form .checkbox label input:checked + span:after {
 }
 @media only screen and (max-width: 1600px) {
   .header__nav ul:first-child {
-    gap: 20px;
+    gap: 16px;
     margin: 0 20px;
   }
 }
@@ -1394,12 +1397,6 @@ form .checkbox label input:checked + span:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 0;
   }
 }
@@ -1435,9 +1432,6 @@ form .checkbox label input:checked + span:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 10px;
     opacity: 1;
     pointer-events: auto;
@@ -1507,7 +1501,7 @@ form .checkbox label input:checked + span:after {
   background-color: #CC423F;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 4px 8px;
+  padding: 4px;
   z-index: 100;
   cursor: pointer;
   -webkit-transition: background-color 0.3s;
@@ -1517,13 +1511,17 @@ form .checkbox label input:checked + span:after {
 .header__burger i {
   display: block;
   position: relative;
-  height: 3px;
+  height: 1px;
   width: 100%;
   border-radius: 2px;
   background: #fff;
   left: 0;
   top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 .header__burger i:first-child {
   width: 50%;
@@ -1576,17 +1574,14 @@ form .checkbox label input:checked + span:after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 32px;
+    gap: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: auto;
     width: 100vw;
-    padding: 24px 20px;
+    padding: 24px 20px 24px 30px;
     padding-bottom: 100px;
   }
 }
@@ -1600,9 +1595,22 @@ body.is-nav-open .menu {
           transform: none;
   pointer-events: auto;
 }
-body.is-nav-open .header__burger {
-  -webkit-box-shadow: inset 0px 0px 6px 1px #000000;
-          box-shadow: inset 0px 0px 6px 1px #000000;
+body.is-nav-open .header__burger i {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 80%;
+  left: 4px;
+}
+body.is-nav-open .header__burger i:first-child {
+  width: 50%;
+  opacity: 0;
+}
+body.is-nav-open .header__burger i:last-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -5px;
 }
 
 body.is-sub-nav-open .header__nav ul:nth-child(2) {
@@ -1665,6 +1673,11 @@ body.is-scrolled .header__wrapper {
     margin-top: 98px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .hero {
+    margin-top: 70px;
+  }
+}
 .hero::before {
   position: absolute;
   content: "";
@@ -1721,9 +1734,9 @@ body.is-scrolled .header__wrapper {
 }
 @media (max-width: 900px) {
   .hero__main-text {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 6px;
     border-radius: 6px;
   }
 }
@@ -1747,10 +1760,10 @@ body.is-scrolled .header__wrapper {
 }
 @media (max-width: 1000px) {
   .hero__sub-text {
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 0 50px 0;
+    width: 90%;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 20px 0;
     padding: 10px;
     border-radius: 6px;
   }
@@ -1764,7 +1777,7 @@ body.is-scrolled .header__wrapper {
 }
 @media only screen and (max-width: 1200px) {
   .hero--page {
-    padding: 20px;
+    padding: 10px;
   }
 }
 .hero--page .hero__main-text {
@@ -1796,9 +1809,9 @@ body.is-scrolled .header__wrapper {
 }
 @media (max-width: 900px) {
   .hero--page .hero__main-text {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 6px;
     border-radius: 6px;
   }
 }
@@ -1824,9 +1837,9 @@ body.is-scrolled .header__wrapper {
 @media (max-width: 1000px) {
   .hero--page .hero__sub-text {
     width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 0 50px 0;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 20px 0;
     padding: 10px;
     border-radius: 6px;
   }
@@ -2847,7 +2860,7 @@ body .fancybox-content {
 }
 @media only screen and (max-width: 1300px) {
   .service__preview {
-    width: 100%;
+    display: none;
   }
 }
 .service__content {
@@ -4386,9 +4399,9 @@ button::-moz-selection {
 @media only screen and (max-width: 1200px) {
   .works__item {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .works__previews {
