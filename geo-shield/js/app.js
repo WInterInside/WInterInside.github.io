@@ -502,3 +502,12 @@ $(document).ready(function () {
 		}
 	});
 });
+
+$(document).ready(function() {
+    $('.footer__up').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0 // Прокручиваем до верха страницы
+        }, 500); // Время анимации в миллисекундах (здесь 500 мс)
+    });
+});
