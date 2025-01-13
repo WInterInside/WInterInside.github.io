@@ -899,7 +899,7 @@
   width: 492px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 38px;
+  padding: 94px;
   background-color: #63614F;
   text-align: center;
   color: #fff;
@@ -922,6 +922,11 @@
   line-height: 31.2px;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 1500px) {
+  .contacts-page__form {
+    padding: 48px;
+  }
 }
 @media (max-width: 1100px) {
   .contacts-page__form {
@@ -1910,6 +1915,11 @@ body.is-scrolled .header__wrapper {
 }
 .modal .contacts-page__form form .button {
   margin-top: 46px;
+}
+@media (max-width: 1500px) {
+  .modal .contacts-page__form {
+    padding: 48px;
+  }
 }
 @media (max-width: 1100px) {
   .modal .contacts-page__form {
