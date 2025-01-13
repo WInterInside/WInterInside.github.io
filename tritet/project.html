@@ -13,8 +13,11 @@
 				href="img/favicons/favicon.svg"
 				type="image/svg+xml">
 
+	<!-- <link rel="stylesheet"
+				href="css/style.css"> -->
+	
 	<link rel="stylesheet"
-				href="css/style.css">
+				href="css/style.min.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -365,6 +368,34 @@
 	</div>
 </div>
 
+<div id="callback" class="modal">
+	<div class="contacts-page__form">
+		<h2>
+			Обратная связь
+		</h2>
+		<p>
+			Заполните форму и мы перезвоним вам в ближайшее время
+		</p>
+		<form class="form" action="">
+				<input class="form__input" type="text" name="name" required="" placeholder="Имя">
+				<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="Телефон" maxlength="18">
+
+				<button class="button form__button" type="submit">
+					Отправить заявку
+				</button>
+
+				<div class="form__check">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" class="required" checked/>
+							<span>Согласие на обработку персональных данных</span>
+						</label>
+					</div>
+				</div>
+		</form>
+	</div>
+</div>
+
 	</div>
 
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
@@ -380,7 +411,7 @@
 <script src="js/app.js"></script>
 
 <!-- Подключение API Yandex карт -->
-<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 
 </html>

@@ -30,7 +30,7 @@
 
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 
-	<title>ТРИТЭТ | Спасибо</title>
+	<title>ТРИТЭТ | Контакты</title>
 </head>
 
 
@@ -119,21 +119,114 @@
 
 
 		<main class="main">
-			<section class="success">
-				<div class="container">
-					<div class="success__content">
-						<h1 class="success__caption">
-							Спасибо! <br>
-							Ваша заявка отправлена
-						</h1>
-						<p class="success__text">
-							Наш специалист свяжется с Вами в ближайшее время
-						</p>
-						<a href="/" class="button success__button">
-							Вернуться на главную
-						</a>
+			<main class="main">
+				<section class="contacts-page">
+					<!-- breadcrumbs -->
+					<div class="container">
+						<section class="breadcrumbs">
+							<ol itemscope="" itemtype="#">
+								<li itemprop="itemListElement" itemscope="" itemtype="#">
+									<a itemprop="item" href="index.html">
+										<span itemprop="name" class="breadcrumb_font_style">Главная</span>
+									</a>
+									<meta itemprop="position" content="1">
+									<span class="breadcrumb_font_dash">/</span>
+								</li>
+								<li>
+									<span class="breadcrumb_font_style">Контакты</span>
+								</li>
+							</ol>
+						</section>
 					</div>
-				</div>
+					<!-- breadcrumbs -->
+
+					<div class="container">
+
+						<h1>Контакты</h1>
+
+						<div class="contacts-page__wrapper">
+							<div class="contacts-page__content">
+								<div class="contacts-page__item">
+									<h3>
+										Адрес:
+									</h3>
+									<address>
+										ул. Маяковского, 14
+									</address>
+								</div>
+
+								<div class="contacts-page__item">
+									<h3>
+										Телефон:
+									</h3>
+									<div>
+										<a class="header__tel-link" href="tel:+79790558023">+79790558023</a>
+
+										<a href="https://t.me/+79790558023">
+											<img src="img/icons/whtsp.svg" alt="icon">
+										</a>
+
+										<a href="https://wa.me/79790558023">
+											<img src="img/icons/tm.svg" alt="icon">
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts-page__item">
+									<h3>
+										Почта:
+									</h3>
+									<a href="mailto:pg-designcrimea@mail.ru">pg-designcrimea@mail.ru</a>
+								</div>
+
+								<div class="contacts-page__item">
+									<h3>
+										Режим работы:
+									</h3>
+									<span>
+										пн-пт: 10:00 - 18:00, сб: 10:00 - 16:00,
+										<br>
+										вс - выходной
+									</span>
+								</div>
+							</div>
+
+							<div class="contacts-page__form">
+								<h2>
+									Обратная связь
+								</h2>
+								<p>
+									Заполните форму и мы перезвоним вам в ближайшее время
+								</p>
+								<form class="form" action="">
+										<input class="form__input" type="text" name="name" required="" placeholder="Имя">
+										<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="Телефон" maxlength="18">
+										<input class="form__input form__input--mail" type="email" name="mail" required="" placeholder="E-mail">
+
+										<div class="form__check">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" class="required" checked/>
+													<span>Согласие на обработку персональных данных</span>
+												</label>
+											</div>
+										</div>
+
+										<button class="button form__button" type="submit">
+											Отправить заявку
+										</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- Карта -->
+					<div class="contacts-page__map-wrapper">
+						<div id="contacts-page__map" style="width: 100%;"></div>
+					</div>
+				</section>
+			</main>
+
 			</section>
 		</main>
 

@@ -253,3 +253,40 @@ $(document).ready(function () {
 	});
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Функция создания карты
+	function createMap(xID, coords) {
+		const mapContainer = document.getElementById(xID);
+		if (mapContainer) {
+			ymaps.ready(function () {
+				const myMap = new ymaps.Map(xID, {
+					center: coords,
+					zoom: 17,
+					controls: []
+				});
+
+				const myPlacemark = new ymaps.Placemark(coords,
+					{
+						hintContent: 'г. Симферополь, ул. Маяковского, 14',
+						balloonContent: 'г. Симферополь, ул. Маяковского, 14'
+					},
+					{
+						iconLayout: 'default#image',
+						iconImageHref: 'img/map-pin.svg',
+						iconImageSize: [44, 54],
+						iconImageOffset: [-20, -130]
+					}
+				);
+
+				myMap.geoObjects.add(myPlacemark);
+				myMap.behaviors.disable('scrollZoom');
+			});
+		} else {
+			console.error("Элемент с ID", xID, "не найден.");
+		}
+	}
+
+	// Вызов функции создания карты
+	createMap('contacts-page__map', [44.949890, 34.089134]);
+});
