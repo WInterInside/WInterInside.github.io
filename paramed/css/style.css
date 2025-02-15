@@ -1050,7 +1050,7 @@
 .dms__banner {
   position: relative;
   overflow: hidden;
-  height: 500px;
+  min-height: 500px;
   border-radius: 30px;
   padding: 40px;
   margin: 30px 0;
@@ -1075,6 +1075,11 @@
           flex-direction: column;
   gap: 20px;
   width: 70%;
+}
+@media only screen and (max-width: 900px) {
+  .dms__banner-text {
+    width: 100%;
+  }
 }
 .dms__banner-text span:first-child {
   font-size: 33px;
@@ -3803,6 +3808,13 @@ body .fancybox-content {
   list-style-type: disc; /* Тип маркера списка */
   padding-left: 20px; /* Отступ слева от списка */
 }
+@media only screen and (max-width: 900px) {
+  .service-page__banner ul {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+}
 .service-page__banner ul li {
   margin-bottom: 6px;
 }
@@ -5157,6 +5169,14 @@ textarea::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media only screen and (max-width: 900px) {
+  .page-controls__item:first-child {
+    display: none;
+  }
+  .page-controls__item--next {
+    margin-left: auto;
+  }
+}
 .page-controls__item--next span {
   display: inline-block;
   width: 100%;
@@ -5992,6 +6012,14 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media only screen and (max-width: 900px) {
+  .page-controls__item:first-child {
+    display: none;
+  }
+  .page-controls__item--next {
+    margin-left: auto;
+  }
 }
 .page-controls__item--next span {
   display: inline-block;
