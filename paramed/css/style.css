@@ -258,6 +258,68 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.article {
+  position: relative;
+  padding: 40px 0;
+  margin-top: 132px;
+}
+.article h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 900px) {
+  .article h2 {
+    font-size: 25px;
+  }
+}
+.article li {
+  margin: 6px 0;
+}
+@media only screen and (max-width: 1200px) {
+  .article {
+    margin-top: 98px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .article {
+    margin-top: 70px;
+  }
+}
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+.article__info > div {
+  background-color: #dd9933;
+  color: #fff;
+  padding: 6px;
+  border-radius: 3px;
+}
+.article__banner {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(217, 83, 79);
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+.article__banner > a {
+  font-weight: 600;
+  color: #dd9933;
+}
 .articles--page {
   padding: 40px 0;
   margin-top: 132px;
@@ -5148,6 +5210,7 @@ textarea::placeholder {
 }
 
 .page-controls {
+  margin: 30px 0;
   color: rgb(221, 221, 221);
   border-bottom: 1px solid rgb(221, 221, 221);
   display: -webkit-box;
@@ -5992,6 +6055,7 @@ textarea::placeholder {
 }
 
 .page-controls {
+  margin: 30px 0;
   color: rgb(221, 221, 221);
   border-bottom: 1px solid rgb(221, 221, 221);
   display: -webkit-box;
