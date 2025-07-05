@@ -149,84 +149,88 @@
 					</div>
 				</div>
 			</section>
-
+			
 			<section id="contact" class="contact section section--contact">
 				<div class="container">
 					<h2 class="contact__caption">Kontakt & Führung</h2>
 
 					<p class="section__text">Sie wollen unsere Produktion kennenlernen und in die Geheimnisse der hohen Chocolatier-Kunst eingeweiht werden? Besuchen Sie unser Werk und unseren Schokoshop. Alvarez bietet Führungen für Gruppen unterschiedlicher Ausrichtung an, für Kindergärten, Schulgruppen, Familien und interessierte Erwachsene.</p>
 					<p class="section__text">In Seminaren und Workshops erfahren Sie alles, was eine gute Schokolade ausmacht und wie man selbst köstliche Pralinen herstellt. Firmen stellen wir unsere Räumlichkeiten für außergewöhnliche Feiern und Tagungen zur Verfügung.</p>
-				
-					<h2 class="contact__caption">Kontaktformular</h2>
-
-					<form class="contact__form" action="">
-	
-						<div class="contact__form-line">
-							<div class="contact__form-field">
-								<label for="name">Name</label>
-								<input class="contact__form-input" type="text" id="name" required="">
-							</div>
-	
-	
-							<div class="contact__form-field">
-								<label for="Vorname">Vorname</label>
-								<input class="contact__form-input" type="text" id="vorname" required="">
-							</div>
-						</div>
-	
-						<div class="contact__form-line">
-							<div class="contact__form-field">
-								<label for="strabe">Straße</label>
-								<input class="contact__form-input" type="text" id="strabe" required="">
-							</div>	
-	
-							<div class="contact__form-field">
-								<label for="plz">PLZ</label>
-								<input class="contact__form-input" type="text" id="plz" required="">
-							</div>
-						</div>
-	
-						<div class="contact__form-line">
-							<div class="contact__form-field">
-								<label for="tel">Telefon</label>
-								<input class="contact__form-input" type="tel" id="tel" required="">
-							</div>
-	
-	
-							<div class="contact__form-field">
-								<label for="email">E-Mail</label>
-								<input class="contact__form-input" type="email" id="email" required="">
-							</div>
-						</div>
-	
-						<textarea name="" id="" cols="30" rows="10"></textarea>
-	
-						<div class="contact__radio-wrapper">
-							<input class="contact__radio" type="radio" id="fuehrungJa" name="fuehrung" value="ja">
-							<label for="fuehrungJa">Ja, ich/wir möchten an einer Führung am <input class="contact__form-input" type="text"> teilnehmen Personenanzahl <input class="contact__short-input" type="text"></label>
-						</div>
-	
-						<div class="contact__form-check">
-							<h3 class="contact__form-caption">Ich bin an weiteren Informationen interessiert. Bitte nehmen Sie mich in Ihren Infoverteiler auf.</h3>
-							<div class="contact__form-block">
-								<input type="checkbox" id="firmenfeiern" name="firmenfeiern">
-								<label for="firmenfeiern">Firmenfeiern</label><br>
-	
-								<input type="checkbox" id="führungen" name="führungen">
-								<label for="führungen">Führungen</label><br>
-	
-								<input type="checkbox" id="workshops" name="workshops">
-								<label for="workshops">Workshops & Seminare</label><br>
-	
-								<input type="checkbox" id="tagungen" name="tagungen">
-								<label for="tagungen">Tagungen</label><br>
-							</div>
-						</div>
-	
-						<input class="btn btn--black btn--submit" type="submit" value="Senden">
-					</form>
+					
+					<button class="contact__btn btn">Kontaktformular</button>
 				</div>
 			</section>
+
+			<div class="modal">
+				<button class="modal__close">x</button>
+				<h2 class="contact__caption">Kontaktformular</h2>
+				<form class="contact__form" action="">
+
+					<div class="contact__form-line">
+						<div class="contact__form-field">
+							<label for="name">Name</label>
+							<input class="contact__form-input" type="text" id="name" required="">
+						</div>
+
+
+						<div class="contact__form-field">
+							<label for="Vorname">Vorname</label>
+							<input class="contact__form-input" type="text" id="vorname" required="">
+						</div>
+					</div>
+
+					<div class="contact__form-line">
+						<div class="contact__form-field">
+							<label for="strabe">Straße</label>
+							<input class="contact__form-input" type="text" id="strabe" required="">
+						</div>	
+
+						<div class="contact__form-field">
+							<label for="plz">PLZ</label>
+							<input class="contact__form-input" type="text" id="plz" required="">
+						</div>
+					</div>
+
+					<div class="contact__form-line">
+						<div class="contact__form-field">
+							<label for="tel">Telefon</label>
+							<input class="contact__form-input" type="tel" id="tel" required="">
+						</div>
+
+
+						<div class="contact__form-field">
+							<label for="email">E-Mail</label>
+							<input class="contact__form-input" type="email" id="email" required="">
+						</div>
+					</div>
+
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+
+					<div class="contact__radio-wrapper">
+						<input class="contact__radio" type="radio" id="fuehrungJa" name="fuehrung" value="ja">
+						<label for="fuehrungJa">Ja, ich/wir möchten an einer Führung am <input class="contact__form-input" type="text"> teilnehmen Personenanzahl <input class="contact__short-input" type="text"></label>
+					</div>
+
+					<div class="contact__form-check">
+						<h3 class="contact__form-caption">Ich bin an weiteren Informationen interessiert. Bitte nehmen Sie mich in Ihren Infoverteiler auf.</h3>
+						<div class="contact__form-block">
+							<input type="checkbox" id="firmenfeiern" name="firmenfeiern">
+							<label for="firmenfeiern">Firmenfeiern</label><br>
+
+							<input type="checkbox" id="führungen" name="führungen">
+							<label for="führungen">Führungen</label><br>
+
+							<input type="checkbox" id="workshops" name="workshops">
+							<label for="workshops">Workshops & Seminare</label><br>
+
+							<input type="checkbox" id="tagungen" name="tagungen">
+							<label for="tagungen">Tagungen</label><br>
+						</div>
+					</div>
+
+					<input class="btn btn--black btn--submit" type="submit" value="Senden">
+				</form>
+			</div>
 		</main>
 
 		<footer class="footer">

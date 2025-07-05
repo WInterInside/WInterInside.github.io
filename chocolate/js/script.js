@@ -61,3 +61,21 @@ $(document).ready(function() {
 		]
 	});
 });
+
+// modal
+var btn = document.querySelector(".contact__btn");
+var popup = document.querySelector(".modal");
+var body = document.querySelector('body');
+var closeBtn = document.querySelector(".modal__close");
+
+btn.addEventListener("click", function(evn) {
+    evn.preventDefault();
+    popup.classList.add("modal-show");
+	body.classList.add("is-modal");
+});
+
+closeBtn.addEventListener("click", function(evn) {
+    evn.preventDefault();
+    popup.classList.remove("modal-show");
+	body.classList.remove("is-modal");
+});

@@ -362,6 +362,15 @@ img {
   min-height: 100vh;
   overflow: hidden; }
 
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #125024d0; }
+
+::-webkit-scrollbar-thumb {
+  background: #22914e; }
+
 .hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -779,6 +788,9 @@ img {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .section__name {
+      font-size: 50px; } }
 
 .section__text {
   font-size: 36px;
@@ -914,8 +926,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4rem;
-  background-color: #0F3920; }
+  gap: 4rem; }
   .contact__form label {
     font-size: 20px;
     font-weight: 900;
@@ -923,6 +934,9 @@ img {
   @media (max-width: 900px) {
     .contact__form {
       gap: 50px; } }
+
+.contact__btn {
+  margin: 150px auto 0 auto; }
 
 .contact__form-caption {
   text-align: center;
@@ -998,6 +1012,58 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.modal {
+  z-index: 1000;
+  padding: 24px;
+  border-radius: 5px;
+  position: fixed;
+  left: calc(50% - 400px);
+  top: 10%;
+  max-width: 800px;
+  height: 80vh;
+  overflow-y: scroll;
+  background-color: #0F3920;
+  -webkit-box-shadow: 1px 1px 17px 16px #0000006f;
+          box-shadow: 1px 1px 17px 16px #0000006f;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s; }
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer; }
+
+.modal-show {
+  -webkit-transform: none;
+          transform: none; }
+
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 100%;
+    max-width: unset;
+    left: 0;
+    bottom: 0; } }
+
+body.is-modal {
+  overflow: hidden; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 
 .footer {
   padding: 80px 0;
