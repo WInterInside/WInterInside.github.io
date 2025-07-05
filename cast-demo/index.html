@@ -1,0 +1,74 @@
+
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1 ">
+		<script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+		<link rel="stylesheet" href="style.css" media="all" />
+	</head>
+	<body>
+		<h1>Screencast demo</h1>
+
+		<iframe id="videoPlayer" src="https://www.youtube.com/embed/_awjFymn-GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<button class="button">Loading</button>
+
+		<script>
+			function initializeCastApi() {
+			console.log('initializeCastApi');
+
+			var sessionRequest = new chrome.cast.SessionRequest(
+				chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID);
+			var apiConfig = new chrome.cast.ApiConfig(
+				sessionRequest, sessionListener, receiverListener);
+			chrome.cast.initialize(apiConfig, onInitSuccess, onError);
+			};
+
+			if (!chrome.cast || !chrome.cast.isAvailable) {
+			setTimeout(initializeCastApi, 1000);
+			}
+
+			function onInitSuccess() {
+			console.log('onInitSuccess');
+			}
+
+			function onError(e) {
+			console.log('onError', e);
+			}
+
+			function sessionListener(e) {
+			console.log('sessionListener', e);
+			}
+
+			function receiverListener(availability) {
+			console.log('receiverListener', availability);
+
+			if(availability === chrome.cast.ReceiverAvailability.AVAILABLE) {
+				document.querySelector(".button").removeAttribute("disabled");
+				document.querySelector(".button").textContent = "Start cast on tv =>";
+			}
+			}
+
+			function onSessionRequestSuccess(session) {
+				console.log('onSessionRequestSuccess', session);
+
+				var mediaInfo = new chrome.cast.media.MediaInfo(
+					'https://www.youtube.com/embed/_awjFymn-GA',
+					'video/mp4'
+				);
+
+				var request = new chrome.cast.media.LoadRequest(mediaInfo);
+				session.loadMedia(request, onMediaLoadSuccess, onError);
+			}
+
+			function onMediaLoadSuccess(e) {
+			console.log('onMediaLoadSuccess', e);
+			}
+
+			document.querySelector(".button").addEventListener("click", function() {
+			chrome.cast.requestSession(onSessionRequestSuccess, onError);
+			});
+		</script>
+	</body>
+</html>
+
