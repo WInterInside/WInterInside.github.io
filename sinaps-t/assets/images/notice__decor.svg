@@ -1,0 +1,50 @@
+<svg width="212" height="98" viewBox="0 0 212 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_372_2)">
+<rect x="6" y="6" width="200" height="85" fill="white"/>
+<rect x="-19" y="-5.45508" width="6" height="150" transform="rotate(-10.8508 -19 -5.45508)" fill="black"/>
+<rect x="-9.17969" y="-7.33765" width="6" height="150" transform="rotate(-10.8508 -9.17969 -7.33765)" fill="black"/>
+<rect x="0.642578" y="-9.22021" width="6" height="150" transform="rotate(-10.8508 0.642578 -9.22021)" fill="black"/>
+<rect x="10.4629" y="-11.1025" width="6" height="150" transform="rotate(-10.8508 10.4629 -11.1025)" fill="black"/>
+<rect x="20.2852" y="-12.9851" width="6" height="150" transform="rotate(-10.8508 20.2852 -12.9851)" fill="black"/>
+<rect x="30.1055" y="-14.8677" width="6" height="150" transform="rotate(-10.8508 30.1055 -14.8677)" fill="black"/>
+<rect x="39.9277" y="-16.7502" width="6" height="150" transform="rotate(-10.8508 39.9277 -16.7502)" fill="black"/>
+<rect x="49.748" y="-18.6328" width="6" height="150" transform="rotate(-10.8508 49.748 -18.6328)" fill="black"/>
+<rect x="59.5703" y="-20.5151" width="6" height="150" transform="rotate(-10.8508 59.5703 -20.5151)" fill="black"/>
+<rect x="69.3906" y="-22.3977" width="6" height="150" transform="rotate(-10.8508 69.3906 -22.3977)" fill="black"/>
+<rect x="79.2129" y="-24.2803" width="6" height="150" transform="rotate(-10.8508 79.2129 -24.2803)" fill="black"/>
+<rect x="89.0332" y="-26.1628" width="6" height="150" transform="rotate(-10.8508 89.0332 -26.1628)" fill="black"/>
+<rect x="98.8535" y="-28.0454" width="6" height="150" transform="rotate(-10.8508 98.8535 -28.0454)" fill="black"/>
+<rect x="108.676" y="-29.928" width="6" height="150" transform="rotate(-10.8508 108.676 -29.928)" fill="black"/>
+<rect x="118.496" y="-31.8103" width="6" height="150" transform="rotate(-10.8508 118.496 -31.8103)" fill="black"/>
+<rect x="128.318" y="-33.6929" width="6" height="150" transform="rotate(-10.8508 128.318 -33.6929)" fill="black"/>
+<rect x="138.139" y="-35.5754" width="6" height="150" transform="rotate(-10.8508 138.139 -35.5754)" fill="black"/>
+<rect x="147.961" y="-37.458" width="6" height="150" transform="rotate(-10.8508 147.961 -37.458)" fill="black"/>
+<rect x="157.781" y="-39.3406" width="6" height="150" transform="rotate(-10.8508 157.781 -39.3406)" fill="black"/>
+<rect x="167.604" y="-41.2229" width="6" height="150" transform="rotate(-10.8508 167.604 -41.2229)" fill="black"/>
+<rect x="177.424" y="-43.1055" width="6" height="150" transform="rotate(-10.8508 177.424 -43.1055)" fill="black"/>
+<rect x="187.246" y="-44.988" width="6" height="150" transform="rotate(-10.8508 187.246 -44.988)" fill="black"/>
+<rect x="197.066" y="-46.8706" width="6" height="150" transform="rotate(-10.8508 197.066 -46.8706)" fill="black"/>
+</g>
+<rect x="6.5" y="6.5" width="199" height="84" stroke="black"/>
+<rect width="1" height="8" fill="black"/>
+<rect width="1" height="8" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 0 1)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 0 1)" fill="black"/>
+<rect width="1" height="8" transform="translate(211)" fill="black"/>
+<rect width="1" height="8" transform="translate(211)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 204 1)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 204 1)" fill="black"/>
+<rect width="1" height="8" transform="translate(211 89)" fill="black"/>
+<rect width="1" height="8" transform="translate(211 89)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 204 97)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 204 97)" fill="black"/>
+<rect width="1" height="8" transform="translate(0 90)" fill="black"/>
+<rect width="1" height="8" transform="translate(0 90)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 0 98)" fill="black"/>
+<rect width="1" height="8" transform="matrix(0 -1 1 0 0 98)" fill="black"/>
+<defs>
+<clipPath id="clip0_372_2">
+<rect x="6" y="6" width="200" height="85" fill="white"/>
+</clipPath>
+</defs>
+</svg>
