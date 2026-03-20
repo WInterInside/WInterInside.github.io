@@ -22,9 +22,24 @@
 	<header class="header">
   <div class="container container--relative">
     <div class="header__wrapper">
-      <img src="assets/images/header-text.svg" alt="" />
+      <div class="header__buttons header__buttons--m">
+        <a class="header__button">мануал по созданию нейрочип-капсулы</a>
+        <a class="header__button header__button--black">СИНАПС</a>
+      </div>
+
+      <img
+        class="header__img header__img--d"
+        src="assets/images/header-text.svg"
+        alt=""
+      />
+      <img
+        class="header__img header__img--m"
+        src="assets/images/header-text-m.svg"
+        alt=""
+      />
+
       <div class="header__side">
-        <div class="header__buttons">
+        <div class="header__buttons header__buttons--d">
           <a class="header__button">мануал по созданию нейрочип-капсулы</a>
           <a class="header__button header__button--black">СИНАПС</a>
         </div>
@@ -75,7 +90,6 @@
     <div class="header__dot header__dot--6"></div>
   </div>
 </header>
-
 
 
 	<div class="wrapper">
@@ -305,7 +319,8 @@
 					<div class="activation__content">
 						<div class="activation__figure"></div>
 						<span class="activation__text">нрчп</span>
-						<img class="activation__text-title" src="assets/images/activation-title.svg" alt="" />
+						<img class="activation__text-title activation__text-title--d" src="assets/images/activation-title-d.svg" alt="" />
+						<img class="activation__text-title activation__text-title--m" src="assets/images/activation-title-m.svg" alt="" />
 					</div>
 					<img class="activation__text-decor" src="assets/images/activation-text.svg" alt="" />
 					<div class="activation__instruction">
@@ -314,7 +329,7 @@
 					</div>
 				</div>
 
-				<div class="container">
+				<div class="container container--game">
 					<div class="activation__game">
 						<div class="activation__start"></div>
 						<canvas id="mazeCanvas"></canvas>
@@ -351,8 +366,6 @@
 </footer>
 
 	</div>
-
-
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
