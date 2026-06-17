@@ -14,7 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <title>New challenge</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"
+      async
+    ></script>
+    <title>Challenge</title>
   </head>
 </html>
 
@@ -25,7 +29,14 @@
     <div class="header__wrapper">
       <div class="logo">
         <a href="/">
-          <img class="logo__img" src="assets/images/logo.png" alt="site logo" />
+          <picture>
+            <source
+              media="only screen and (max-width: 767px)"
+              srcset="assets/images/logo-mob.png"
+            />
+
+            <img class="logo__img" src="assets/images/logo.png" alt="" />
+          </picture>
         </a>
       </div>
 
@@ -59,21 +70,22 @@
 
 		<main class="main">
 			<h1 class="hidden">New challenge</h1>
-			<div class="container">
+
 				<section class="hero">
-					<img src="assets/images/hero.png" alt="" />
-					<!-- <div class="hero__header">
-						<div class="hero__header-content">
-							<span>app</span>
-							<div class="hero__header-decor">
-								<img src="assets/images/hero-text.png" alt="hero text" />
-							</div>
-							<span>2026</span>
-						</div>
+					<div class="container">
+						<picture>
+							<source
+							media="only screen and (max-width: 767px)"
+							srcset="assets/images/hero-mob.png"
+							/>
+
+							<img
+							class=""
+							src="assets/images/hero.png"
+							alt=""
+							/>
+						</picture>
 					</div>
-					<div class="hero__main">
-						<img src="assets/images/hero-main-text.png" alt="hero main text" />
-					</div> -->
 				</section>
 
 				<section class="content">
@@ -83,7 +95,19 @@
 							<img class="content__decor content__decor--small-star content__decor--small-star-1" src="assets/images/small-star.png" alt="" />
 							<img class="content__decor content__decor--small-star content__decor--small-star-2" src="assets/images/small-star.png" alt="" />
 
-							<img src="assets/images/content-text.png" alt="" />
+							<picture>
+								<source
+									media="only screen and (max-width: 767px)"
+									srcset="assets/images/content-text-mob.png">
+
+								<source
+									media="only screen and (max-width: 1199px)"
+									srcset="assets/images/content-text-tab.png">
+
+								<img
+									src="assets/images/content-text.png"
+									alt="">
+							</picture>
 
 							<div class="content__list">
 								<div class="content__item content__item--1">
@@ -122,6 +146,107 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="today">
+					<div class="container">
+						<div class="today__wrapper">
+							<span>не нужно ждать понедельника, начни</span>
+							<picture>
+								<source
+								media="only screen and (max-width: 767px)"
+								srcset="assets/images/today-mob.png"
+								/>
+
+								<img
+								class=""
+								src="assets/images/today.png"
+								alt=""
+								/>
+							</picture>
+						</div>
+					</div>
+				</section>
+
+				<section class="level">
+					<div class="container">
+						<div class="level__wrapper">
+							<h2 class="level__caption">твой уровень</h2>
+							<picture>
+								<source
+								media="only screen and (max-width: 767px)"
+								srcset="assets/images/level-mob.png"
+								/>
+
+								<img
+								class=""
+								src="assets/images/level-simple.png"
+								alt=""
+								/>
+							</picture>
+						</div>
+					</div>
+				</section>
+
+				<section class="changes">
+					<div class="container">
+						<div class="changes__wrapper">
+							<header class="changes__header">
+								наблюдай за изменениями
+							</header>
+
+							<div class="changes__list">
+								<div class="changes__item changes__item--1">
+									<span>становись лучше каждый день, каждое выполненное задание приближает тебя к новой версии тебя</span>
+									<a href="/404">Активировать прогресс</a>
+								</div>
+								<div class="changes__item changes__item--2">
+									<span>не дай серии оборваться — впереди новые челленджи</span>
+									<div class="changes__indicator changes__indicator--large">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="changes__item changes__item--3">
+									<span>зарабатывай очки за каждое выполненное испытание</span>
+									<div class="changes__indicator changes__indicator--small">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="changes__item changes__item--4">
+									<span>завершай челленджи — открывай уникальные награды</span>
+									<img
+										class=""
+										src="assets/images/changes-star.png"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section class="ready">
+					<picture>
+						<source
+						media="only screen and (max-width: 767px)"
+						srcset="assets/images/ready-mob.png"
+						/>
+
+						<img
+						class=""
+						src="assets/images/ready.png"
+						alt=""
+						/>
+					</picture>
+				</section> -->
 			</div>
 		</main>
 
