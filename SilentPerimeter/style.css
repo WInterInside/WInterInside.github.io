@@ -87,3 +87,12 @@ footer a{display:inline-block;text-decoration:underline;text-decoration-color:tr
 footer a:hover,footer a:focus-visible{color:var(--text);text-decoration-color:var(--accent)}
 @media(max-width:600px){footer{justify-content:center;text-align:center}}
 @media(max-width:600px){#hearts{width:45px;height:36px}}
+@media(max-width:600px){
+ #help-dialog{width:calc(100% - 16px);max-width:none;padding:14px;max-height:88vh}
+ #help-dialog h2{margin:4px 0 8px}
+ #help-dialog h3{margin:10px 0 2px}
+ #help-dialog ul{margin:3px 0;padding-left:18px}
+ #help-dialog p{margin:4px 0 7px}
+ #help-dialog .guide-banner{margin:5px 0 9px}
+ #help-dialog .guide-actions{gap:6px}
+}
