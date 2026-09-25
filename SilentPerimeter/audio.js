@@ -1,6 +1,6 @@
 'use strict';
 class ZoneAudio {
- constructor(){try{this.enabled=localStorage.getItem('kordon-sound')!=='off'}catch{this.enabled=true}this.nextMusic=0;this.nextNearby=0;this.nextRustle=0;this.lastCue=null}
+ constructor(){try{this.enabled=localStorage.getItem('kordon-sound')!=='off'}catch{this.enabled=true}this.nextMusic=0;this.nextNearby=0;this.nextRustle=0;this.lastCue=null;this.lastFootstepBeat=null}
  async start(){try{if(!this.ctx){const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;this.ctx=new Audio();const c=this.ctx;this.master=c.createGain();this.master.gain.value=this.enabled?.6:0;this.master.connect(c.destination);
  const buffer=c.createBuffer(1,c.sampleRate*3,c.sampleRate),data=buffer.getChannelData(0);let brown=0;for(let i=0;i<data.length;i++){brown=(brown+(Math.random()*2-1)*.03)/1.02;data[i]=brown*3}this.noiseBuffer=buffer;
  this.wind=c.createBufferSource();this.wind.buffer=buffer;this.wind.loop=true;this.filter=c.createBiquadFilter();this.filter.type='lowpass';this.filter.frequency.value=700;this.weatherGain=c.createGain();this.weatherGain.gain.value=.035;this.wind.connect(this.filter).connect(this.weatherGain).connect(this.master);this.wind.start();
@@ -8,6 +8,8 @@ class ZoneAudio {
  toggle(){this.enabled=!this.enabled;try{localStorage.setItem('kordon-sound',this.enabled?'on':'off')}catch{}if(this.master)this.master.gain.setTargetAtTime(this.enabled?.6:0,this.ctx.currentTime,.03);this.start();return this.enabled}
  tone(freq,end,duration,volume=.05,type='sine',delay=0){if(!this.ctx||!this.enabled)return;const c=this.ctx,t=c.currentTime+delay,o=c.createOscillator(),gain=c.createGain();o.type=type;o.frequency.setValueAtTime(freq,t);o.frequency.exponentialRampToValueAtTime(Math.max(15,end),t+duration);gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(Math.max(.0002,volume),t+Math.min(.12,duration/4));gain.gain.exponentialRampToValueAtTime(.0001,t+duration);o.connect(gain).connect(this.master);o.start(t);o.stop(t+duration+.05);o.onended=()=>{o.disconnect();gain.disconnect()}}
  noise(duration,frequency,volume=.04,delay=0){if(!this.ctx||!this.enabled)return;const c=this.ctx,t=c.currentTime+delay,n=c.createBufferSource(),f=c.createBiquadFilter(),gain=c.createGain();n.buffer=this.noiseBuffer;n.loop=true;f.type='bandpass';f.frequency.value=frequency;f.Q.value=.8;gain.gain.setValueAtTime(.0001,t);gain.gain.linearRampToValueAtTime(volume,t+.03);gain.gain.exponentialRampToValueAtTime(.0001,t+duration);n.connect(f).connect(gain).connect(this.master);n.start(t);n.stop(t+duration+.05);n.onended=()=>{n.disconnect();f.disconnect();gain.disconnect()}}
+ footstep(){if(!this.enabled)return;this.noise(.14,145,.20);this.tone(68,34,.16,.085,'triangle');this.noise(.09,520,.04,.025)}
+ distantGunfire(burst){if(!this.enabled)return;const shots=burst?4:1;for(let i=0;i<shots;i++){const d=i*.16;this.noise(.09,1550,.26,d);this.tone(128,55,.22,.13,'triangle',d);this.noise(.72,180,.095,d+.035);this.tone(74,38,.68,.055,'sine',d+.07);this.noise(.8,330,.045,d+.18)}}
  cue(type,volume=1){if(!this.enabled)return;const v=Math.max(0,volume);
  if(type==='dogs'||type==='indoorDog'){for(let i=0;i<3;i++){this.tone(230,95,.17,.065*v,'sawtooth',i*.28);this.noise(.14,900,.13*v,i*.28)}}
  else if(type==='boars'){this.tone(74,42,.65,.12*v,'sawtooth');this.noise(.65,160,.18*v);this.noise(.15,1300,.1*v,.7)}
@@ -23,6 +25,8 @@ class ZoneAudio {
  }
  update(s,time){if(!this.ctx)return;const c=this.ctx;
  const weather={clear:[.025,420],wind:[.07,950],rain:[.15,2300],fog:[.025,280]}[s.weather];this.weatherGain.gain.setTargetAtTime(weather[0]*(.8+Math.sin(time*.4)*.2),c.currentTime,1);this.filter.frequency.setTargetAtTime(weather[1],c.currentTime,1);
+  const footstepBeat=Math.floor(s.steps/13);if(s.mode==='playing'){if(this.lastFootstepBeat===null)this.lastFootstepBeat=footstepBeat;else if(footstepBeat>this.lastFootstepBeat){this.footstep();this.lastFootstepBeat=footstepBeat}}else this.lastFootstepBeat=footstepBeat;
+ if(s.mode==='playing'){const second=Math.floor(s.elapsed);if(second>=60&&second>(s.lastDistantShotCheck??59)){s.lastDistantShotCheck=second;const last=Number.isFinite(s.lastDistantShotAt)?s.lastDistantShotAt:null,ready=last===null||s.elapsed-last>=120,ramp=last===null?s.elapsed-60:s.elapsed-last-120,chance=Math.min(1,.1+.9*Math.max(0,ramp)/120);if(ready&&Math.random()<chance){s.lastDistantShotAt=s.elapsed;this.distantGunfire(Math.random()<.5)}}}
  if(!this.enabled)return;
  if(s.soundCue){this.cue(s.soundCue);s.soundCue=null}
  if(time>this.nextMusic){this.nextMusic=time+18+Math.random()*16;const root=s.night?49:55;[1,1.498,2.119].forEach((ratio,i)=>this.tone(root*ratio,root*ratio*.997,12+i*2,.018/(i+1),'sine',i*1.4));this.tone(root*4,root*3.99,6,.005,'triangle',5)}
@@ -30,3 +34,4 @@ class ZoneAudio {
  if(time>this.nextNearby&&['playing','camp','rest'].includes(s.mode)){this.nextNearby=time+2.7+Math.random()*2;let target=null,nearest=280;for(const p of [...(s.night?s.map.fireflies||[]:s.map.groups).filter(g=>!g.defeated),...s.map.pois.filter(p=>p.type==='anomaly'&&!p.searched)]){const d=Math.hypot(p.x-s.x,p.y-s.y);if(d<nearest){nearest=d;target=p}}if(target)this.cue(target.element||target.type,(1-nearest/280)*.65)}
  }
 }
+if(typeof module!=='undefined'&&module.exports)module.exports=ZoneAudio;
