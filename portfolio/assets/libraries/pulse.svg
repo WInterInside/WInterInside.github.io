@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .ring { transform-origin: 50px 50px; animation: expand 3s ease-out infinite; }
+    .late { animation-delay: -1.5s; }
+    @keyframes expand { 0% { transform: scale(.5); opacity: .85; } 100% { transform: scale(3.2); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .ring { animation: none; opacity: .6; transform: scale(2.2); } .late { transform: scale(3.2); opacity: .28; } }
+  </style>
+  <circle class="ring" cx="50" cy="50" r="10" stroke="#91BDE0" stroke-width="2"/>
+  <circle class="ring late" cx="50" cy="50" r="10" stroke="#B4ABE1" stroke-width="2"/>
+  <circle cx="50" cy="50" r="8" fill="#85A9D4"/>
+</svg>

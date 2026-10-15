@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .node { transform-box: fill-box; transform-origin: center; animation: rise 2.4s ease-in-out infinite; }
+    .node:nth-child(2), .node:nth-child(4), .node:nth-child(6), .node:nth-child(8) { animation-delay: -.6s; }
+    .node:nth-child(1), .node:nth-child(3), .node:nth-child(7), .node:nth-child(9) { animation-delay: -1.2s; }
+    @keyframes rise { 0%, 100% { transform: scale(.65); opacity: .45; } 50% { transform: scale(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .node { animation: none; transform: none; opacity: 1; } }
+  </style>
+  <path d="M25 25h50M25 50h50M25 75h50M25 25v50M50 25v50M75 25v50" stroke="#C0D2E9" stroke-width="1.2"/>
+  <g fill="#8FB6DB">
+    <circle class="node" cx="25" cy="25" r="5"/>
+    <circle class="node" cx="50" cy="25" r="5"/>
+    <circle class="node" cx="75" cy="25" r="5"/>
+    <circle class="node" cx="25" cy="50" r="5"/>
+    <circle class="node" cx="50" cy="50" r="7" fill="#AFA8E0"/>
+    <circle class="node" cx="75" cy="50" r="5"/>
+    <circle class="node" cx="25" cy="75" r="5"/>
+    <circle class="node" cx="50" cy="75" r="5"/>
+    <circle class="node" cx="75" cy="75" r="5"/>
+  </g>
+</svg>

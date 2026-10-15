@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .strand { stroke-dasharray: 110 8; animation: flow 4s linear infinite; }
+    .strand--late { animation-direction: reverse; }
+    .rungs { animation: shimmer 2.4s ease-in-out infinite alternate; }
+    @keyframes flow { to { stroke-dashoffset: -118; } }
+    @keyframes shimmer { to { opacity: .35; } }
+    @media (prefers-reduced-motion: reduce) { .strand, .rungs { animation: none; } }
+  </style>
+  <g class="rungs" stroke="#A9C6E2" stroke-width="1.5">
+    <path d="M35 20h30M41 35h18M42 50h16M41 65h18M35 80h30"/>
+  </g>
+  <path class="strand" d="M34 10C77 25 77 40 50 50S23 75 66 90" stroke="#83ACD8" stroke-width="3" stroke-linecap="round"/>
+  <path class="strand strand--late" d="M66 10C23 25 23 40 50 50S77 75 34 90" stroke="#B4ABE1" stroke-width="3" stroke-linecap="round"/>
+</svg>

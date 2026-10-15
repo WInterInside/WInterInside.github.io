@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .wave { animation: drift 3.8s ease-in-out infinite alternate; }
+    .wave:nth-of-type(2) { animation-delay: -1.3s; }
+    .wave:nth-of-type(3) { animation-delay: -2.6s; }
+    @keyframes drift { from { transform: translateX(-5px); opacity: .45; } to { transform: translateX(5px); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .wave { animation: none; opacity: 1; } }
+  </style>
+  <path class="wave" d="M12 31C24 17 37 17 50 31S76 45 88 31" stroke="#91BDE0" stroke-width="3" stroke-linecap="round"/>
+  <path class="wave" d="M12 50C24 36 37 36 50 50S76 64 88 50" stroke="#B7AFE4" stroke-width="3" stroke-linecap="round"/>
+  <path class="wave" d="M12 69C24 55 37 55 50 69S76 83 88 69" stroke="#80A9D7" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .shell { transform-origin: 50px 50px; animation: breathe 4s ease-in-out infinite alternate; }
+    .middle { animation-delay: -1s; }
+    .core { animation-delay: -2s; }
+    @keyframes breathe { to { transform: translateY(-5px) rotate(8deg); } }
+    @media (prefers-reduced-motion: reduce) { .shell { animation: none; } }
+  </style>
+  <path class="shell" d="M50 9 83 50 50 91 17 50Z" fill="#A1BFE0" fill-opacity=".28" stroke="#8FB2D8" stroke-width="1.5"/>
+  <path class="shell middle" d="M50 20 73 50 50 80 27 50Z" fill="#BCB4E8" fill-opacity=".38" stroke="#A99EDB" stroke-width="1.5"/>
+  <path class="shell core" d="M50 33 63 50 50 67 37 50Z" fill="#AACDEC"/>
+</svg>
