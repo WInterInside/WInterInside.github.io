@@ -4592,7 +4592,7 @@ body.is-preview-open {
 }
 .experience__job {
   position: relative;
-  padding: 0 0 34px;
+  padding: 0 0 44px;
 }
 .experience__job:last-child {
   padding-bottom: 0;
@@ -4825,7 +4825,6 @@ body.is-preview-open {
   }
 }
 .site-footer {
-  padding-bottom: 80px;
   background: #101820;
   color: #b6c5d0;
 }
@@ -4834,7 +4833,7 @@ body.is-preview-open {
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 8px;
-  min-height: 96px;
+  min-height: 64px;
 }
 .site-footer__brand {
   justify-self: start;
@@ -4852,9 +4851,6 @@ body.is-preview-open {
   font-size: 12px;
 }
 @media (max-width: 850px) {
-  .site-footer {
-    padding-bottom: 0;
-  }
   .site-footer__inner {
     padding-block: 28px;
   }
